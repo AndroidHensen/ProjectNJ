@@ -19,7 +19,7 @@
                     android:layout_height="150dp"
                     android:text="I'm Diko"
                     android:gravity="center"
-                    android:textSize="20sp"/>
+                    android:textSize="25sp"/>
 
         </LinearLayout>
     </ScrollView>
