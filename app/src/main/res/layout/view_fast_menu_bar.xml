@@ -53,7 +53,7 @@
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_marginRight="6dp"
-            android:src="@drawable/my_view_fast_menu_bar_fmb_gray_arrow" />
+            android:src="@drawable/commom_ic_grey_arrow" />
     </LinearLayout>
 
     <View

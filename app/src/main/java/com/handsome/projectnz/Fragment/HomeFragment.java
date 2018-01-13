@@ -1,4 +1,4 @@
-package com.handsome.projectnz.F;
+package com.handsome.projectnz.Fragment;
 
 import android.view.View;
 
@@ -8,11 +8,11 @@ import com.handsome.projectnz.R;
 /**
  * Created by handsome on 2016/4/7.
  */
-public class ProjectFragment extends BaseLazyFragment {
+public class HomeFragment extends BaseLazyFragment {
 
     @Override
     public int getLayoutId() {
-        return R.layout.fragment_project;
+        return R.layout.fragment_home;
     }
 
     @Override
@@ -27,7 +27,9 @@ public class ProjectFragment extends BaseLazyFragment {
 
     @Override
     public void initData() {
-        setTitle("项目");
+        setTitle("工作台");
+        setEdit("登陆");
+        setEdit2("注册");
     }
 
     @Override

@@ -35,7 +35,7 @@
                     android:id="@+id/iv_bottom_home"
                     android:layout_width="28dp"
                     android:layout_height="28dp"
-                    android:background="@drawable/main_bot_tab_home_off" />
+                    android:background="@drawable/main_ic_bot_tab_home_off" />
 
                 <TextView
                     android:id="@+id/tv_bottom_home"
@@ -58,7 +58,7 @@
                     android:id="@+id/iv_bottom_project"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:background="@drawable/main_bot_tab_project_off" />
+                    android:background="@drawable/main_ic_bot_tab_project_off" />
 
                 <TextView
                     android:id="@+id/tv_bottom_project"
@@ -81,7 +81,7 @@
                     android:id="@+id/iv_bottom_message"
                     android:layout_width="28dp"
                     android:layout_height="28dp"
-                    android:background="@drawable/main_bot_tab_message_off" />
+                    android:background="@drawable/main_ic_bot_tab_message_off" />
 
                 <TextView
                     android:id="@+id/tv_bottom_message"
@@ -104,7 +104,7 @@
                     android:id="@+id/iv_bottom_mine"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:background="@drawable/main_bot_tab_mine_off" />
+                    android:background="@drawable/main_ic_bot_tab_mine_off" />
 
                 <TextView
                     android:id="@+id/tv_bottom_mine"

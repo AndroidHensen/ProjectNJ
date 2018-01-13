@@ -1,10 +1,10 @@
-package com.handsome.projectnz.F;
+package com.handsome.projectnz.Fragment;
 
 import android.view.View;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseLazyFragment;
 import com.handsome.projectnz.R;
-import com.handsome.projectnz.V.MyView.FastMenuBar;
+import com.handsome.projectnz.CustomView.FastMenuBar;
 
 /**
  * Created by Diko on 2018/1/13.

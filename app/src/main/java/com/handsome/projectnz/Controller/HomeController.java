@@ -1,4 +1,4 @@
-package com.handsome.projectnz.C;
+package com.handsome.projectnz.Controller;
 
 /**
  * =====作者=====

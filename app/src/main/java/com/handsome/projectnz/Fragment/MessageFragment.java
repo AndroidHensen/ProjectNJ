@@ -1,4 +1,4 @@
-package com.handsome.projectnz.F;
+package com.handsome.projectnz.Fragment;
 
 import android.view.View;
 

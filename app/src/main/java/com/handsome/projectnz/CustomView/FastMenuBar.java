@@ -1,4 +1,4 @@
-package com.handsome.projectnz.V.MyView;
+package com.handsome.projectnz.CustomView;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -85,7 +85,7 @@ public class FastMenuBar extends LinearLayout {
     private void initRootViews(Context context) {
         views = new SparseArray<>();
         inflater = LayoutInflater.from(context);
-        fmb_view = inflater.inflate(R.layout.fast_menu_bar, null);
+        fmb_view = inflater.inflate(R.layout.view_fast_menu_bar, null);
         addView(fmb_view);
     }
 
