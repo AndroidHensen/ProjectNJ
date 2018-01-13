@@ -12,8 +12,6 @@
     <!--所有界面的标题文字下面的消息文字-->
     <color name="colorPrimaryMessage">#888888</color>
 
-    <color name="colorloginregistertitle">#259b24</color>
-
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000000</color>
 </resources>
