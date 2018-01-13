@@ -20,6 +20,6 @@
             android:gravity="center"
             android:textSize="14sp"
             android:textColor="@color/colorWhite"
-            android:background="@drawable/feedback_task_item"/>
+            android:background="@drawable/return_project_task_bg_message_item"/>
     </LinearLayout>
 </LinearLayout>

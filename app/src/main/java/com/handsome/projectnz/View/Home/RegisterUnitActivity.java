@@ -1,4 +1,4 @@
-package com.handsome.projectnz.V.Home;
+package com.handsome.projectnz.View.Home;
 
 import android.view.View;
 
@@ -9,10 +9,10 @@ import com.handsome.projectnz.R;
  * Created by jie on 2018/1/13.
  */
 
-public class Login_register_untiActivity extends BaseActivity {
+public class RegisterUnitActivity extends BaseActivity {
     @Override
     public int getLayoutId() {
-        return R.layout.login_register_registerunit;
+        return R.layout.activity_register_unit;
     }
 
     @Override

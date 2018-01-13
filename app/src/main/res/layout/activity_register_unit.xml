@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryBackGroup">
+    android:background="@color/colorPrimaryBackGroup"
+    android:orientation="vertical">
+
     <include layout="@layout/include_common_header" />
-    <include layout="@layout/login_register_bar"  />
+
+    <include layout="@layout/include_register_header" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -15,33 +18,29 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="13dp"
                 android:background="@color/colorWhite"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="81dp"
-                    android:layout_height="26dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="9dp"
-                    android:layout_marginTop="13dp"
-                    android:gravity="center_vertical"
                     android:text="单位名称："
                     android:textColor="@color/colorPrimaryTitle"
                     android:textSize="16sp" />
 
                 <EditText
-                    android:layout_width="246dp"
-                    android:layout_height="30dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="39dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ff0"
                     android:textColor="@color/colorPrimaryMessage"
                     android:textSize="14dp" />
-            </RelativeLayout>
+            </LinearLayout>
 
             <include layout="@layout/include_common_split_line_hor" />
 
@@ -106,7 +105,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="55dp"
                     android:layout_marginTop="11dp"
-                    android:background="@drawable/login_register_unitregister1" />
+                    android:background="@drawable/register_unit_ic_creadit1" />
 
                 <ImageButton
                     android:layout_width="30dp"
@@ -114,7 +113,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="11dp"
                     android:layout_marginTop="11dp"
-                    android:background="@drawable/login_register_unitregister2" />
+                    android:background="@drawable/register_unit_ic_creadit2" />
             </RelativeLayout>
 
             <include layout="@layout/include_common_split_line_hor" />
@@ -141,40 +140,42 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="194dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/login_bt_up_shade"
+                    android:background="@drawable/common_bg_blue"
                     android:text="上传照片"
                     android:textColor="@color/colorWhite"
                     android:textSize="14dp" />
-                
+
                 <ImageButton
                     android:layout_width="32dp"
                     android:layout_height="27dp"
-                    android:src="@drawable/login_ic_choice_up"
+                    android:layout_alignParentRight="true"
                     android:layout_marginRight="150dp"
                     android:layout_marginTop="10dp"
-                    android:layout_alignParentRight="true"/>
+                    android:src="@drawable/register_unit_ic_default_pic" />
+
                 <ImageButton
                     android:layout_width="32dp"
                     android:layout_height="27dp"
-                    android:src="@drawable/login_ic_choice_up"
+                    android:layout_alignParentRight="true"
                     android:layout_marginRight="108dp"
                     android:layout_marginTop="10dp"
-                    android:layout_alignParentRight="true"/>
+                    android:src="@drawable/register_unit_ic_default_pic" />
+
                 <ImageButton
                     android:layout_width="32dp"
                     android:layout_height="27dp"
-                    android:src="@drawable/login_ic_choice_up"
+                    android:layout_alignParentRight="true"
                     android:layout_marginRight="66dp"
                     android:layout_marginTop="10dp"
-                    android:layout_alignParentRight="true"/>
+                    android:src="@drawable/register_unit_ic_default_pic" />
+
                 <ImageButton
                     android:layout_width="32dp"
                     android:layout_height="27dp"
-                    android:src="@drawable/login_ic_choice_up"
+                    android:layout_alignParentRight="true"
                     android:layout_marginRight="24dp"
                     android:layout_marginTop="10dp"
-                    android:layout_alignParentRight="true"
-                    />
+                    android:src="@drawable/register_unit_ic_default_pic" />
             </RelativeLayout>
 
             <include layout="@layout/include_common_split_line_hor" />
@@ -201,42 +202,42 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="211dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/login_bt_up_shade"
+                    android:background="@drawable/common_bg_blue"
                     android:text="上传照片"
                     android:textColor="@color/colorWhite"
                     android:textSize="14dp" />
+
                 <ImageButton
                     android:layout_width="32dp"
                     android:layout_height="27dp"
-                    android:src="@drawable/login_ic_choice_up"
+                    android:layout_alignParentRight="true"
                     android:layout_marginRight="167dp"
                     android:layout_marginTop="10dp"
-                    android:layout_alignParentRight="true"
-                    />
+                    android:src="@drawable/register_unit_ic_default_pic" />
+
                 <ImageButton
                     android:layout_width="32dp"
                     android:layout_height="27dp"
-                    android:src="@drawable/login_ic_choice_up"
+                    android:layout_alignParentRight="true"
                     android:layout_marginRight="125dp"
                     android:layout_marginTop="10dp"
-                    android:layout_alignParentRight="true"
-                    />
+                    android:src="@drawable/register_unit_ic_default_pic" />
+
                 <ImageButton
                     android:layout_width="32dp"
                     android:layout_height="27dp"
-                    android:src="@drawable/login_ic_choice_up"
+                    android:layout_alignParentRight="true"
                     android:layout_marginRight="83dp"
                     android:layout_marginTop="10dp"
-                    android:layout_alignParentRight="true"
-                    />
+                    android:src="@drawable/register_unit_ic_default_pic" />
+
                 <ImageButton
                     android:layout_width="32dp"
                     android:layout_height="27dp"
-                    android:src="@drawable/login_ic_choice_up"
+                    android:layout_alignParentRight="true"
                     android:layout_marginRight="41dp"
                     android:layout_marginTop="10dp"
-                    android:layout_alignParentRight="true"
-                    />
+                    android:src="@drawable/register_unit_ic_default_pic" />
             </RelativeLayout>
 
             <include layout="@layout/include_common_split_line_hor" />
@@ -263,26 +264,26 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="130dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/login_bt_up_shade"
+                    android:background="@drawable/common_bg_blue"
                     android:text="上传照片"
                     android:textColor="@color/colorWhite"
                     android:textSize="14dp" />
+
                 <ImageButton
                     android:layout_width="32dp"
                     android:layout_height="27dp"
-                    android:src="@drawable/login_ic_choice_up"
+                    android:layout_alignParentRight="true"
                     android:layout_marginRight="86dp"
                     android:layout_marginTop="10dp"
-                    android:layout_alignParentRight="true"
-                    />
+                    android:src="@drawable/register_unit_ic_default_pic" />
+
                 <ImageButton
                     android:layout_width="32dp"
                     android:layout_height="27dp"
-                    android:src="@drawable/login_ic_choice_up"
+                    android:layout_alignParentRight="true"
                     android:layout_marginRight="44dp"
                     android:layout_marginTop="10dp"
-                    android:layout_alignParentRight="true"
-                    />
+                    android:src="@drawable/register_unit_ic_default_pic" />
             </RelativeLayout>
 
             <include layout="@layout/include_common_split_line_hor" />
@@ -396,42 +397,42 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="194dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/login_bt_up_shade"
+                    android:background="@drawable/common_bg_blue"
                     android:text="上传照片"
                     android:textColor="@color/colorWhite"
                     android:textSize="14dp" />
+
                 <ImageButton
                     android:layout_width="32dp"
                     android:layout_height="27dp"
-                    android:src="@drawable/login_ic_choice_up"
+                    android:layout_alignParentRight="true"
                     android:layout_marginRight="150dp"
                     android:layout_marginTop="10dp"
-                    android:layout_alignParentRight="true"
-                    />
+                    android:src="@drawable/register_unit_ic_default_pic" />
+
                 <ImageButton
                     android:layout_width="32dp"
                     android:layout_height="27dp"
-                    android:src="@drawable/login_ic_choice_up"
+                    android:layout_alignParentRight="true"
                     android:layout_marginRight="108dp"
                     android:layout_marginTop="10dp"
-                    android:layout_alignParentRight="true"
-                    />
+                    android:src="@drawable/register_unit_ic_default_pic" />
+
                 <ImageButton
                     android:layout_width="32dp"
                     android:layout_height="27dp"
-                    android:src="@drawable/login_ic_choice_up"
+                    android:layout_alignParentRight="true"
                     android:layout_marginRight="66dp"
                     android:layout_marginTop="10dp"
-                    android:layout_alignParentRight="true"
-                    />
+                    android:src="@drawable/register_unit_ic_default_pic" />
+
                 <ImageButton
                     android:layout_width="32dp"
                     android:layout_height="27dp"
-                    android:src="@drawable/login_ic_choice_up"
+                    android:layout_alignParentRight="true"
                     android:layout_marginRight="24dp"
                     android:layout_marginTop="10dp"
-                    android:layout_alignParentRight="true"
-                    />
+                    android:src="@drawable/register_unit_ic_default_pic" />
             </RelativeLayout>
 
             <include layout="@layout/include_common_split_line_hor" />
@@ -578,19 +579,21 @@
                     android:textColor="@color/colorPrimaryMessage"
                     android:textSize="14dp" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="136dp">
+
                 <Button
                     android:layout_width="337dp"
                     android:layout_height="40dp"
-                    android:text="提交审核"
-                    android:textSize="16sp"
-                    android:gravity="center"
-                    android:textColor="@color/colorWhite"
                     android:layout_marginLeft="18dp"
                     android:layout_marginTop="32dp"
-                    android:background="@drawable/login_bt_up_shade"/>
+                    android:background="@drawable/common_bg_blue"
+                    android:gravity="center"
+                    android:text="提交审核"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>

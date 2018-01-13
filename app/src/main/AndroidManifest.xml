@@ -10,13 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".View.Main.MainActivity">
+
+        </activity>
+        <activity android:name=".View.Home.LoginActivity" />
+        <activity android:name=".View.Home.RegisterActivity"></activity>
+        <activity android:name=".View.Home.ReturnProjectTaskActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.Home.LoginActivity"></activity>
+        <activity android:name=".View.Home.RegisterUnitActivity">
+        </activity>
     </application>
 
 </manifest>
