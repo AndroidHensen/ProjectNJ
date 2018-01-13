@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -10,16 +11,79 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
+            android:background="@color/colorPrimaryBackGroup"
             android:layout_height="match_parent">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="try"
-            android:gravity="center"
-            android:textSize="50dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_height="157dp">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="18dp"
+                    android:id="@+id/my_photo"
+                    android:background="@drawable/mine_photo"/>
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:text="张三丰"
+                    android:background="@drawable/mine_name_tv_shape"/>
+            </LinearLayout>
+            <com.handsome.projectnz.V.MyView.FastMenuBar
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:fmb_icon_size="45dp"
+                android:id="@+id/company_information"
+                app:fmb_title="公司资料"
+                app:fmb_icon="@drawable/mine_ic_company_information"
+                android:layout_marginTop="1dp">
+
+            </com.handsome.projectnz.V.MyView.FastMenuBar>
+            <com.handsome.projectnz.V.MyView.FastMenuBar
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:fmb_icon_size="45dp"
+                app:fmb_title="帮助"
+                android:id="@+id/help"
+                app:fmb_icon="@drawable/mine_ic_help"
+                android:layout_marginTop="1dp">
+            </com.handsome.projectnz.V.MyView.FastMenuBar>
+            <com.handsome.projectnz.V.MyView.FastMenuBar
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent" app:fmb_icon_size="45dp"
+                app:fmb_title="清理缓存"
+                android:id="@+id/cache_clean_up"
+                app:fmb_icon="@drawable/mine_ic_inset_cache_clean_up"
+                android:layout_height="50dp">
+            </com.handsome.projectnz.V.MyView.FastMenuBar>
+            <com.handsome.projectnz.V.MyView.FastMenuBar
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:fmb_icon_size="45dp"
+                app:fmb_title="意见反馈"
+                android:id="@+id/feedback"
+                app:fmb_icon="@drawable/mine_ic_feedback"
+                android:layout_marginTop="1dp">
+            </com.handsome.projectnz.V.MyView.FastMenuBar>
+
+            <com.handsome.projectnz.V.MyView.FastMenuBar
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:id="@+id/setting"
+                app:fmb_icon="@drawable/mine_ic_inset_setting"
+                app:fmb_icon_size="45dp"
+                app:fmb_title="设置">
+            </com.handsome.projectnz.V.MyView.FastMenuBar>
 
         </LinearLayout>
     </ScrollView>
