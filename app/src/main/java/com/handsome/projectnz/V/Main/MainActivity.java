@@ -13,6 +13,7 @@ import com.handsome.projectnz.A.MainAdapter;
 import com.handsome.projectnz.F.HomeFragment;
 import com.handsome.projectnz.F.MessageFragment;
 import com.handsome.projectnz.F.MineFragment;
+import com.handsome.projectnz.F.ProjectFragment;
 import com.handsome.projectnz.R;
 
 import java.util.ArrayList;
@@ -23,9 +24,9 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
     private ViewPager vp_main;
     private MainAdapter adapter;
     private List<Fragment> list;
-    private ImageView iv_bottom_message, iv_bottom_mine, iv_bottom_home;
-    private TextView tv_bottom_message, tv_bottom_mine, tv_bottom_home;
-    private LinearLayout ly_bottom_home, ly_bottom_message, ly_bottom_mine;
+    private ImageView iv_bottom_message, iv_bottom_mine, iv_bottom_home,iv_bottom_project;
+    private TextView tv_bottom_message, tv_bottom_mine, tv_bottom_home,tv_bottom_project;
+    private LinearLayout ly_bottom_home, ly_bottom_message, ly_bottom_mine,ly_bottom_project;
 
     @Override
     public int getLayoutId() {
@@ -38,12 +39,15 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
         iv_bottom_message = findView(R.id.iv_bottom_message);
         iv_bottom_mine = findView(R.id.iv_bottom_mine);
         iv_bottom_home = findView(R.id.iv_bottom_home);
+        iv_bottom_project = findView(R.id.iv_bottom_project);
         tv_bottom_message = findView(R.id.tv_bottom_message);
         tv_bottom_mine = findView(R.id.tv_bottom_mine);
         tv_bottom_home = findView(R.id.tv_bottom_home);
+        tv_bottom_project = findView(R.id.tv_bottom_project);
         ly_bottom_home = findView(R.id.ly_bottom_home);
         ly_bottom_message = findView(R.id.ly_bottom_message);
         ly_bottom_mine = findView(R.id.ly_bottom_mine);
+        ly_bottom_project = findView(R.id.ly_bottom_project);
     }
 
     @Override
@@ -51,6 +55,7 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
         setOnClick(ly_bottom_home);
         setOnClick(ly_bottom_message);
         setOnClick(ly_bottom_mine);
+        setOnClick(ly_bottom_project);
         vp_main.setOnPageChangeListener(this);
     }
 
@@ -66,11 +71,14 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
             case R.id.ly_bottom_home:
                 iconLight(0);
                 break;
-            case R.id.ly_bottom_message:
+            case R.id.ly_bottom_project:
                 iconLight(1);
                 break;
-            case R.id.ly_bottom_mine:
+            case R.id.ly_bottom_message:
                 iconLight(2);
+                break;
+            case R.id.ly_bottom_mine:
+                iconLight(3);
                 break;
         }
     }
@@ -82,6 +90,7 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
     private void initFragments() {
         list = new ArrayList<>();
         list.add(new HomeFragment());
+        list.add(new ProjectFragment());
         list.add(new MessageFragment());
         list.add(new MineFragment());
         adapter = new MainAdapter(getSupportFragmentManager(), list);
@@ -99,11 +108,13 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
     private void iconLight(int position) {
         vp_main.setCurrentItem(position, false);
         iv_bottom_home.setBackgroundResource(position == 0 ? R.drawable.main_bot_tab_home_on : R.drawable.main_bot_tab_home_off);
-        iv_bottom_message.setBackgroundResource(position == 1 ? R.drawable.main_bot_tab_message_on : R.drawable.main_bot_tab_message_off);
-        iv_bottom_mine.setBackgroundResource(position == 2 ? R.drawable.main_bot_tab_mine_on : R.drawable.main_bot_tab_mine_off);
+        iv_bottom_project.setBackgroundResource(position == 1 ? R.drawable.main_bot_tab_project_on : R.drawable.main_bot_tab_project_off);
+        iv_bottom_message.setBackgroundResource(position == 2 ? R.drawable.main_bot_tab_message_on : R.drawable.main_bot_tab_message_off);
+        iv_bottom_mine.setBackgroundResource(position == 3 ? R.drawable.main_bot_tab_mine_on : R.drawable.main_bot_tab_mine_off);
         tv_bottom_home.setTextColor(position == 0 ? Color.parseColor("#4B72BF") : Color.parseColor("#5D5F6A"));
-        tv_bottom_message.setTextColor(position == 1 ? Color.parseColor("#4B72BF") : Color.parseColor("#5D5F6A"));
-        tv_bottom_mine.setTextColor(position == 2 ? Color.parseColor("#4B72BF") : Color.parseColor("#5D5F6A"));
+        tv_bottom_project.setTextColor(position == 1 ? Color.parseColor("#4B72BF") : Color.parseColor("#5D5F6A"));
+        tv_bottom_message.setTextColor(position ==2 ? Color.parseColor("#4B72BF") : Color.parseColor("#5D5F6A"));
+        tv_bottom_mine.setTextColor(position == 3 ? Color.parseColor("#4B72BF") : Color.parseColor("#5D5F6A"));
     }
 
     @Override
