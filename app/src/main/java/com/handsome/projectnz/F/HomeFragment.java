@@ -27,7 +27,7 @@ public class HomeFragment extends BaseLazyFragment {
 
     @Override
     public void initData() {
-        setTitle("工作台");
+        setTitle("1111");
     }
 
     @Override
