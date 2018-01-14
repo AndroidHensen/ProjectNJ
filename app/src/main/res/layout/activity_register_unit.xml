@@ -64,6 +64,7 @@
                     android:textSize="16sp" />
 
                 <EditText
+                    android:id="@+id/et_belong_company"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
@@ -76,8 +77,9 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@color/colorWhite">
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center">
 
 
                 <TextView
@@ -85,7 +87,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="13dp"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
                     android:text="社会统一信用号："
                     android:textColor="@color/colorPrimaryTitle"
                     android:textSize="16sp" />
@@ -93,28 +96,27 @@
                 <EditText
                     android:id="@+id/et_write_credit"
                     android:layout_width="0dp"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@null"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
                     android:textColor="@color/colorPrimaryMessage"
-                    android:textSize="14dp" />
+                    android:textSize="16sp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="9dp"
-                    android:layout_marginRight="11dp"
-                    android:layout_marginTop="11dp"
                     android:orientation="horizontal">
 
                     <ImageButton
+                        android:id="@+id/ib_register_credit01"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:background="@drawable/register_unit_ic_creadit1" />
 
                     <ImageButton
-                        android:id="@+id/imageButton"
+                        android:id="@+id/ib_register_credit02"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:background="@drawable/register_unit_ic_creadit2" />
@@ -125,15 +127,16 @@
             <include layout="@layout/include_common_split_line_hor" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorWhite"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="9dp"
+                    android:layout_marginLeft="9dp"
                     android:paddingBottom="12dp"
                     android:paddingTop="12dp"
                     android:text="开户许可证："
@@ -141,156 +144,47 @@
                     android:textSize="16sp" />
 
                 <Button
+                    android:id="@+id/bt_open_licence"
                     android:layout_width="0dp"
                     android:layout_height="27dp"
-                    android:padding="0dp"
-                    android:paddingBottom="12dp"
-                    android:paddingTop="12dp"
                     android:layout_weight="1"
                     android:background="@drawable/common_bg_blue"
+                    android:padding="0dp"
                     android:text="上传照片"
                     android:textColor="@color/colorWhite"
-                    android:textSize="14dp" />
+                    android:textSize="16sp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
                     android:orientation="horizontal">
 
                     <ImageButton
                         android:id="@+id/ib_allow_pic_01"
-                        android:layout_width="32dp"
-                        android:layout_height="27dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginLeft="10dp"
                         android:src="@drawable/register_unit_ic_default_pic" />
 
                     <ImageButton
                         android:id="@+id/ib_allow_pic_02"
-                        android:layout_width="32dp"
-                        android:layout_height="27dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginLeft="10dp"
                         android:src="@drawable/register_unit_ic_default_pic" />
 
                     <ImageButton
-                        android:layout_width="32dp"
-                        android:layout_height="27dp"
+                        android:id="@+id/ib_allow_pic_03"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginLeft="10dp"
                         android:src="@drawable/register_unit_ic_default_pic" />
 
                     <ImageButton
-                        android:layout_width="32dp"
-                        android:layout_height="27dp"
-                        android:layout_marginLeft="10dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <include layout="@layout/include_common_split_line_hor" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:background="@color/colorWhite"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
-                    android:paddingLeft="9dp"
-                    android:text="资信证明："
-                    android:textColor="@color/colorPrimaryTitle"
-                    android:textSize="16sp" />
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="27dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/common_bg_blue"
-                    android:text="上传照片"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="14dp" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="26dp"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
-
-                    <ImageButton
-                        android:layout_width="32dp"
-                        android:layout_height="27dp"
-                        android:layout_marginLeft="10dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
-
-                    <ImageButton
-                        android:layout_width="32dp"
-                        android:layout_height="27dp"
-                        android:layout_marginLeft="10dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
-
-                    <ImageButton
-                        android:layout_width="32dp"
-                        android:layout_height="27dp"
-                        android:layout_marginLeft="10dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
-
-                    <ImageButton
-                        android:layout_width="32dp"
-                        android:layout_height="27dp"
-                        android:layout_marginLeft="10dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
-                </LinearLayout>
-            </LinearLayout>
-
-
-            <include layout="@layout/include_common_split_line_hor" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:background="@color/colorWhite"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
-                    android:paddingLeft="9dp"
-                    android:text="上一年度的完税证明："
-                    android:textColor="@color/colorPrimaryTitle"
-                    android:textSize="16sp" />
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="27dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/common_bg_blue"
-                    android:text="上传照片"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="14dp" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="26dp"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
-
-                    <ImageButton
-                        android:layout_width="32dp"
-                        android:layout_height="27dp"
-                        android:layout_marginLeft="10dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
-
-                    <ImageButton
-                        android:layout_width="32dp"
-                        android:layout_height="27dp"
+                        android:id="@+id/ib_allow_pic_04"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginLeft="10dp"
                         android:src="@drawable/register_unit_ic_default_pic" />
                 </LinearLayout>
@@ -300,135 +194,116 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:background="@color/colorWhite"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="13dp"
-                    android:text="开户行："
-                    android:textColor="@color/colorPrimaryTitle"
-                    android:textSize="16sp" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="9dp"
-                    android:background="@null"
-                    android:textColor="@color/colorPrimaryMessage"
-                    android:textSize="14dp" />
-            </LinearLayout>
-
-            <include layout="@layout/include_common_split_line_hor"></include>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@color/colorWhite"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="9dp"
-                    android:layout_marginTop="16dp"
-                    android:text="账号："
-                    android:textColor="@color/colorPrimaryTitle"
-                    android:textSize="16sp" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="13dp"
-                    android:background="@null"
-                    android:textColor="@color/colorPrimaryMessage"
-                    android:textSize="14dp" />
-            </LinearLayout>
-
-            <include layout="@layout/include_common_split_line_hor"></include>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@color/colorWhite"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="14dp"
-                    android:text="地址："
-                    android:textColor="@color/colorPrimaryTitle"
-                    android:textSize="16sp" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@null"
-                    android:textColor="@color/colorPrimaryMessage"
-                    android:textSize="14dp" />
-            </LinearLayout>
-
-            <include layout="@layout/include_common_split_line_hor"></include>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:background="@color/colorWhite"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="14dp"
-                    android:paddingLeft="8dp"
-                    android:text="资质证书照："
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:text="资信证明："
                     android:textColor="@color/colorPrimaryTitle"
                     android:textSize="16sp" />
 
                 <Button
+                    android:id="@+id/bt_credit_certification"
                     android:layout_width="0dp"
                     android:layout_height="27dp"
-                    android:layout_marginTop="12dp"
                     android:layout_weight="1"
                     android:background="@drawable/common_bg_blue"
+                    android:padding="0dp"
                     android:text="上传照片"
                     android:textColor="@color/colorWhite"
-                    android:textSize="14dp" />
+                    android:textSize="16sp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="27dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:layout_width="32dp"
-                        android:layout_height="27dp"
+                        android:id="@+id/ib_certification01"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginLeft="10dp"
                         android:src="@drawable/register_unit_ic_default_pic" />
 
                     <ImageButton
-                        android:layout_width="32dp"
-                        android:layout_height="27dp"
+                        android:id="@+id/ib_certification02"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginLeft="10dp"
                         android:src="@drawable/register_unit_ic_default_pic" />
 
                     <ImageButton
-                        android:layout_width="32dp"
-                        android:layout_height="27dp"
+                        android:id="@+id/ib_certification03"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginLeft="10dp"
                         android:src="@drawable/register_unit_ic_default_pic" />
 
                     <ImageButton
-                        android:layout_width="32dp"
-                        android:layout_height="27dp"
+                        android:id="@+id/ib_certification04"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/register_unit_ic_default_pic" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:text="上一年度的完税证明："
+                    android:textColor="@color/colorPrimaryTitle"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/bt_tax"
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_bg_blue"
+                    android:padding="0dp"
+                    android:text="上传照片"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/ib_tax_credit01"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/register_unit_ic_default_pic" />
+
+                    <ImageButton
+                        android:id="@+id/ib_tax_credit02"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_marginLeft="10dp"
                         android:src="@drawable/register_unit_ic_default_pic" />
                 </LinearLayout>
@@ -438,129 +313,288 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:background="@color/colorWhite"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="13dp"
+                    android:text="开户行："
+                    android:textColor="@color/colorPrimaryTitle"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_opening_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:textColor="@color/colorPrimaryMessage"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="账号："
+                    android:textColor="@color/colorPrimaryTitle"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:textColor="@color/colorPrimaryMessage"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="地址："
+                    android:textColor="@color/colorPrimaryTitle"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_adress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:textColor="@color/colorPrimaryMessage"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:text="资质证书照："
+                    android:textColor="@color/colorPrimaryTitle"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/bt_certificate_pic"
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_bg_blue"
+                    android:padding="0dp"
+                    android:text="上传照片"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/ib_certificate_pic01"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/register_unit_ic_default_pic" />
+
+                    <ImageButton
+                        android:id="@+id/ib_certificate_pic02"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/register_unit_ic_default_pic" />
+
+                    <ImageButton
+                        android:id="@+id/ib_certificate_pic03"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/register_unit_ic_default_pic" />
+
+                    <ImageButton
+                        android:id="@+id/ib_certificate_pic04"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/register_unit_ic_default_pic" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
                     android:text="公司官网："
                     android:textColor="@color/colorPrimaryTitle"
                     android:textSize="16sp" />
 
                 <EditText
+                    android:id="@+id/et_official_website"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="9dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
                     android:background="@null"
                     android:textColor="@color/colorPrimaryMessage"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <include layout="@layout/include_common_split_line_hor"></include>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:background="@color/colorWhite"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="12dp"
                     android:text="联系电话："
                     android:textColor="@color/colorPrimaryTitle"
                     android:textSize="16sp" />
 
                 <EditText
+                    android:id="@+id/et_phone"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
                     android:background="@null"
                     android:textColor="@color/colorPrimaryMessage"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <include layout="@layout/include_common_split_line_hor"></include>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:background="@color/colorWhite"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="13dp"
                     android:text="企业邮箱："
                     android:textColor="@color/colorPrimaryTitle"
                     android:textSize="16sp" />
 
                 <EditText
+                    android:id="@+id/et_email"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
                     android:background="@null"
                     android:textColor="@color/colorPrimaryMessage"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <include layout="@layout/include_common_split_line_hor"></include>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:background="@color/colorWhite"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="14dp"
                     android:text="经营区域："
                     android:textColor="@color/colorPrimaryTitle"
                     android:textSize="16sp" />
 
                 <EditText
+                    android:id="@+id/et_area"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
                     android:background="@null"
                     android:textColor="@color/colorPrimaryMessage"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <include layout="@layout/include_common_split_line_hor"></include>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="103dp"
+                android:layout_height="wrap_content"
                 android:background="@color/colorWhite"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingTop="12dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="26dp"
                     android:layout_marginLeft="8dp"
-
                     android:gravity="bottom"
                     android:text="可参与的项目类别："
                     android:textColor="@color/colorPrimaryTitle"
                     android:textSize="16sp" />
 
                 <EditText
+                    android:id="@+id/et_item_classification"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
                     android:layout_marginTop="5dp"
                     android:background="@null"
                     android:gravity="top"
@@ -575,6 +609,7 @@
                 android:layout_height="136dp">
 
                 <Button
+                    android:id="@+id/bt_Submit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="18dp"
