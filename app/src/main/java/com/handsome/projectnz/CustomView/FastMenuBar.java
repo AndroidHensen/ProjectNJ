@@ -19,12 +19,14 @@ import android.widget.TextView;
 
 import com.handsome.projectnz.R;
 
+
 /**
  * =====作者=====
  * 许英俊
  * =====时间=====
  * 2017/11/24.
  */
+
 
 public class FastMenuBar extends LinearLayout {
 

@@ -23,4 +23,9 @@
             <flag name="fmb_jump" value="3" />
         </attr>
     </declare-styleable>
+    <declare-styleable name="MessageTabButton">
+        <attr name="mtb_title" format="string" />
+        <attr name="mtb_unread" format="string" />
+        <attr name="mtb_selected" format="boolean" />
+    </declare-styleable>
 </resources>
