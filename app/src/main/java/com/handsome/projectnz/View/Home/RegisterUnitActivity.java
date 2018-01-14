@@ -1,6 +1,7 @@
 package com.handsome.projectnz.View.Home;
 
 import android.view.View;
+import android.widget.EditText;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
 import com.handsome.projectnz.R;
@@ -10,6 +11,9 @@ import com.handsome.projectnz.R;
  */
 
 public class RegisterUnitActivity extends BaseActivity {
+
+    private EditText et_unit_name;
+
     @Override
     public int getLayoutId() {
         return R.layout.activity_register_unit;
@@ -17,7 +21,7 @@ public class RegisterUnitActivity extends BaseActivity {
 
     @Override
     public void initViews() {
-
+        et_unit_name = findView(R.id.et_unit_name);
     }
 
     @Override

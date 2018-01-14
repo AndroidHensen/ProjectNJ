@@ -20,53 +20,56 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="13dp"
                 android:background="@color/colorWhite"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
                     android:text="单位名称："
                     android:textColor="@color/colorPrimaryTitle"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginLeft="9dp"
                     android:textSize="16sp" />
 
                 <EditText
+                    android:id="@+id/et_unit_name"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
                     android:background="@null"
                     android:textColor="@color/colorPrimaryMessage"
-                    android:layout_marginTop="8dp"
-                    android:textSize="14dp" />
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <include layout="@layout/include_common_split_line_hor" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:background="@color/colorWhite"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="所属上级公司："
-                    android:layout_marginTop="13dp"
                     android:layout_marginLeft="8dp"
+                    android:text="所属上级公司："
                     android:textColor="@color/colorPrimaryTitle"
                     android:textSize="16sp" />
 
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
                     android:background="@null"
-                    android:layout_marginTop="9dp"
                     android:textColor="@color/colorPrimaryMessage"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <include layout="@layout/include_common_split_line_hor" />
@@ -81,34 +84,33 @@
                     android:id="@+id/tv_society_credit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="13dp"
                     android:text="社会统一信用号："
                     android:textColor="@color/colorPrimaryTitle"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginLeft="9dp"
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/et_writecredit"
+                    android:id="@+id/et_write_credit"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
                     android:layout_weight="1"
                     android:background="@null"
                     android:textColor="@color/colorPrimaryMessage"
-                    android:layout_marginTop="8dp"
                     android:textSize="14dp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="11dp"
                     android:layout_marginLeft="9dp"
                     android:layout_marginRight="11dp"
+                    android:layout_marginTop="11dp"
                     android:orientation="horizontal">
 
                     <ImageButton
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:layout_toRightOf="@id/et_writecredit"
                         android:background="@drawable/register_unit_ic_creadit1" />
 
                     <ImageButton
@@ -124,24 +126,27 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:background="@color/colorWhite"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:paddingLeft="9dp"
-                    android:layout_marginTop="13dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="9dp"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
                     android:text="开户许可证："
                     android:textColor="@color/colorPrimaryTitle"
                     android:textSize="16sp" />
 
                 <Button
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="27dp"
-                    android:layout_marginTop="10dp"
+                    android:padding="0dp"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:layout_weight="1"
                     android:background="@drawable/common_bg_blue"
                     android:text="上传照片"
                     android:textColor="@color/colorWhite"
@@ -150,32 +155,35 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp">
-                <ImageButton
-                    android:layout_width="32dp"
-                    android:layout_height="27dp"
-                    android:layout_marginLeft="10dp"
-                    android:src="@drawable/register_unit_ic_default_pic" />
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
 
-                <ImageButton
-                    android:layout_width="32dp"
-                    android:layout_height="27dp"
-                    android:layout_marginLeft="10dp"
-                    android:src="@drawable/register_unit_ic_default_pic" />
+                    <ImageButton
+                        android:id="@+id/ib_allow_pic_01"
+                        android:layout_width="32dp"
+                        android:layout_height="27dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/register_unit_ic_default_pic" />
 
-                <ImageButton
-                    android:layout_width="32dp"
-                    android:layout_height="27dp"
-                    android:layout_marginLeft="10dp"
-                    android:src="@drawable/register_unit_ic_default_pic" />
+                    <ImageButton
+                        android:id="@+id/ib_allow_pic_02"
+                        android:layout_width="32dp"
+                        android:layout_height="27dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/register_unit_ic_default_pic" />
 
-                <ImageButton
-                    android:layout_width="32dp"
-                    android:layout_height="27dp"
-                    android:layout_marginLeft="10dp"
-                    android:src="@drawable/register_unit_ic_default_pic" />
+                    <ImageButton
+                        android:layout_width="32dp"
+                        android:layout_height="27dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/register_unit_ic_default_pic" />
+
+                    <ImageButton
+                        android:layout_width="32dp"
+                        android:layout_height="27dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/register_unit_ic_default_pic" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -188,19 +196,19 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:paddingLeft="9dp"
-                    android:layout_marginTop="13dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:paddingLeft="9dp"
                     android:text="资信证明："
                     android:textColor="@color/colorPrimaryTitle"
                     android:textSize="16sp" />
 
                 <Button
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="27dp"
                     android:layout_marginTop="10dp"
+                    android:layout_weight="1"
                     android:background="@drawable/common_bg_blue"
                     android:text="上传照片"
                     android:textColor="@color/colorWhite"
@@ -209,9 +217,9 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginRight="26dp"
-                    android:layout_marginTop="10dp">
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
 
                     <ImageButton
                         android:layout_width="32dp"
@@ -249,19 +257,19 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:paddingLeft="9dp"
-                    android:layout_marginTop="13dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:paddingLeft="9dp"
                     android:text="上一年度的完税证明："
                     android:textColor="@color/colorPrimaryTitle"
                     android:textSize="16sp" />
 
                 <Button
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="27dp"
                     android:layout_marginTop="10dp"
+                    android:layout_weight="1"
                     android:background="@drawable/common_bg_blue"
                     android:text="上传照片"
                     android:textColor="@color/colorWhite"
@@ -270,9 +278,9 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginRight="26dp"
-                    android:layout_marginTop="10dp">
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
 
                     <ImageButton
                         android:layout_width="32dp"
@@ -299,18 +307,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="13dp"
                     android:text="开户行："
                     android:textColor="@color/colorPrimaryTitle"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginLeft="8dp"
                     android:textSize="16sp" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:layout_marginTop="9dp"
                     android:background="@null"
                     android:textColor="@color/colorPrimaryMessage"
-                    android:layout_marginTop="9dp"
                     android:textSize="14dp" />
             </LinearLayout>
 
@@ -325,18 +333,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="16dp"
                     android:text="账号："
                     android:textColor="@color/colorPrimaryTitle"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginLeft="9dp"
                     android:textSize="16sp" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:layout_marginTop="13dp"
                     android:background="@null"
                     android:textColor="@color/colorPrimaryMessage"
-                    android:layout_marginTop="13dp"
                     android:textSize="14dp" />
             </LinearLayout>
 
@@ -351,18 +359,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="14dp"
                     android:text="地址："
                     android:textColor="@color/colorPrimaryTitle"
-                    android:layout_marginTop="14dp"
-                    android:layout_marginLeft="8dp"
                     android:textSize="16sp" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
                     android:background="@null"
                     android:textColor="@color/colorPrimaryMessage"
-                    android:layout_marginTop="10dp"
                     android:textSize="14dp" />
             </LinearLayout>
 
@@ -375,19 +383,19 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:paddingLeft="8dp"
-                    android:layout_marginTop="14dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="8dp"
                     android:text="资质证书照："
                     android:textColor="@color/colorPrimaryTitle"
                     android:textSize="16sp" />
 
                 <Button
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="27dp"
                     android:layout_marginTop="12dp"
+                    android:layout_weight="1"
                     android:background="@drawable/common_bg_blue"
                     android:text="上传照片"
                     android:textColor="@color/colorWhite"
@@ -396,9 +404,10 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
                     android:layout_marginRight="27dp"
-                    android:layout_marginTop="12dp">
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
                     <ImageButton
                         android:layout_width="32dp"
                         android:layout_height="27dp"
@@ -436,18 +445,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="13dp"
                     android:text="公司官网："
                     android:textColor="@color/colorPrimaryTitle"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginLeft="8dp"
                     android:textSize="16sp" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:layout_marginTop="9dp"
                     android:background="@null"
                     android:textColor="@color/colorPrimaryMessage"
-                    android:layout_marginTop="9dp"
                     android:textSize="14sp" />
             </LinearLayout>
 
@@ -462,18 +471,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="12dp"
                     android:text="联系电话："
                     android:textColor="@color/colorPrimaryTitle"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginLeft="8dp"
                     android:textSize="16sp" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
                     android:background="@null"
                     android:textColor="@color/colorPrimaryMessage"
-                    android:layout_marginTop="8dp"
                     android:textSize="14sp" />
             </LinearLayout>
 
@@ -488,18 +497,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="13dp"
                     android:text="企业邮箱："
                     android:textColor="@color/colorPrimaryTitle"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginLeft="8dp"
                     android:textSize="16sp" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
                     android:background="@null"
                     android:textColor="@color/colorPrimaryMessage"
-                    android:layout_marginTop="10dp"
                     android:textSize="14sp" />
             </LinearLayout>
 
@@ -514,20 +523,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="14dp"
                     android:text="经营区域："
                     android:textColor="@color/colorPrimaryTitle"
-                    android:layout_marginTop="14dp"
-                    android:layout_marginLeft="8dp"
                     android:textSize="16sp" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
                     android:background="@null"
                     android:textColor="@color/colorPrimaryMessage"
-                    android:layout_marginTop="10dp"
                     android:textSize="14sp" />
             </LinearLayout>
+
             <include layout="@layout/include_common_split_line_hor"></include>
 
             <LinearLayout
@@ -549,13 +559,13 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="top"
-                    android:hint="电器安装工程、土建工程、通信及其自动化工程、实验运维、顶管、其他（做成可选多类别）"
-                    android:lines="5"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="15dp"
                     android:layout_marginTop="5dp"
                     android:background="@null"
+                    android:gravity="top"
+                    android:hint="电器安装工程、土建工程、通信及其自动化工程、实验运维、顶管、其他（做成可选多类别）"
+                    android:lines="5"
                     android:textColor="@color/colorPrimaryMessage"
                     android:textSize="14dp" />
             </LinearLayout>
@@ -567,9 +577,7 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="18dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginTop="32dp"
+                    android:layout_margin="18dp"
                     android:background="@drawable/common_bg_blue"
                     android:gravity="center"
                     android:text="提交审核"
