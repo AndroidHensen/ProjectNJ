@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <LinearLayout
-        android:layout_width="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="12dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center"
-        android:layout_gravity="center"
-        android:paddingTop="12dp"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:paddingBottom="12dp">
-        <TextView
-            android:id="@+id/tv_data"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="12月25日"
-            android:gravity="center"
-            android:textSize="14sp"/>
-        <TextView
-            android:id="@+id/tv_workload"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="完成工作量：     500米       进度30%"
-            android:gravity="center"
-            android:textSize="14sp"
-            android:textColor="@color/colorWhite"
-            android:background="@drawable/return_project_task_bg_message_item"/>
-    </LinearLayout>
+        android:text="12月25日"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_workload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/return_project_task_bg_message_item"
+        android:gravity="center"
+        android:text="完成工作量：     500米       进度30%"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
 </LinearLayout>
