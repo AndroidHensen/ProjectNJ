@@ -14,12 +14,7 @@
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="match_parent">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:text="I'm Diko"
-                    android:gravity="center"
-                    android:textSize="25sp"/>
+
 
         </LinearLayout>
     </ScrollView>
