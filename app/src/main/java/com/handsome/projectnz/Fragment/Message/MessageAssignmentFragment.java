@@ -1,4 +1,4 @@
-package com.handsome.projectnz.Fragment;
+package com.handsome.projectnz.Fragment.Message;
 
 import android.view.View;
 import android.widget.ListView;
@@ -44,6 +44,7 @@ public class MessageAssignmentFragment extends BaseLazyFragment {
         lists.add(message2);
         Message message3 = new Message("你有一个新任务", false, "项目名称：1028工程\n任务名称：android开发\n截至时间：2018年12月11日", "2017年11月10日", "编制计划");
         lists.add(message3);
+
         mAdapter = new MessageAdapter(getActivity(), lists);
         lv.setAdapter(mAdapter);
     }

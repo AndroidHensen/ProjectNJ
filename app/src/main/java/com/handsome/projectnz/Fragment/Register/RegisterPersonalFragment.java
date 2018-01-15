@@ -1,4 +1,4 @@
-package com.handsome.projectnz.Fragment;
+package com.handsome.projectnz.Fragment.Register;
 
 import android.view.View;
 import android.widget.Button;

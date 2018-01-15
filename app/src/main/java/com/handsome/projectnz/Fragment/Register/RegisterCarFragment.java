@@ -1,4 +1,4 @@
-package com.handsome.projectnz.Fragment;
+package com.handsome.projectnz.Fragment.Register;
 
 import android.view.View;
 
@@ -9,10 +9,10 @@ import com.handsome.projectnz.R;
  * Created by jie on 2018/1/15.
  */
 
-public class RegisterMachineFragment extends BaseLazyFragment {
+public class RegisterCarFragment extends BaseLazyFragment {
     @Override
     public int getLayoutId() {
-        return R.layout.activity_register_machine;
+        return R.layout.activity_register_car;
     }
 
     @Override

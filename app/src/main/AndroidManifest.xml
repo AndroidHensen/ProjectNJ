@@ -9,19 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.Home.AnnouncementsNewsActivity">
+        <activity android:name=".View.Main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.Home.AnnouncementsCompanyActivity" />
-
-        <activity android:name=".View.Home.RegisterActivity" />
         <activity android:name=".View.Home.LoginActivity" />
-        <activity android:name=".View.Main.MainActivity"></activity>
-        <activity android:name=".View.Home.ReturnProjectTaskActivity"></activity>
+        <activity android:name=".View.Home.RegisterActivity" />
+        <activity android:name=".View.Home.RegisterUnitActivity" />
+        <activity android:name=".View.Home.ReturnProjectTaskActivity" />
+        <activity android:name=".V.Project.ProjectNew" />
+        <activity android:name=".V.Project.ProjectSum" />
+        <activity android:name=".V.Project.ProjectFile" />
+        <activity android:name=".V.Project.ProjectDeleteFile" />
+        <activity android:name=".V.Project.ProjectUpdate" />
+        <activity android:name=".V.Mine.MineSetting" />
+        <activity android:name=".V.Mine.MineFeedback"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackGroup"
+    android:orientation="vertical"
+    tools:context="com.handsome.projectnz.V.Project.ProjectNew">
+
+    <include layout="@layout/include_common_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/project_left"
+            android:layout_width="144dp"
+            android:layout_height="24dp"
+            android:background="@drawable/project_title_white_shape"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/project_right"
+            android:layout_width="144dp"
+            android:layout_height="24dp"
+            android:background="@drawable/project_title_white_shape"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_project"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

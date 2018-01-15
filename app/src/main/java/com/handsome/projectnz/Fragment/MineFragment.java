@@ -1,15 +1,18 @@
 package com.handsome.projectnz.Fragment;
 
+import android.content.Intent;
 import android.view.View;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseLazyFragment;
 import com.handsome.projectnz.R;
 import com.handsome.projectnz.CustomView.FastMenuBar;
+import com.handsome.projectnz.V.Mine.MineFeedback;
+import com.handsome.projectnz.V.Mine.MineSetting;
 
 /**
  * Created by Diko on 2018/1/13.
  */
-public class MineFragment extends BaseLazyFragment {
+public class MineFragment extends BaseLazyFragment implements FastMenuBar.onMenuBarClickListener {
     private FastMenuBar fmb_company_information;
     private FastMenuBar fmb_help;
     private FastMenuBar fmb_cache_clean_up;
@@ -32,7 +35,11 @@ public class MineFragment extends BaseLazyFragment {
 
     @Override
     public void initListener() {
-
+        fmb_company_information.setOnMenuBarClickListener(this);
+        fmb_help.setOnMenuBarClickListener(this);
+        fmb_cache_clean_up.setOnMenuBarClickListener(this);
+        fmb_feedback.setOnMenuBarClickListener(this);
+        fmb_setting.setOnMenuBarClickListener(this);
     }
 
     @Override
@@ -42,6 +49,28 @@ public class MineFragment extends BaseLazyFragment {
 
     @Override
     public void processClick(View v) {
+    }
 
+    @Override
+    public void onMenuBarClick(FastMenuBar view) {
+        Intent i;
+        switch (view.getId()) {
+            case R.id.company_information:
+                break;
+            case R.id.help:
+                break;
+            case R.id.cache_clean_up:
+                break;
+            case R.id.feedback:
+                i=new Intent(getActivity(), MineFeedback.class);
+                startActivity(i);
+                break;
+            case R.id.setting:
+                i = new Intent(getActivity(), MineSetting.class);
+                startActivity(i);
+                break;
+            default:
+
+        }
     }
 }

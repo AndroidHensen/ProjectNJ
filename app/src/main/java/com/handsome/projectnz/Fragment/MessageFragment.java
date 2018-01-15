@@ -7,6 +7,10 @@ import android.view.View;
 import com.handsome.module_engine.E.BaseTemplate.BaseLazyFragment;
 import com.handsome.projectnz.Adapter.MainAdapter;
 import com.handsome.projectnz.CustomView.MessageTabButton;
+import com.handsome.projectnz.Fragment.Message.MessageAssignmentFragment;
+import com.handsome.projectnz.Fragment.Message.MessageCompanyNoticeFragment;
+import com.handsome.projectnz.Fragment.Message.MessageOfficeFragment;
+import com.handsome.projectnz.Fragment.Message.MessageSystemFragment;
 import com.handsome.projectnz.R;
 
 import java.util.ArrayList;

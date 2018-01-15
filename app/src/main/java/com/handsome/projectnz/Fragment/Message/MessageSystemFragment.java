@@ -1,4 +1,4 @@
-package com.handsome.projectnz.Fragment;
+package com.handsome.projectnz.Fragment.Message;
 
 import android.view.View;
 import android.widget.ListView;
@@ -13,9 +13,9 @@ import java.util.List;
 
 /**
  * Created by Diko(柯东煜) on 2018/1/14.
- * 对应界面为：主界面-消息-公司公告
+ * 对应界面为：主界面-消息-系统信息
  */
-public class MessageCompanyNoticeFragment extends BaseLazyFragment {
+public class MessageSystemFragment extends BaseLazyFragment {
     private ListView lv;
     private MessageAdapter mAdapter;
 
@@ -27,8 +27,9 @@ public class MessageCompanyNoticeFragment extends BaseLazyFragment {
     @Override
     public void initViews() {
         lv = findView(R.id.message_notice_lv);
+
         List<Message> lists = new ArrayList<>();
-        Message message = new Message("公告标题", false, "内容。。。。", "2017年11月10日", "查看详情");
+        Message message = new Message("系统消息", true, "欢迎新成员Diko加入", "2017年11月10日", "");
         lists.add(message);
         mAdapter = new MessageAdapter(getActivity(), lists);
         lv.setAdapter(mAdapter);
@@ -41,6 +42,7 @@ public class MessageCompanyNoticeFragment extends BaseLazyFragment {
 
     @Override
     public void initData() {
+
     }
 
     @Override

@@ -201,6 +201,7 @@ public class FastMenuBar extends LinearLayout {
         this.listener = listener;
     }
 
+
     public interface onMenuBarClickListener {
         void onMenuBarClick(FastMenuBar view);
     }

@@ -8,10 +8,10 @@ import android.widget.TextView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
 import com.handsome.projectnz.Adapter.MainAdapter;
-import com.handsome.projectnz.Fragment.RegisterCarFragment;
-import com.handsome.projectnz.Fragment.RegisterMachineFragment;
-import com.handsome.projectnz.Fragment.RegisterPersonalFragment;
-import com.handsome.projectnz.Fragment.RegisterUnitFragment;
+import com.handsome.projectnz.Fragment.Register.RegisterCarFragment;
+import com.handsome.projectnz.Fragment.Register.RegisterMachineFragment;
+import com.handsome.projectnz.Fragment.Register.RegisterPersonalFragment;
+import com.handsome.projectnz.Fragment.Register.RegisterUnitFragment;
 import com.handsome.projectnz.R;
 
 import java.util.ArrayList;

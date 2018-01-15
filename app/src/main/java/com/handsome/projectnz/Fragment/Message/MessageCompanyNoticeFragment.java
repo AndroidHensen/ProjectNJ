@@ -1,4 +1,4 @@
-package com.handsome.projectnz.Fragment;
+package com.handsome.projectnz.Fragment.Message;
 
 import android.view.View;
 import android.widget.ListView;
@@ -13,9 +13,9 @@ import java.util.List;
 
 /**
  * Created by Diko(柯东煜) on 2018/1/14.
- * 对应界面为：主界面-消息-办公信息
+ * 对应界面为：主界面-消息-公司公告
  */
-public class MessageOfficeFragment extends BaseLazyFragment {
+public class MessageCompanyNoticeFragment extends BaseLazyFragment {
     private ListView lv;
     private MessageAdapter mAdapter;
 
@@ -27,16 +27,9 @@ public class MessageOfficeFragment extends BaseLazyFragment {
     @Override
     public void initViews() {
         lv = findView(R.id.message_notice_lv);
-
         List<Message> lists = new ArrayList<>();
-        Message message = new Message("工作申请", true, "申请标题：android开发工程师\n" +
-                "内容概要：工作问题，工作问题\n" +
-                "截至时间：2018年12月11日", "2017年11月10日", "查看详情");
+        Message message = new Message("公告标题", false, "内容。。。。", "2017年11月10日", "查看详情");
         lists.add(message);
-        Message message1 = new Message("工作申请", false, "申请标题：android开发工程师\n" +
-                "内容概要：工作问题，工作问题，工作问题，工作问题，工作问题，工作问题，工作问题，工作问题，工作问题，工作问题，工作问题，工作问题\n" +
-                "截至时间：2018年12月11日", "2017年11月10日", "查看详情");
-        lists.add(message1);
         mAdapter = new MessageAdapter(getActivity(), lists);
         lv.setAdapter(mAdapter);
     }
