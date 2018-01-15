@@ -1,9 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.handsome.projectnz.View.Home.RegisterActivity">
+    android:background="@color/colorPrimaryBackGroup"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <include layout="@layout/include_common_header" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_tab_bg_unselected_shape"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/register_unit"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorloginregistertitle"
+                android:background="@drawable/common_bd_green"
+                android:text="单位注册"/>
+            <TextView
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:id="@+id/register_personal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorloginregistertitle"
+                android:background="@drawable/common_bd_green"
+                android:text="个人注册"/>
+
+            <TextView
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:id="@+id/register_car"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/common_bd_green"
+                android:gravity="center"
+                android:text="车辆注册"
+                android:textColor="@color/colorloginregistertitle"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:id="@+id/register_machine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorloginregistertitle"
+                android:background="@drawable/common_bd_green"
+                android:text="器械注册"/>
+
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>
