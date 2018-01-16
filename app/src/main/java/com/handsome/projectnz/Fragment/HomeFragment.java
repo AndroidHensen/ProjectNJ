@@ -15,7 +15,7 @@ public class HomeFragment extends BaseLazyFragment {
 
     @Override
     public int getLayoutId() {
-        return R.layout.fragment_home;
+        return R.layout.activity_workbench;
     }
 
     @Override
