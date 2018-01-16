@@ -18,7 +18,6 @@
         </activity>
         <activity android:name=".View.Home.LoginActivity" />
         <activity android:name=".View.Home.RegisterActivity" />
-        <activity android:name=".View.Home.RegisterUnitActivity" />
         <activity android:name=".View.Home.ReturnProjectTaskActivity" />
         <activity android:name=".V.Project.ProjectNew" />
         <activity android:name=".V.Project.ProjectSum" />
