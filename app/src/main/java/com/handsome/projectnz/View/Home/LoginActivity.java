@@ -2,6 +2,7 @@ package com.handsome.projectnz.View.Home;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
@@ -9,8 +10,10 @@ import com.handsome.projectnz.R;
 
 public class LoginActivity extends BaseActivity {
 
-    private Button btn_login;
-    private TextView tv_username;
+
+    private ImageButton ib_wechat;
+    private ImageButton ib_qq;
+    private Button btn_register;
 
     @Override
     public int getLayoutId() {
@@ -19,6 +22,9 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     public void initViews() {
+        ib_wechat=findView(R.id.ib_wechat);
+        ib_qq=findView(R.id.ib_qq);
+        btn_register=findView(R.id.btn_register);
     }
 
     @Override
@@ -27,27 +33,11 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     public void initData() {
-        initLoginData();
-        initRegisterData();
-        initUserData();
+        setTitle("注册");
     }
-
 
     @Override
     public void processClick(View v) {
-        switch (v.getId()){
 
-        }
-    }
-
-    private void initLoginData() {
-
-    }
-
-
-    private void initUserData() {
-    }
-
-    private void initRegisterData() {
     }
 }
