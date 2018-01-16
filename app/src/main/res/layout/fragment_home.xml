@@ -2,29 +2,546 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryBackGroup"
     android:orientation="vertical">
 
     <include layout="@layout/include_common_header" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:gravity="center"
-                android:text="I'm Diko"
-                android:textSize="25sp" />
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="10dp">
 
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#3F51B5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="办公OA"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/include_common_split_line_hor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/common_bd_red" />
+
+                        <ImageView
+                            android:id="@+id/iv_working_notice"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/workbench_ic_company_announcements" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_working_notice"
+                            android:layout_centerInParent="true"
+                            android:text="公司公告"
+                            android:textColor="#5D5F6A"
+                            android:textSize="10dp" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/include_common_split_line_ver" />
+
+                    <RelativeLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/common_bd_red" />
+
+                        <ImageView
+                            android:id="@+id/iv_working_task"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/workbench_ic_working_task" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_working_task"
+                            android:layout_centerInParent="true"
+                            android:text="工作任务"
+                            android:textColor="#5D5F6A"
+                            android:textSize="10dp" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/include_common_split_line_ver" />
+
+                    <RelativeLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/common_bd_red" />
+
+                        <ImageView
+                            android:id="@+id/iv_working_report"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/workbench_ic_work_report" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_working_report"
+                            android:layout_centerInParent="true"
+                            android:text="工作汇报"
+                            android:textColor="#5D5F6A"
+                            android:textSize="10dp" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/include_common_split_line_ver" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/common_bd_red" />
+
+                        <ImageView
+                            android:id="@+id/iv_working_apply"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/workbench_ic_general_settings" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_working_apply"
+                            android:layout_centerInParent="true"
+                            android:text="通用申请"
+                            android:textColor="#5D5F6A"
+                            android:textSize="10dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="10dp">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#259B24" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="项目管理"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/workbench_ic_detailed_list" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="清单"
+                            android:textColor="#5D5F6A"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                    <include layout="@layout/include_common_split_line_ver" />
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/workbench_ic_progress_plan" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="进度计划"
+                            android:textColor="#5D5F6A"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                    <include layout="@layout/include_common_split_line_ver" />
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/workbench_ic_security_check" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="安全检查"
+                            android:textColor="#5D5F6A"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                    <include layout="@layout/include_common_split_line_ver" />
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/workbench_ic_quality_inspection" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="质量检查"
+                            android:textColor="#5D5F6A"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/include_common_split_line_hor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/workbench_ic_detailed_list" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="签到记工"
+                            android:textColor="#5D5F6A"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                    <include layout="@layout/include_common_split_line_ver" />
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/workbench_ic_progress_plan" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="完工验收"
+                            android:textColor="#5D5F6A"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                    <include layout="@layout/include_common_split_line_ver" />
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/workbench_ic_security_check" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="物资"
+                            android:textColor="#5D5F6A"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                    <include layout="@layout/include_common_split_line_ver" />
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/workbench_ic_quality_inspection" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="日常巡查"
+                            android:textColor="#5D5F6A"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="10dp">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ff4081" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="统计"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/workbench_ic_data_statistics" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="任务统计"
+                            android:textColor="#5D5F6A"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                    <include layout="@layout/include_common_split_line_ver" />
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/workbench_ic_hard_statistics" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="用工统计"
+                            android:textColor="#5D5F6A"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                    <include layout="@layout/include_common_split_line_ver" />
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/workbench_ic_material_statistics" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="物资统计"
+                            android:textColor="#5D5F6A"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                    <include layout="@layout/include_common_split_line_ver" />
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/workbench_ic_material_statistics" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="资料统计"
+                            android:textColor="#5D5F6A"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
+
 
 </LinearLayout>

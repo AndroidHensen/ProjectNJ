@@ -13,6 +13,7 @@ import com.handsome.projectnz.Adapter.MainAdapter;
 import com.handsome.projectnz.Fragment.HomeFragment;
 import com.handsome.projectnz.Fragment.MessageFragment;
 import com.handsome.projectnz.Fragment.MineFragment;
+import com.handsome.projectnz.Fragment.Project.ProjectSumConductingFragment;
 import com.handsome.projectnz.Fragment.ProjectFragment;
 import com.handsome.projectnz.R;
 
@@ -76,9 +77,9 @@ public class ProjectNew extends BaseActivity implements ViewPager.OnPageChangeLi
      */
     private void initFragments() {
         list = new ArrayList<>();
-        list.add(new HomeFragment());
-        list.add(new HomeFragment());
-        list.add(new HomeFragment());
+        list.add(new ProjectSumConductingFragment());
+        list.add(new ProjectSumConductingFragment());
+        list.add(new ProjectSumConductingFragment());
         adapter = new MainAdapter(getSupportFragmentManager(), list);
         vp_project_new.setAdapter(adapter);
         vp_project_new.setOffscreenPageLimit(3);
