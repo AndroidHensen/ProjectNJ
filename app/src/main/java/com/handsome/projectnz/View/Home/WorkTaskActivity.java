@@ -48,7 +48,7 @@ public class WorkTaskActivity extends BaseActivity implements ViewPager.OnPageCh
     public void initData() {
         setTitle("工作任务");
         setTitleCanBack();
-        initFragments();
+       initFragments();
     }
     /**
      * 初始化碎片
@@ -59,6 +59,7 @@ public class WorkTaskActivity extends BaseActivity implements ViewPager.OnPageCh
         list.add(new WorkTaskArrangeFragment());
         adapter=new MainAdapter(this.getSupportFragmentManager(),list);
         vp_work_task.setAdapter(adapter);
+        vp_work_task.setOffscreenPageLimit(1);
         onPageSelected(0);
     }
 

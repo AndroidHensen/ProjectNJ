@@ -10,11 +10,11 @@ import java.util.ArrayList;
 
 /**
  * Created by YX_PC on 2018/1/15.
+ * 工作台-工作任务-我安排的
  */
 
 public class WorkTaskArrangeFragment extends BaseLazyFragment {
     private TextView tv_arrange;
-    private ArrayList<TextView> lists;
 
     @Override
     public int getLayoutId() {
@@ -24,8 +24,6 @@ public class WorkTaskArrangeFragment extends BaseLazyFragment {
     @Override
     public void initViews() {
         tv_arrange = findView(R.id.tv_arrange);
-        lists = new ArrayList<TextView>();
-        lists.add(tv_arrange);
     }
 
     @Override
