@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.Main.MainActivity">
+        <activity android:name=".View.Home.WorkTaskActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,7 +25,9 @@
         <activity android:name=".V.Project.ProjectDeleteFile" />
         <activity android:name=".V.Project.ProjectUpdate" />
         <activity android:name=".V.Mine.MineSetting" />
-        <activity android:name=".V.Mine.MineFeedback"></activity>
+        <activity android:name=".V.Mine.MineFeedback"/>
+        <activity android:name=".View.Home.ReportNewsActivity"/>
+
     </application>
 
 </manifest>
