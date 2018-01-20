@@ -13,22 +13,23 @@ import com.handsome.projectnz.R;
  */
 
 public class WorkTaskProjectAcceptActivity extends BaseActivity {
-    private TextView tv_project;
-    private TextView tv_task_name;
-    private TextView tv_arrange_people;
-    private TextView tv_operator;
-    private TextView tv_check_category;
-    private TextView tv_start_time;
-    private TextView tv_end_time;
-    private TextView tv_now_time;
-    private TextView tv_over_date;
-    private TextView tv_workload;
-    private TextView tv_describe;
-    private Button btn_pass;
-    private Button btn_no_pass;
-    private RatingBar rb_evaluate;
-    private TextView tv_accept_opinion;
-    private Button btn_submit;
+    private TextView tv_project;//项目
+    private TextView tv_task_name;//任务名称
+    private TextView tv_arrange_people;//安排人
+    private TextView tv_operator;//执行人
+    private TextView tv_check_category;//检查类别
+    private TextView tv_start_time;//派工日期
+    private TextView tv_end_time;//截止日期
+    private TextView tv_now_time;//当前日期
+    private TextView tv_over_date;//超期
+    private TextView tv_workload;//工作量
+    private TextView tv_describe;//描述
+    private TextView tv_schedule;//进度
+    private Button btn_pass;//通过
+    private Button btn_no_pass;//不通过
+    private RatingBar rb_evaluate;//评价
+    private TextView tv_accept_opinion;//验收意见
+    private Button btn_submit;//提交
 
 
     @Override
@@ -47,6 +48,7 @@ public class WorkTaskProjectAcceptActivity extends BaseActivity {
         tv_end_time=findView(R.id.tv_end_time);
         tv_now_time=findView(R.id.tv_now_time);
         tv_over_date=findView(R.id.tv_over_date);
+        tv_schedule=findView(R.id.tv_schedule);
         tv_workload=findView(R.id.tv_workload);
         tv_describe=findView(R.id.tv_describe);
         btn_pass=findView(R.id.btn_pass);

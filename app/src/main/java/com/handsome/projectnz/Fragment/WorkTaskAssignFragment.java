@@ -19,8 +19,8 @@ import java.util.List;
  */
 
 public class WorkTaskAssignFragment extends BaseLazyFragment {
-    private ListView lv_project;
-    private ListView lv_official;
+    private ListView lv_project;//项目任务
+    private ListView lv_official;//办公任务
     private List<WorkTaskProjectMessage> lists_project;
     private List<WorkTaskOfficialMessage> lists_official;
     private WorkTaskProjectAdapter mAdapter_project;

@@ -10,10 +10,10 @@ import android.os.Parcelable;
 
 public class WorkTaskOfficialMessage implements Parcelable {
 
-    private String department;    //部门
-    private String official_status;    //状态(办公任务)
-    private String official_time; //时间(办公任务)
-    private String content;  //内容
+    private String department;//部门
+    private String official_status;//状态(办公任务)
+    private String official_time;//时间(办公任务)
+    private String content;//内容
     private String official_schedule_status;//进度状态(办公任务)
 
 

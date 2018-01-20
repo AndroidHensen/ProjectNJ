@@ -12,8 +12,8 @@ public class WorkTaskProjectMessage implements Parcelable {
 
     private String project_status;//状态(项目任务)
     private String arrange_people;//安排人
-    private String project_schedule_status; //进度状态(项目任务)
-    private String project_time;  //时间(项目任务)
+    private String project_schedule_status;//进度状态(项目任务)
+    private String project_time;//时间(项目任务)
     private String over_date;//超期
     private String work_date;//工时
 

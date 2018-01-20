@@ -12,11 +12,11 @@ import com.handsome.projectnz.R;
  */
 
 public class ReturnProjectTaskActivity extends BaseActivity {
-    private EditText et_project_name;
-    private EditText et_task_name;
-    private EditText ed_input;
-    private EditText et_explain;
-    private Button btn_submit;
+    private EditText et_project_name;//项目名称
+    private EditText et_task_name;//任务名称
+    private EditText ed_input;//输入
+    private EditText et_explain;//补充说明
+    private Button btn_submit;//提交
     @Override
     public int getLayoutId() {
         return R.layout.activity_work_task_project_return;

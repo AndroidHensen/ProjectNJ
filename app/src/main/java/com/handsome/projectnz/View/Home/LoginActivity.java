@@ -11,9 +11,9 @@ import com.handsome.projectnz.R;
 public class LoginActivity extends BaseActivity {
 
 
-    private ImageButton ib_wechat;
-    private ImageButton ib_qq;
-    private Button btn_register;
+    private ImageButton ib_wechat;//微信登陆
+    private ImageButton ib_qq;//QQ登陆
+    private Button btn_register;//注册
 
     @Override
     public int getLayoutId() {

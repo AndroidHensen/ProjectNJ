@@ -16,20 +16,20 @@ import com.handsome.projectnz.R;
 
 public class WorkTaskNewActivity extends BaseActivity {
 
-    private TextView tv_text_project;
-    private TextView tv_task_name;
-    private ImageButton ib_task_name;
-    private TextView tv_task_category;
-    private ImageButton ib_task_category;
-    private TextView tv_task_address;
-    private ImageButton ib_start_time;
-    private TextView tv_start_time;
-    private ImageButton ib_end_time;
-    private TextView tv_end_time;
-    private TextView tv_operator;
-    private EditText et_task_explain;
-    private EditText et_announcements;
-    private Button btn_submit;
+    private TextView tv_text_project;//项目
+    private TextView tv_task_name;//任务名称
+    private ImageButton ib_task_name;//任务名称(按钮)
+    private TextView tv_task_category;//任务类别
+    private ImageButton ib_task_category;//任务类别(按钮)
+    private TextView tv_task_address;//任务地址
+    private ImageButton ib_start_time;//开始日期(按钮)
+    private TextView tv_start_time;//开始日期
+    private ImageButton ib_end_time;//结束日期(按钮)
+    private TextView tv_end_time;//结束日期
+    private TextView tv_operator;//执行人
+    private EditText et_task_explain;//任务描述
+    private EditText et_announcements;//注意事项
+    private Button btn_submit;//上传附件
 
     @Override
     public int getLayoutId() {

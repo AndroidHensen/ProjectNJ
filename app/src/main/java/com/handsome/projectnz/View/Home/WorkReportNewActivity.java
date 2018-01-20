@@ -12,10 +12,10 @@ import com.handsome.projectnz.R;
  */
 
 public class WorkReportNewActivity extends BaseActivity {
-    private EditText et_report_title;
-    private EditText et_report_content;
-    private ImageButton ib_camera;
-    private ImageButton ib_right;
+    private EditText et_report_title;//标题
+    private EditText et_report_content;//内容
+    private ImageButton ib_camera;//添加图片
+    private ImageButton ib_right;//汇报给
 
     @Override
     public int getLayoutId() {

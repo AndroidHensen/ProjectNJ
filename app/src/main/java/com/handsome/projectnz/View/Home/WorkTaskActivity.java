@@ -19,8 +19,8 @@ import java.util.ArrayList;
  */
 
 public class WorkTaskActivity extends BaseActivity implements ViewPager.OnPageChangeListener {
-    private Button btn_assign;
-    private Button btn_arrange;
+    private Button btn_assign;//派给我的
+    private Button btn_arrange;//我安排的
     private ViewPager vp_work_task;
     private ArrayList<Fragment> list;
     private MainAdapter adapter;
