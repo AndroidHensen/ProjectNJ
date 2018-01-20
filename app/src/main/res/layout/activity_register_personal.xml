@@ -203,7 +203,7 @@
                     android:id="@+id/bt_department"
                     android:layout_width="wrap_content"
                     android:layout_height="27dp"
-                    android:background="@drawable/common_bg_blue"
+                    android:background="@drawable/common_bg_blue_radius"
                     android:padding="0dp"
                     android:text="工程部"
                     android:textColor="@color/colorWhite"
@@ -234,7 +234,7 @@
                     android:id="@+id/bt_position"
                     android:layout_width="wrap_content"
                     android:layout_height="27dp"
-                    android:background="@drawable/common_bg_blue"
+                    android:background="@drawable/common_bg_blue_radius"
                     android:padding="0dp"
                     android:text="项目经理"
                     android:textColor="@color/colorWhite"
@@ -293,7 +293,7 @@
                     android:id="@+id/bt_personal_photo"
                     android:layout_width="wrap_content"
                     android:layout_height="27dp"
-                    android:background="@drawable/common_bg_blue"
+                    android:background="@drawable/common_bg_blue_radius"
                     android:padding="0dp"
                     android:text="上传照片"
                     android:textColor="@color/colorWhite"
@@ -310,28 +310,28 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="10dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
 
                     <ImageButton
                         android:id="@+id/ib_personal_photo02"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="5dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
 
                     <ImageButton
                         android:id="@+id/ib_personal_photo03"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="5dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
 
                     <ImageButton
                         android:id="@+id/ib_personal_photo04"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="5dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -345,7 +345,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="18dp"
-                    android:background="@drawable/common_bg_blue"
+                    android:background="@drawable/common_bg_blue_radius"
                     android:gravity="center"
                     android:text="提交审核"
                     android:textColor="@color/colorWhite"

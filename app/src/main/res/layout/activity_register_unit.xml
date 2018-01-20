@@ -146,7 +146,7 @@
                     android:id="@+id/bt_open_licence"
                     android:layout_width="wrap_content"
                     android:layout_height="27dp"
-                    android:background="@drawable/common_bg_blue"
+                    android:background="@drawable/common_bg_blue_radius"
                     android:padding="0dp"
                     android:text="上传照片"
                     android:textColor="@color/colorWhite"
@@ -163,28 +163,28 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="10dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
 
                     <ImageButton
                         android:id="@+id/ib_allow_pic_02"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="5dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
 
                     <ImageButton
                         android:id="@+id/ib_allow_pic_03"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="5dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
 
                     <ImageButton
                         android:id="@+id/ib_allow_pic_04"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="5dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -211,7 +211,7 @@
                     android:id="@+id/bt_credit_certification"
                     android:layout_width="wrap_content"
                     android:layout_height="27dp"
-                    android:background="@drawable/common_bg_blue"
+                    android:background="@drawable/common_bg_blue_radius"
                     android:padding="0dp"
                     android:text="上传照片"
                     android:textColor="@color/colorWhite"
@@ -228,28 +228,28 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="10dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
 
                     <ImageButton
                         android:id="@+id/ib_certification02"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="5dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
 
                     <ImageButton
                         android:id="@+id/ib_certification03"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="5dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
 
                     <ImageButton
                         android:id="@+id/ib_certification04"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="5dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -277,7 +277,7 @@
                     android:id="@+id/bt_tax"
                     android:layout_width="wrap_content"
                     android:layout_height="27dp"
-                    android:background="@drawable/common_bg_blue"
+                    android:background="@drawable/common_bg_blue_radius"
                     android:padding="0dp"
                     android:text="上传照片"
                     android:textColor="@color/colorWhite"
@@ -294,14 +294,14 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="10dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
 
                     <ImageButton
                         android:id="@+id/ib_tax_credit02"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="5dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -412,7 +412,7 @@
                     android:id="@+id/bt_certificate_pic"
                     android:layout_width="wrap_content"
                     android:layout_height="27dp"
-                    android:background="@drawable/common_bg_blue"
+                    android:background="@drawable/common_bg_blue_radius"
                     android:padding="0dp"
                     android:text="上传照片"
                     android:textColor="@color/colorWhite"
@@ -429,28 +429,28 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="10dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
 
                     <ImageButton
                         android:id="@+id/ib_certificate_pic02"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="5dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
 
                     <ImageButton
                         android:id="@+id/ib_certificate_pic03"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="5dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
 
                     <ImageButton
                         android:id="@+id/ib_certificate_pic04"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="5dp"
-                        android:src="@drawable/register_unit_ic_default_pic" />
+                        android:src="@drawable/common_ic_default_pic" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -608,7 +608,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="18dp"
-                    android:background="@drawable/common_bg_blue"
+                    android:background="@drawable/common_bg_blue_radius"
                     android:gravity="center"
                     android:text="提交审核"
                     android:textColor="@color/colorWhite"

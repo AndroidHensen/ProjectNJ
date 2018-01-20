@@ -49,15 +49,6 @@
             android:text="任务名称"
             android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/tv_task_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@id/tv_task_name_must"
-            android:layout_toRightOf="@id/tv_text_task_name"
-            android:textSize="16sp" />
-
         <ImageButton
             android:id="@+id/ib_task_name"
             android:layout_width="20dp"
@@ -74,6 +65,17 @@
             android:text="(必填)"
             android:textColor="@color/lightGray"
             android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_task_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_task_name_must"
+            android:layout_toRightOf="@id/tv_text_task_name"
+            android:textSize="16sp" />
+
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -97,9 +99,9 @@
             android:id="@+id/tv_task_category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@id/tv_task_category_must"
-            android:layout_toRightOf="@id/tv_text_task_category"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/tv_text_task_category"
+            android:layout_toRightOf="@+id/tv_text_task_category"
             android:textSize="16sp" />
 
         <ImageButton
@@ -137,15 +139,6 @@
             android:text="任务地址"
             android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/tv_task_address"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@id/tv_task_address_option"
-            android:layout_toRightOf="@id/tv_text_task_address"
-            android:textSize="16sp" />
-
         <ImageButton
             android:id="@+id/ib_temp_task_address"
             android:layout_width="20dp"
@@ -163,6 +156,17 @@
             android:text="(可不填)"
             android:textColor="@color/lightGray"
             android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_task_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_task_address_option"
+            android:layout_toRightOf="@id/tv_text_task_address"
+            android:textSize="16sp" />
+
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -253,15 +257,6 @@
             android:text="执行人"
             android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/tv_operator"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@id/tv_operator_must"
-            android:layout_toRightOf="@id/tv_text_operator"
-            android:textSize="16sp" />
-
         <ImageButton
             android:id="@+id/ib_operator"
             android:layout_width="20dp"
@@ -279,6 +274,17 @@
             android:text="(必选)"
             android:textColor="@color/lightGray"
             android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_operator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_operator_must"
+            android:layout_toRightOf="@id/tv_text_operator"
+            android:textSize="16sp" />
+
+
     </RelativeLayout>
 
     <RelativeLayout
