@@ -26,7 +26,7 @@
         <activity android:name=".V.Project.ProjectUpdate" />
         <activity android:name=".V.Mine.MineSetting" />
         <activity android:name=".V.Mine.MineFeedback"/>
-        <activity android:name=".View.Home.ReportNewsActivity"/>
+        <activity android:name=".View.Home.WorkReportNewActivity"/>
 
     </application>
 

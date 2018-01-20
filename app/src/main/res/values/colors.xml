@@ -6,5 +6,6 @@
     <color name="white">#ffffff</color>
     <!--文字浅灰-->
     <color name="lightGray">#bab6ba</color>
-
+    <!--绿色边框-->
+    <color name="green">#259B24</color>
 </resources>

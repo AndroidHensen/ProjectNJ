@@ -11,7 +11,7 @@ import com.handsome.projectnz.R;
  * Created by jie on 2018/1/15.
  */
 
-public class ReportNewsActivity extends BaseActivity {
+public class WorkReportNewActivity extends BaseActivity {
     private EditText et_report_title;
     private EditText et_report_content;
     private ImageButton ib_camera;
