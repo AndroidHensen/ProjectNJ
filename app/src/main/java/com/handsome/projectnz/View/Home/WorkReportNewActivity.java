@@ -19,15 +19,16 @@ public class WorkReportNewActivity extends BaseActivity {
 
     @Override
     public int getLayoutId() {
-        return R.layout.activity_announcement_new;
+        return R.layout.activity_work_report_new;
     }
 
     @Override
     public void initViews() {
-        et_report_title = (EditText) findViewById(R.id.et_report_title);
-        et_report_content = (EditText) findViewById(R.id.et_report_content);
-        ib_camera = (ImageButton) findViewById(R.id.ib_camera);
-        ib_right = (ImageButton) findViewById(R.id.ib_right);
+        et_report_title = findView(R.id.et_report_title);
+        et_report_content = findView(R.id.et_report_content);
+        ib_camera = findView(R.id.ib_camera);
+        ib_right = findView(R.id.ib_right);
+
     }
 
     @Override

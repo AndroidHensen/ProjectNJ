@@ -17,7 +17,7 @@ import com.handsome.projectnz.R;
 public class WorkTaskNewActivity extends BaseActivity {
 
     private TextView tv_text_project;
-    private ImageButton tv_task_name;
+    private TextView tv_task_name;
     private ImageButton ib_task_name;
     private TextView tv_task_category;
     private ImageButton ib_task_category;

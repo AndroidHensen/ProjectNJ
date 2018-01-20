@@ -74,8 +74,6 @@
             android:layout_toLeftOf="@id/tv_task_name_must"
             android:layout_toRightOf="@id/tv_text_task_name"
             android:textSize="16sp" />
-
-
     </RelativeLayout>
 
     <RelativeLayout
