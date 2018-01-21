@@ -1,20 +1,14 @@
-package com.handsome.projectnz.V.Project;
+package com.handsome.projectnz.View.Project;
 
 import android.graphics.drawable.Drawable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
 import com.handsome.projectnz.Adapter.MainAdapter;
-import com.handsome.projectnz.Fragment.HomeFragment;
-import com.handsome.projectnz.Fragment.MessageFragment;
-import com.handsome.projectnz.Fragment.MineFragment;
 import com.handsome.projectnz.Fragment.Project.ProjectSumConductingFragment;
-import com.handsome.projectnz.Fragment.ProjectFragment;
 import com.handsome.projectnz.R;
 
 import java.util.ArrayList;

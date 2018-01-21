@@ -6,8 +6,8 @@ import android.view.View;
 import com.handsome.module_engine.E.BaseTemplate.BaseLazyFragment;
 import com.handsome.projectnz.R;
 import com.handsome.projectnz.CustomView.FastMenuBar;
-import com.handsome.projectnz.V.Mine.MineFeedback;
-import com.handsome.projectnz.V.Mine.MineSetting;
+import com.handsome.projectnz.View.Mine.MineFeedback;
+import com.handsome.projectnz.View.Mine.MineSetting;
 
 /**
  * Created by Diko on 2018/1/13.

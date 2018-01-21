@@ -1,16 +1,14 @@
-package com.handsome.projectnz.V.Project;
+package com.handsome.projectnz.View.Project;
 
 import android.graphics.drawable.Drawable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
 import com.handsome.projectnz.Adapter.MainAdapter;
-import com.handsome.projectnz.Fragment.HomeFragment;
+import com.handsome.projectnz.Fragment.Project.ProjectFileUnfileFragment;
 import com.handsome.projectnz.Fragment.Project.ProjectSumConductingFragment;
 import com.handsome.projectnz.R;
 
@@ -58,7 +56,7 @@ public class ProjectFile extends BaseActivity implements ViewPager.OnPageChangeL
      */
     private void initFragments() {
         list = new ArrayList<>();
-        list.add(new ProjectSumConductingFragment());
+        list.add(new ProjectFileUnfileFragment());
         list.add(new ProjectSumConductingFragment());
         adapter = new MainAdapter(getSupportFragmentManager(), list);
         vp_project.setAdapter(adapter);

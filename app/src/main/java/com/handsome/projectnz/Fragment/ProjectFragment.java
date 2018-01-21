@@ -6,11 +6,11 @@ import android.view.View;
 import com.handsome.module_engine.E.BaseTemplate.BaseLazyFragment;
 import com.handsome.projectnz.CustomView.FastMenuBar;
 import com.handsome.projectnz.R;
-import com.handsome.projectnz.V.Project.ProjectDeleteFile;
-import com.handsome.projectnz.V.Project.ProjectFile;
-import com.handsome.projectnz.V.Project.ProjectNew;
-import com.handsome.projectnz.V.Project.ProjectUpdate;
-import com.handsome.projectnz.V.Project.ProjectSum;
+import com.handsome.projectnz.View.Project.ProjectDeleteFile;
+import com.handsome.projectnz.View.Project.ProjectFile;
+import com.handsome.projectnz.View.Project.ProjectNew;
+import com.handsome.projectnz.View.Project.ProjectUpdate;
+import com.handsome.projectnz.View.Project.ProjectSum;
 
 /**
  * Created by Diko(kedongyu) on 2016/4/7.

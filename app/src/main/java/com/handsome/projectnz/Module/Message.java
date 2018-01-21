@@ -10,11 +10,11 @@ import android.os.Parcelable;
 
 
 public class Message implements Parcelable {
-    private String title;
-    private boolean read_state;
-    private String content;
-    private String data;
-    private String operation;
+    private String title;//消息的标题
+    private boolean read_state;//消息的标题
+    private String content;//消息内容
+    private String data;//消息日期
+    private String operation;//操作
 
     public Message() {
     }

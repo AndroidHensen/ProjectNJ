@@ -1,4 +1,4 @@
-package com.handsome.projectnz.V.Mine;
+package com.handsome.projectnz.View.Mine;
 
 import android.view.View;
 import android.widget.EditText;

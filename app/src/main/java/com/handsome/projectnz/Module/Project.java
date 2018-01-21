@@ -14,6 +14,7 @@ public class Project implements Parcelable {
     private String constructionUnit;//施工单位
     private String projectName;//项目名称
     private String projectType;//项目类型
+    private String projectNum;//项目编号
     private String location;//所属区域
     private String projectAddress;//项目地址
     private int difficulty;//项目难度
@@ -29,6 +30,14 @@ public class Project implements Parcelable {
 
     public Project() {
 
+    }
+
+    public String getProjectNum() {
+        return projectNum;
+    }
+
+    public void setProjectNum(String projectNum) {
+        this.projectNum = projectNum;
     }
 
     public String getEngineeringName() {
@@ -188,6 +197,7 @@ public class Project implements Parcelable {
         dest.writeString(this.constructionUnit);
         dest.writeString(this.projectName);
         dest.writeString(this.projectType);
+        dest.writeString(this.projectNum);
         dest.writeString(this.location);
         dest.writeString(this.projectAddress);
         dest.writeInt(this.difficulty);
@@ -209,6 +219,7 @@ public class Project implements Parcelable {
         this.constructionUnit = in.readString();
         this.projectName = in.readString();
         this.projectType = in.readString();
+        this.projectNum = in.readString();
         this.location = in.readString();
         this.projectAddress = in.readString();
         this.difficulty = in.readInt();
@@ -223,7 +234,7 @@ public class Project implements Parcelable {
         this.projectState = in.readInt();
     }
 
-    public static final Parcelable.Creator<Project> CREATOR = new Parcelable.Creator<Project>() {
+    public static final Creator<Project> CREATOR = new Creator<Project>() {
         public Project createFromParcel(Parcel source) {
             return new Project(source);
         }

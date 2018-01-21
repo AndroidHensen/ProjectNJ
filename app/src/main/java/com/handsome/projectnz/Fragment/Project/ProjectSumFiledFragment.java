@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Created by handsome on 2016/4/7.
  */
-public class ProjectSumConductingFragment extends BaseLazyFragment {
+public class ProjectSumFiledFragment extends BaseLazyFragment {
     private ListView lv_project;
     private ProjectSumAdapter adapter;
     @Override
@@ -40,19 +40,19 @@ public class ProjectSumConductingFragment extends BaseLazyFragment {
         project.setTimeLimit(30);
         project.setEngineeringType("系统内工程");
         project.setProjectType("检测试验");
-        project.setProjectManager("Diko(柯东煜)");
-        project.setInitiator("xuyingjun");
-        project.setProjectProgress(30);
+        project.setProjectManager("adah(zjf)");
+        project.setInitiator("kedongyu");
+        project.setProjectProgress(100);
         lists.add(project);
         Project project1=new Project();
         project1.setProjectName("1028工程");
         project1.setTimeLimit(30);
         project1.setEngineeringType("系统内工程");
         project1.setProjectType("检测试验");
-        project1.setProjectManager("Diko(柯东煜)");
-        project1.setInitiator("xuyingjun");
-        project1.setProjectProgress(30);
-        lists.add(project1);
+        project1.setProjectManager("adah(zjf)");
+        project1.setInitiator("kedongyu");
+        project1.setProjectProgress(100);
+        lists.add(project);
         adapter=new ProjectSumAdapter(getActivity(),lists);
         lv_project.setAdapter(adapter);
 

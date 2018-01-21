@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryBackGroup"
     android:orientation="vertical"
-    tools:context="com.handsome.projectnz.V.Project.ProjectNew">
+    tools:context=".View.Project.ProjectNew">
 
     <include layout="@layout/include_common_header" />
 

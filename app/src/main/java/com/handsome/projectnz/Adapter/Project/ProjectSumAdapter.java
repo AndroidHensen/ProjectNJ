@@ -1,4 +1,4 @@
-package com.handsome.projectnz.Adapter;
+package com.handsome.projectnz.Adapter.Project;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 import com.handsome.projectnz.Module.Project;
 import com.handsome.projectnz.R;
-import com.handsome.projectnz.V.Project.ProjectSum;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,10 +17,10 @@ import java.util.List;
  * Created by 柯东煜 on 2018/1/15.
  */
 
-public class ProjectSumConductingAdapter extends BaseAdapter {
+public class ProjectSumAdapter extends BaseAdapter {
     private List<Project> lists=new ArrayList<>();
     private Context context;
-    public ProjectSumConductingAdapter(Context context, List<Project> lists){
+    public ProjectSumAdapter(Context context, List<Project> lists){
         this.context=context;
         this.lists=lists;
     }
@@ -44,7 +43,7 @@ public class ProjectSumConductingAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder = null;
         if(convertView == null){
-            convertView = LayoutInflater.from(context).inflate(R.layout.view_project_sum_conducting,null,false);
+            convertView = LayoutInflater.from(context).inflate(R.layout.adapter_project_sum,null,false);
             holder = new ViewHolder();
             holder.tv_project_name= (TextView) convertView.findViewById(R.id.project_name);
             holder.tv_time_limit = (TextView) convertView.findViewById(R.id.time_limit);

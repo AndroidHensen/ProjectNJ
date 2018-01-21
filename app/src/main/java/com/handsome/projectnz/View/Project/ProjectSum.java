@@ -1,4 +1,4 @@
-package com.handsome.projectnz.V.Project;
+package com.handsome.projectnz.View.Project;
 
 import android.graphics.drawable.Drawable;
 import android.support.v4.app.Fragment;
@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
 import com.handsome.projectnz.Adapter.MainAdapter;
 import com.handsome.projectnz.Fragment.Project.ProjectSumConductingFragment;
+import com.handsome.projectnz.Fragment.Project.ProjectSumFiledFragment;
 import com.handsome.projectnz.R;
 
 import java.util.ArrayList;
@@ -56,7 +57,7 @@ public class ProjectSum extends BaseActivity implements ViewPager.OnPageChangeLi
     private void initFragments() {
         list = new ArrayList<>();
         list.add(new ProjectSumConductingFragment());
-        list.add(new ProjectSumConductingFragment());
+        list.add(new ProjectSumFiledFragment());
         adapter = new MainAdapter(getSupportFragmentManager(), list);
         vp_project.setAdapter(adapter);
         vp_project.setOffscreenPageLimit(2);
