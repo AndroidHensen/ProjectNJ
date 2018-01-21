@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -50,141 +51,69 @@
                     android:background="#fff"
                     android:orientation="horizontal">
 
-                    <RelativeLayout
+                    <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1">
 
-                        <TextView
-                            android:layout_width="10dp"
-                            android:layout_height="10dp"
-                            android:layout_alignParentRight="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginTop="5dp"
-                            android:background="@drawable/common_bd_red" />
-
-                        <ImageView
-                            android:id="@+id/iv_working_notice"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:background="@drawable/workbench_ic_company_announcements" />
-
-                        <TextView
+                        <com.handsome.projectnz.CustomView.WorkbenchContent
+                            android:id="@+id/iv_company_announcements"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/iv_working_notice"
-                            android:layout_centerInParent="true"
-                            android:text="公司公告"
-                            android:textColor="#5D5F6A"
-                            android:textSize="10dp" />
-                    </RelativeLayout>
+                            app:wc_content="公司公告"
+                            app:wc_image="@drawable/workbench_ic_company_announcements"
+                            app:wc_new_notice="false" />
 
-                    <include layout="@layout/include_common_split_line_ver" />
+                    </LinearLayout>
 
-                    <RelativeLayout
-
+                    <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1">
 
-                        <TextView
-                            android:layout_width="10dp"
-                            android:layout_height="10dp"
-                            android:layout_alignParentRight="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginTop="5dp"
-                            android:background="@drawable/common_bd_red" />
-
-                        <ImageView
+                        <com.handsome.projectnz.CustomView.WorkbenchContent
                             android:id="@+id/iv_working_task"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:background="@drawable/workbench_ic_working_task" />
-
-                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/iv_working_task"
-                            android:layout_centerInParent="true"
-                            android:text="工作任务"
-                            android:textColor="#5D5F6A"
-                            android:textSize="10dp" />
-                    </RelativeLayout>
+                            app:wc_content="工作任务"
+                            app:wc_image="@drawable/workbench_ic_working_task"
+                            app:wc_new_notice="true" />
+                    </LinearLayout>
 
                     <include layout="@layout/include_common_split_line_ver" />
 
-                    <RelativeLayout
+                    <include layout="@layout/include_common_split_line_ver" />
 
+                    <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1">
 
-                        <TextView
-                            android:layout_width="10dp"
-                            android:layout_height="10dp"
-                            android:layout_alignParentRight="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginTop="5dp"
-                            android:background="@drawable/common_bd_red" />
-
-                        <ImageView
-                            android:id="@+id/iv_working_report"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:background="@drawable/workbench_ic_work_report" />
-
-                        <TextView
+                        <com.handsome.projectnz.CustomView.WorkbenchContent
+                            android:id="@+id/iv_work_report"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/iv_working_report"
-                            android:layout_centerInParent="true"
-                            android:text="工作汇报"
-                            android:textColor="#5D5F6A"
-                            android:textSize="10dp" />
-                    </RelativeLayout>
+                            app:wc_content="工作汇报"
+                            app:wc_image="@drawable/workbench_ic_work_report"
+                            app:wc_new_notice="true" />
+                    </LinearLayout>
 
                     <include layout="@layout/include_common_split_line_ver" />
 
-                    <RelativeLayout
+                    <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1">
 
-                        <TextView
-                            android:layout_width="10dp"
-                            android:layout_height="10dp"
-                            android:layout_alignParentRight="true"
-                            android:layout_alignParentTop="true"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginTop="5dp"
-                            android:background="@drawable/common_bd_red" />
-
-                        <ImageView
-                            android:id="@+id/iv_working_apply"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_centerHorizontal="true"
-                            android:layout_centerVertical="true"
-                            android:background="@drawable/workbench_ic_general_settings" />
-
-                        <TextView
+                        <com.handsome.projectnz.CustomView.WorkbenchContent
+                            android:id="@+id/iv_general_settings"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/iv_working_apply"
-                            android:layout_centerInParent="true"
-                            android:text="通用申请"
-                            android:textColor="#5D5F6A"
-                            android:textSize="10dp" />
-                    </RelativeLayout>
+                            app:wc_content="通用申请"
+                            app:wc_image="@drawable/workbench_ic_general_settings"
+                            app:wc_new_notice="false" />
+                    </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -223,7 +152,7 @@
                         android:orientation="vertical">
 
                         <ImageView
-
+                            android:id="@+id/iv_detailed_list"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:background="@drawable/workbench_ic_detailed_list" />
@@ -248,7 +177,7 @@
                         android:orientation="vertical">
 
                         <ImageView
-
+                            android:id="@+id/progress_plan"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:background="@drawable/workbench_ic_progress_plan" />
@@ -273,7 +202,7 @@
                         android:orientation="vertical">
 
                         <ImageView
-
+                            android:id="@+id/security_check"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:background="@drawable/workbench_ic_security_check" />
@@ -298,6 +227,7 @@
                         android:orientation="vertical">
 
                         <ImageView
+                            android:id="@+id/quality_inspection"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:background="@drawable/workbench_ic_quality_inspection" />
@@ -328,7 +258,7 @@
                         android:orientation="vertical">
 
                         <ImageView
-
+                            android:id="@+id/detailed_list"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:background="@drawable/workbench_ic_detailed_list" />
@@ -353,7 +283,7 @@
                         android:orientation="vertical">
 
                         <ImageView
-
+                            android:id="@+id/iv_progress_plan"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:background="@drawable/workbench_ic_progress_plan" />
@@ -403,6 +333,7 @@
                         android:orientation="vertical">
 
                         <ImageView
+                            android:id="@+id/iv_quality_inspection"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:background="@drawable/workbench_ic_quality_inspection" />
@@ -477,7 +408,7 @@
                         android:orientation="vertical">
 
                         <ImageView
-
+                            android:id="@+id/hard_statistics"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:background="@drawable/workbench_ic_hard_statistics" />
@@ -502,7 +433,7 @@
                         android:orientation="vertical">
 
                         <ImageView
-
+                            android:id="@+id/material_statistics"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:background="@drawable/workbench_ic_material_statistics" />
@@ -527,6 +458,7 @@
                         android:orientation="vertical">
 
                         <ImageView
+                            android:id="@+id/iv_material_statistics"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:background="@drawable/workbench_ic_material_statistics" />

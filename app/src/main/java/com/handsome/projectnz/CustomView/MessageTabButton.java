@@ -19,7 +19,7 @@ public class MessageTabButton extends RelativeLayout {
     private TextView tv_title;
     private TextView tv_unread;
     private Context context;
-    private String mtb_title;   //标题
+    private String mtb_title; //标题
     private String mtb_num_unread;  //未读数
     private boolean mtb_selected; //是否选中
 
