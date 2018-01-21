@@ -9,13 +9,15 @@ import android.widget.TextView;
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
 import com.handsome.projectnz.Adapter.MainAdapter;
 import com.handsome.projectnz.Fragment.Project.ProjectSumConductingFragment;
-import com.handsome.projectnz.Fragment.Project.ProjectSumFiledFragment;
 import com.handsome.projectnz.R;
 
 import java.util.ArrayList;
 import java.util.List;
-
-public class ProjectSum extends BaseActivity implements ViewPager.OnPageChangeListener {
+/**
+ * Created by Diko in 2018.1.21
+ * 本界面对应 主界面-项目模块-项目汇总
+ */
+public class ProjectSumActivity extends BaseActivity implements ViewPager.OnPageChangeListener {
     private TextView tv_project_filed, tv_project_conducting;//已归档，正在进行中，
     private ViewPager vp_project;
 
@@ -57,7 +59,7 @@ public class ProjectSum extends BaseActivity implements ViewPager.OnPageChangeLi
     private void initFragments() {
         list = new ArrayList<>();
         list.add(new ProjectSumConductingFragment());
-        list.add(new ProjectSumFiledFragment());
+        list.add(new ProjectSumConductingFragment());
         adapter = new MainAdapter(getSupportFragmentManager(), list);
         vp_project.setAdapter(adapter);
         vp_project.setOffscreenPageLimit(2);

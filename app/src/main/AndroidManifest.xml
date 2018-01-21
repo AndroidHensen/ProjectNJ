@@ -19,11 +19,11 @@
         <activity android:name=".View.Home.LoginActivity" />
         <activity android:name=".View.Home.RegisterActivity" />
         <activity android:name=".View.Home.ReturnProjectTaskActivity" />
-        <activity android:name=".View.Project.ProjectNew" />
-        <activity android:name=".View.Project.ProjectSum" />
-        <activity android:name=".View.Project.ProjectFile" />
-        <activity android:name=".View.Project.ProjectDeleteFile" />
-        <activity android:name=".View.Project.ProjectUpdate" />
+        <activity android:name=".View.Project.ProjectNewActivity" />
+        <activity android:name=".View.Project.ProjectSumActivity" />
+        <activity android:name=".View.Project.ProjectFileActivity" />
+        <activity android:name=".View.Project.ProjectDeleteFileActivity" />
+        <activity android:name=".View.Project.ProjectUpdateActivity" />
         <activity android:name=".View.Mine.MineSetting" />
         <activity android:name=".View.Mine.MineFeedback"/>
         <activity android:name=".View.Home.WorkTaskProjectAcceptActivity"/>

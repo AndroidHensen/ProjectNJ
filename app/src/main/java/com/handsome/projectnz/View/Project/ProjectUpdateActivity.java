@@ -13,57 +13,44 @@ import com.handsome.projectnz.R;
 
 import java.util.ArrayList;
 import java.util.List;
-
-public class ProjectNew extends BaseActivity implements ViewPager.OnPageChangeListener {
-    private TextView tv_project_summary, tv_project_data, tv_project_participant;
-    private ViewPager vp_project_new;
+/**
+ * Created by Diko in 2018.1.21
+ * 本界面对应 主界面-项目模块-项目更新
+ */
+public class ProjectUpdateActivity extends BaseActivity implements ViewPager.OnPageChangeListener {
+    private TextView tv_project_changed, tv_project_unchanged;//
+    private ViewPager vp_project;
 
     private MainAdapter adapter;
     private List<Fragment> list;
 
     @Override
     public int getLayoutId() {
-        return R.layout.activity_project_new;
+        return R.layout.activity_project;
     }
 
     @Override
     public void initViews() {
-        tv_project_summary = findView(R.id.project_summary);
-        tv_project_data = findView(R.id.project_data);
-        tv_project_participant = findView(R.id.project_participant);
-        vp_project_new = findView(R.id.vp_project_new);
+        tv_project_changed = findView(R.id.project_left);
+        tv_project_unchanged = findView(R.id.project_right);
+        vp_project = findView(R.id.vp_project);
     }
 
     @Override
     public void initListener() {
-        setOnClick(tv_project_data);
-        setOnClick(tv_project_participant);
-        setOnClick(tv_project_summary);
-        vp_project_new.setOnPageChangeListener(this);
+        setOnClick(tv_project_changed);
+        setOnClick(tv_project_unchanged);
+        vp_project.setOnPageChangeListener(this);
     }
 
     @Override
     public void initData() {
-        setTitle("新建项目");
-        setEdit2("保存");
+        tv_project_changed.setText("有变更");
+        tv_project_unchanged.setText("无变更");
+        setTitle("更新项目");
         setTitleCanBack();
         //初始化碎片
         initFragments();
-    }
-
-    @Override
-    public void processClick(View v) {
-        switch (v.getId()) {
-            case R.id.project_summary:
-                selectPager(0);
-                break;
-            case R.id.project_data:
-                selectPager(1);
-                break;
-            case R.id.project_participant:
-                selectPager(2);
-                break;
-        }
     }
 
     /**
@@ -73,26 +60,36 @@ public class ProjectNew extends BaseActivity implements ViewPager.OnPageChangeLi
         list = new ArrayList<>();
         list.add(new ProjectSumConductingFragment());
         list.add(new ProjectSumConductingFragment());
-        list.add(new ProjectSumConductingFragment());
         adapter = new MainAdapter(getSupportFragmentManager(), list);
-        vp_project_new.setAdapter(adapter);
-        vp_project_new.setOffscreenPageLimit(3);
+        vp_project.setAdapter(adapter);
+        vp_project.setOffscreenPageLimit(2);
         //初始化图标
         selectPager(0);
     }
 
+    @Override
+    public void processClick(View v) {
+        switch (v.getId()) {
+            case R.id.project_left:
+                selectPager(0);
+                break;
+            case R.id.project_right:
+                selectPager(1);
+                break;
+        }
+    }
+
+
     public void selectPager(int position) {
-        vp_project_new.setCurrentItem(position);
+        vp_project.setCurrentItem(position);
         int blueColor = getResources().getColor(R.color.colorPrimary);
         int whiteColor = getResources().getColor(R.color.colorWhite);
         Drawable bg_unselected = getResources().getDrawable(R.drawable.project_title_white_shape);
         Drawable bg_selected = getResources().getDrawable(R.color.colorWhite);
-        tv_project_summary.setTextColor(position == 0 ? blueColor : whiteColor);
-        tv_project_summary.setBackground(position == 0 ? bg_selected : bg_unselected);
-        tv_project_data.setTextColor(position == 1 ? blueColor : whiteColor);
-        tv_project_data.setBackground(position == 1 ? bg_selected : bg_unselected);
-        tv_project_participant.setTextColor(position == 2 ? blueColor : whiteColor);
-        tv_project_participant.setBackground(position == 2 ? bg_selected : bg_unselected);
+        tv_project_changed.setTextColor(position == 0 ? blueColor : whiteColor);
+        tv_project_changed.setBackground(position == 0 ? bg_selected : bg_unselected);
+        tv_project_unchanged.setTextColor(position == 1 ? blueColor : whiteColor);
+        tv_project_unchanged.setBackground(position == 1 ? bg_selected : bg_unselected);
     }
 
     @Override

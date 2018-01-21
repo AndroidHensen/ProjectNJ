@@ -14,7 +14,12 @@ import com.handsome.projectnz.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProjectDeleteFile extends BaseActivity implements ViewPager.OnPageChangeListener {
+/**
+ * Created by Diko in 2018.1.21
+ * 本界面对应 主界面-项目模块-销档
+ */
+
+public class ProjectDeleteFileActivity extends BaseActivity implements ViewPager.OnPageChangeListener {
     private TextView tv_project_filed, tv_project_delete_file;//已归档，销档
     private ViewPager vp_project;
 

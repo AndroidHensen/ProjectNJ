@@ -6,11 +6,11 @@ import android.view.View;
 import com.handsome.module_engine.E.BaseTemplate.BaseLazyFragment;
 import com.handsome.projectnz.CustomView.FastMenuBar;
 import com.handsome.projectnz.R;
-import com.handsome.projectnz.View.Project.ProjectDeleteFile;
-import com.handsome.projectnz.View.Project.ProjectFile;
-import com.handsome.projectnz.View.Project.ProjectNew;
-import com.handsome.projectnz.View.Project.ProjectUpdate;
-import com.handsome.projectnz.View.Project.ProjectSum;
+import com.handsome.projectnz.View.Project.ProjectDeleteFileActivity;
+import com.handsome.projectnz.View.Project.ProjectFileActivity;
+import com.handsome.projectnz.View.Project.ProjectNewActivity;
+import com.handsome.projectnz.View.Project.ProjectUpdateActivity;
+import com.handsome.projectnz.View.Project.ProjectSumActivity;
 
 /**
  * Created by Diko(kedongyu) on 2016/4/7.
@@ -61,23 +61,23 @@ public class ProjectFragment extends BaseLazyFragment implements FastMenuBar.onM
         Intent i;
         switch (v.getId()) {
             case R.id.project_new:
-                i = new Intent(getActivity(), ProjectNew.class);
+                i = new Intent(getActivity(), ProjectNewActivity.class);
                 startActivity(i);
                 break;
             case R.id.project_update:
-                i = new Intent(getActivity(), ProjectUpdate.class);
+                i = new Intent(getActivity(), ProjectUpdateActivity.class);
                 startActivity(i);
                 break;
             case R.id.project_file:
-                i = new Intent(getActivity(), ProjectFile.class);
+                i = new Intent(getActivity(), ProjectFileActivity.class);
                 startActivity(i);
                 break;
             case R.id.project_delete_file:
-                i = new Intent(getActivity(), ProjectDeleteFile.class);
+                i = new Intent(getActivity(), ProjectDeleteFileActivity.class);
                 startActivity(i);
                 break;
             case R.id.project_sum:
-                i = new Intent(getActivity(), ProjectSum.class);
+                i = new Intent(getActivity(), ProjectSumActivity.class);
                 startActivity(i);
                 break;
             default:
