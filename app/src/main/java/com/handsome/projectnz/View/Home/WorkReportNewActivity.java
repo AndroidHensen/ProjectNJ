@@ -9,6 +9,7 @@ import com.handsome.projectnz.R;
 
 /**
  * Created by jie on 2018/1/15.
+ * 界面：工作台_工作汇报_新建汇报
  */
 
 public class WorkReportNewActivity extends BaseActivity {

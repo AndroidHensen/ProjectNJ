@@ -29,29 +29,6 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="项目："
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/tv_project"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:orientation="horizontal"
-                android:paddingBottom="12dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingTop="12dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="任务名称："
                     android:textSize="16sp" />
 
@@ -121,14 +98,16 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="检查类别："
+                    android:text="委派日期："
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/tv_check_category"
-                    android:layout_width="match_parent"
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:textSize="16sp" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -141,43 +120,19 @@
                 android:paddingRight="8dp"
                 android:paddingTop="12dp">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="截止日期："
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:textSize="16sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="派工日期："
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/tv_start_time"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:textSize="16sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="截止日期："
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/tv_end_time"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:textSize="16sp" />
-                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -258,11 +213,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="工作量："
+                    android:text="描述："
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/tv_workload"
+                    android:id="@+id/tv_describe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="16sp" />
@@ -272,6 +227,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
+                android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:paddingBottom="12dp"
                 android:paddingLeft="8dp"
@@ -281,14 +237,28 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="描述："
+                    android:text="照片："
                     android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/tv_describe"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp" />
+                <ImageView
+                    android:id="@+id/iv_photo1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <ImageView
+                    android:id="@+id/iv_photo2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <ImageView
+                    android:id="@+id/iv_photo3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
             </LinearLayout>
 
             <LinearLayout
@@ -370,17 +340,17 @@
                     android:id="@+id/tv_accept_opinion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/common_bd_gray"
                     android:hint="验收意见"
                     android:lines="4"
                     android:paddingLeft="8dp"
                     android:paddingTop="12dp"
                     android:textColorHint="@color/lightGray"
-                    android:textSize="16sp"
-                    android:background="@drawable/common_bd_gray"
-                    />
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_photos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"></android.support.v7.widget.RecyclerView>
