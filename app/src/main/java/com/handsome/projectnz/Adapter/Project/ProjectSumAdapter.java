@@ -15,6 +15,7 @@ import java.util.List;
 
 /**
  * Created by 柯东煜 on 2018/1/15.
+ * 项目模块-项目汇总
  */
 
 public class ProjectSumAdapter extends BaseAdapter {
@@ -56,12 +57,19 @@ public class ProjectSumAdapter extends BaseAdapter {
         }else{
             holder = (ViewHolder) convertView.getTag();
         }
+        //设置项目名称
         holder.tv_project_name.setText(lists.get(position).getProjectName());
+        //设置项目工期
         holder.tv_time_limit.setText(lists.get(position).getTimeLimit()+"天");
+        //设置工程类别
         holder.tv_engineering_type.setText(lists.get(position).getEngineeringType());
+        //设置项目类别
         holder.tv_project_type.setText(lists.get(position).getProjectType());
+        //设置项目经理 （项目负责人）
         holder.tv_project_manager.setText(lists.get(position).getProjectManager());
+        //设置发起人
         holder.tv_initiator.setText(lists.get(position).getInitiator());
+        //设置项目进度
         holder.tv_project_progress.setText(lists.get(position).getProjectProgress()+"%");
         return convertView;
     }

@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
 import com.handsome.projectnz.Adapter.MainAdapter;
+import com.handsome.projectnz.Fragment.Project.ProjectDeleteFileFiledFragment;
+import com.handsome.projectnz.Fragment.Project.ProjectDeleteFileHadDeleteFragment;
 import com.handsome.projectnz.Fragment.Project.ProjectSumConductingFragment;
 import com.handsome.projectnz.R;
 
@@ -58,10 +60,11 @@ public class ProjectDeleteFileActivity extends BaseActivity implements ViewPager
     /**
      * 初始化碎片
      */
+
     private void initFragments() {
         list = new ArrayList<>();
-        list.add(new ProjectSumConductingFragment());
-        list.add(new ProjectSumConductingFragment());
+        list.add(new ProjectDeleteFileFiledFragment());
+        list.add(new ProjectDeleteFileHadDeleteFragment());
         adapter = new MainAdapter(getSupportFragmentManager(), list);
         vp_project.setAdapter(adapter);
         vp_project.setOffscreenPageLimit(2);

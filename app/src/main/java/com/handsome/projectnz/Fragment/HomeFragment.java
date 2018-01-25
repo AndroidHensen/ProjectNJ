@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseLazyFragment;
+import com.handsome.projectnz.CustomView.WorkbenchContent;
 import com.handsome.projectnz.R;
 import com.handsome.projectnz.View.Home.LoginActivity;
 import com.handsome.projectnz.View.Home.RegisterActivity;
@@ -13,10 +14,10 @@ import com.handsome.projectnz.View.Home.RegisterActivity;
  * Created by handsome on 2016/4/7.
  */
 public class HomeFragment extends BaseLazyFragment {
-    private ImageView iv_company_announcements;//公司公告
-    private ImageView iv_working_task;//工作任务
-    private ImageView iv_work_report;//工作汇报
-    private ImageView iv_general_settings;//通用申请
+    private WorkbenchContent iv_company_announcements;//公司公告
+    private WorkbenchContent iv_working_task;//工作任务
+    private WorkbenchContent iv_work_report;//工作汇报
+    private WorkbenchContent iv_general_settings;//通用申请
     private ImageView iv_detailed_list;//清单
     private ImageView iv_progress_plan;//进度计划
     private ImageView tv_security_check;//安全检查
