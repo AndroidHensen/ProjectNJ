@@ -9,15 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.Home.OptionProjectActivity">
+        <activity android:name=".View.Home.ApplyCommonActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--<activity android:name=".View.Home.OptionProjectActivity" />-->
-        <!--<activity android:name=".View.Home.OptionProjectActivity" />-->
+        <!-- <activity android:name=".View.Home.OptionProjectActivity" /> -->
+        <!-- <activity android:name=".View.Home.OptionProjectActivity" /> -->
+        <activity android:name=".View.Home.ApplyDetailsActivity"/>
         <activity android:name=".View.Home.WorkReportActivity" />
         <activity android:name=".View.Home.LoginActivity" />
         <activity android:name=".View.Home.RegisterActivity" />
@@ -28,9 +29,10 @@
         <activity android:name=".View.Project.ProjectDeleteFileActivity" />
         <activity android:name=".View.Project.ProjectUpdateActivity" />
         <activity android:name=".View.Mine.MineSetting" />
-        <activity android:name=".View.Mine.MineFeedback"/>
-        <activity android:name=".View.Home.WorkTaskProjectAcceptActivity"/>
-        <activity android:name=".View.Home.WorkTaskNewActivity"/>
+        <activity android:name=".View.Mine.MineFeedback" />
+        <activity android:name=".View.Home.WorkTaskProjectAcceptActivity" />
+        <activity android:name=".View.Home.WorkTaskNewActivity" />
+        <activity android:name=".View.Home.OptionProjectActivity" />
     </application>
 
 </manifest>
