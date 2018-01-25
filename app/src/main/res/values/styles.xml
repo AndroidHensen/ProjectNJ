@@ -10,9 +10,12 @@
     </style>
 
     <!--自定义星级评分条-->
-    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
-        <item name="android:progressDrawable">@drawable/work_task_project_accept_ratingbar</item>
-        <item name="android:minHeight">16dp</item>
-        <item name="android:maxHeight">16dp</item>
+    <style name="YellowRatingBar">
+        <item name="android:progressDrawable">@drawable/yellow_ratingbar_style</item>
+        <item name="android:minHeight">35dip</item>
+        <item name="android:maxHeight">35dip</item>
+        <item name="android:isIndicator">true</item>
+        <item name="android:thumb">@null</item>
     </style>
+
 </resources>

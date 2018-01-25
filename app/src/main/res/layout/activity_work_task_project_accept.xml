@@ -346,14 +346,10 @@
 
                 <RatingBar
                     android:id="@+id/rb_evaluate"
-                    style="@style/roomRatingBar"
+                    style="@style/YellowRatingBar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:isIndicator="true"
-                    android:numStars="5"
-                    android:rating="0.0"
-                    android:stepSize="1.0" />
+                    android:numStars="5" />
             </LinearLayout>
 
             <LinearLayout
