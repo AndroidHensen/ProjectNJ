@@ -56,7 +56,7 @@ public class PlanDetailsActivity extends BaseActivity {
 
     @Override
     public void initData() {
-        setTitle("假话详情");
+        setTitle("计划详情");
         setTitleCanBack();
     }
 
