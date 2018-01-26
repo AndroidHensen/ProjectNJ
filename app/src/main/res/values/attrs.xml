@@ -33,4 +33,12 @@
         <attr name="wc_image" format="reference" />
         <attr name="wc_content" format="string" />
     </declare-styleable>
+    <declare-styleable name="ProjectDataFileView">
+        <attr name="list_name" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ProjectBuilderView">
+        <attr name="builder_name" format="string" />
+        <attr name="builders_visible" format="boolean"/>
+    </declare-styleable>
 </resources>

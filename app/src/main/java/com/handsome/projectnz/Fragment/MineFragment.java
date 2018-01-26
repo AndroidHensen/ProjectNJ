@@ -6,6 +6,7 @@ import android.view.View;
 import com.handsome.module_engine.E.BaseTemplate.BaseLazyFragment;
 import com.handsome.projectnz.R;
 import com.handsome.projectnz.CustomView.FastMenuBar;
+import com.handsome.projectnz.View.Mine.MineCompanyInfoEmployee;
 import com.handsome.projectnz.View.Mine.MineFeedback;
 import com.handsome.projectnz.View.Mine.MineSetting;
 
@@ -56,6 +57,8 @@ public class MineFragment extends BaseLazyFragment implements FastMenuBar.onMenu
         Intent i;
         switch (view.getId()) {
             case R.id.company_information:
+                i=new Intent(getActivity(), MineCompanyInfoEmployee.class);
+                startActivity(i);
                 break;
             case R.id.help:
                 break;

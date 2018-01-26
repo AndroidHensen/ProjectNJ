@@ -8,7 +8,10 @@ import android.widget.TextView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
 import com.handsome.projectnz.Adapter.MainAdapter;
+import com.handsome.projectnz.Fragment.Project.ProjectNewBuilderFragment;
+import com.handsome.projectnz.Fragment.Project.ProjectNewDataFragment;
 import com.handsome.projectnz.Fragment.Project.ProjectSumConductingFragment;
+import com.handsome.projectnz.Fragment.Project.ProjectNewSummaryFragment;
 import com.handsome.projectnz.R;
 
 import java.util.ArrayList;
@@ -74,9 +77,9 @@ public class ProjectNewActivity extends BaseActivity implements ViewPager.OnPage
      */
     private void initFragments() {
         list = new ArrayList<>();
-        list.add(new ProjectSumConductingFragment());
-        list.add(new ProjectSumConductingFragment());
-        list.add(new ProjectSumConductingFragment());
+        list.add(new ProjectNewSummaryFragment());
+        list.add(new ProjectNewDataFragment());
+        list.add(new ProjectNewBuilderFragment());
         adapter = new MainAdapter(getSupportFragmentManager(), list);
         vp_project_new.setAdapter(adapter);
         vp_project_new.setOffscreenPageLimit(3);

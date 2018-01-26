@@ -21,7 +21,8 @@ import java.util.List;
  */
 //项目销档
 
-public class ProjectDeleteFileAdapter extends BaseAdapter {private List<Project> lists=new ArrayList<>();
+public class ProjectDeleteFileAdapter extends BaseAdapter {
+    private List<Project> lists=new ArrayList<>();
     private Context context;
     public ProjectDeleteFileAdapter(Context context, List<Project> lists){
         this.context=context;

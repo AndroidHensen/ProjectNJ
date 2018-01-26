@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.handsome.projectnz.Fragment.Project.ProjectNewDataFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.handsome.projectnz.CustomView.ProjectDataFileView
+                android:id="@+id/list_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:list_name="工作量表" />
+
+            <com.handsome.projectnz.CustomView.ProjectDataFileView
+                android:id="@+id/list_material"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:list_name="材料清单" />
+
+            <com.handsome.projectnz.CustomView.ProjectDataFileView
+                android:id="@+id/list_design"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:list_name="设计图纸" />
+
+            <com.handsome.projectnz.CustomView.ProjectDataFileView
+                android:id="@+id/list_danger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:list_name="安全基准表" />
+
+            <com.handsome.projectnz.CustomView.ProjectDataFileView
+                android:id="@+id/list_guidance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:list_name="质量指导书" />
+
+            <com.handsome.projectnz.CustomView.ProjectDataFileView
+                android:id="@+id/list_measure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:list_name="施工方案" />
+
+            <com.handsome.projectnz.CustomView.ProjectDataFileView
+                android:id="@+id/list_budget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:list_name="预算表" />
+
+            <com.handsome.projectnz.CustomView.ProjectDataFileView
+                android:id="@+id/list_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:list_name="结算表" />
+
+            <com.handsome.projectnz.CustomView.ProjectDataFileView
+                android:layout_marginBottom="5dp"
+                android:id="@+id/list_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:list_name="其他" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
