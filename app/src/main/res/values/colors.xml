@@ -8,4 +8,6 @@
     <color name="lightGray">#bab6ba</color>
     <!--绿色边框-->
     <color name="green">#259B24</color>
+    <!--标题蓝-->
+    <color name="blue">#3F51B5</color>
 </resources>
