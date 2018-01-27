@@ -10,10 +10,10 @@ import android.widget.TextView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
 import com.handsome.projectnz.Adapter.MainAdapter;
-import com.handsome.projectnz.Fragment.HomeFragment;
-import com.handsome.projectnz.Fragment.MessageFragment;
-import com.handsome.projectnz.Fragment.MineFragment;
-import com.handsome.projectnz.Fragment.ProjectFragment;
+import com.handsome.projectnz.Fragment.Main.HomeFragment;
+import com.handsome.projectnz.Fragment.Main.MessageFragment;
+import com.handsome.projectnz.Fragment.Main.MineFragment;
+import com.handsome.projectnz.Fragment.Main.ProjectFragment;
 import com.handsome.projectnz.R;
 
 import java.util.ArrayList;
