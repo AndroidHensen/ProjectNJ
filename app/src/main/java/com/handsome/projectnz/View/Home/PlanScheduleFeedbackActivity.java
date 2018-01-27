@@ -15,7 +15,7 @@ import com.handsome.projectnz.R;
  * Created by YX_PC on 2018/1/15.
  * 界面：工作台_进度计划_计划详情_进度反馈
  */
-public class PlanScheduleFeedback extends BaseActivity {
+public class PlanScheduleFeedbackActivity extends BaseActivity {
     private TextView tv_project_name;//项目名称
     private TextView tv_task_name;//任务名称
     private TextView tv_task_style;//任务类型
