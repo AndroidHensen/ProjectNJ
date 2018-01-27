@@ -37,6 +37,8 @@ public class ProjectFileFiledFragment extends BaseLazyFragment {
 
     @Override
     public void initData() {
+        setTitle("资料统计");
+        setTitleCanBack();
         List<Project> lists=new ArrayList<>();
         Project project=new Project();
         project.setProjectName("1028工程");

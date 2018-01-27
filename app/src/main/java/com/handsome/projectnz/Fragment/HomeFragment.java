@@ -9,6 +9,7 @@ import com.handsome.projectnz.CustomView.WorkbenchContent;
 import com.handsome.projectnz.R;
 import com.handsome.projectnz.View.Home.LoginActivity;
 import com.handsome.projectnz.View.Home.RegisterActivity;
+import com.handsome.projectnz.View.Home.Statistics.InfoStatisticsActivity;
 
 /**
  * Created by handsome on 2016/4/7.
@@ -55,7 +56,7 @@ public class HomeFragment extends BaseLazyFragment {
 
     @Override
     public void initListener() {
-
+        iv_data_statistics.setOnClickListener(this);
     }
 
     @Override
@@ -75,6 +76,10 @@ public class HomeFragment extends BaseLazyFragment {
                 break;
             case R.id.tv_edit2://注册
                 i=new Intent(getActivity(), RegisterActivity.class);
+                startActivity(i);
+                break;
+            case R.id.iv_data_statistics:
+                i=new Intent(getActivity(), InfoStatisticsActivity.class);
                 startActivity(i);
                 break;
         }

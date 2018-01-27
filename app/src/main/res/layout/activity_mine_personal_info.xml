@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.handsome.projectnz.View.Mine.MinePersonalInfo">
+
+    <include layout="@layout/include_common_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="姓名："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/my_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="张三疯" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="身份证："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/my_id_num"
+                    android:gravity="center_vertical"
+                    android:text="445222111124031144" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/my_id_one"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/register_unit_ic_creadit1"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/my_id_two"
+                    android:background="@drawable/register_unit_ic_creadit2"
+                    android:padding="4dp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="手机："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/my_phone"
+                    android:gravity="center_vertical"
+                    android:text="17875511856" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="邮箱："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:id="@+id/my_email"
+                    android:text="1198611857@qq.com" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="单位名称："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/my_company"
+                    android:gravity="center_vertical"
+                    android:text="创辉" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="部门："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/my_department"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="计算机学院" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="职位："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/common_bg_blue_radius"
+                    android:gravity="center"
+                    android:text="项目经理"
+                    android:id="@+id/my_position"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="资质照："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/common_bg_blue_radius"
+                    android:gravity="center"
+                    android:text="上传照片"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:id="@+id/my_photo_1"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:id="@+id/my_photo_2"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:id="@+id/my_photo_3"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:id="@+id/my_photo_4"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/common_ic_default_pic" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

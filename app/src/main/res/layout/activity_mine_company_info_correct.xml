@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.handsome.projectnz.View.Mine.MinePersonalInfo">
+
+    <include layout="@layout/include_common_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="单位名称："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mine_feedback_et_shape"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="嘉应学院"
+                    android:textColor="#6e6e6e"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="所属上级公司："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/company_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mine_feedback_et_shape"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="无"
+                    android:textColor="#6e6e6e"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="社会统一信用号："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/company_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mine_feedback_et_shape"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text="12441400456763110Y"
+                    android:textColor="#6e6e6e"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/company_id_one"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/register_unit_ic_creadit1"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:id="@+id/company_id_two"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/register_unit_ic_creadit2"
+                    android:padding="4dp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="开户许可证："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <Button
+                    android:id="@+id/company_admit_picture_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_bg_blue_radius"
+                    android:gravity="center"
+                    android:text="上传"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/company_admit_picture_1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/company_admit_picture_2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/company_admit_picture_3"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/company_admit_picture_4"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="资质证明："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <Button
+                    android:id="@+id/company_qualification_picture_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_bg_blue_radius"
+                    android:gravity="center"
+                    android:text="上传照片"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/company_qualification_picture_1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/company_qualification_picture_2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/company_qualification_picture_3"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/company_qualification_picture_4"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="上一年度完税证明："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/company_tax_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_bg_blue_radius"
+                    android:gravity="center"
+                    android:text="上传照片"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/company_tax_1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/company_tax_2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="开户行："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/company_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mine_feedback_et_shape"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="中国银行"
+                    android:textColor="#6e6e6e"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="账号："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/company_bank_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mine_feedback_et_shape"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="444 444 444 444 444 444"
+                    android:textColor="#6e6e6e"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="地址："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/company_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mine_feedback_et_shape"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="广东省梅州市嘉应学院计算机学院"
+                    android:textColor="#6e6e6e"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="资质证书照："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <Button
+                    android:id="@+id/company_qualification_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_bg_blue_radius"
+                    android:gravity="center"
+                    android:text="上传照片"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/company_qualification_1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/company_qualification_2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/company_qualification_3"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/company_qualification_4"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="公司官网："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/company_web"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mine_feedback_et_shape"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="www.jyu.edu.cn"
+                    android:textColor="#6e6e6e"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="联系电话："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/company_cell"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mine_feedback_et_shape"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="110-120-119"
+                    android:textColor="#6e6e6e"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="企业邮箱："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/company_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mine_feedback_et_shape"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="1198611857@qq.com"
+                    android:textColor="#6e6e6e"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="可参与的工程类别："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/company_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mine_feedback_et_shape"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="安装工程、建筑工程、焊接工程、电缆工程、自动化工程、安装工程、建筑工程、焊接工程、电缆工程、自动化工程等等"
+                    android:textColor="#6e6e6e"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimaryBackGroup"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/certain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/common_bg_blue_radius"
+            android:text="提交审核"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>
+

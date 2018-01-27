@@ -2,12 +2,15 @@ package com.handsome.projectnz.Fragment;
 
 import android.content.Intent;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseLazyFragment;
 import com.handsome.projectnz.R;
 import com.handsome.projectnz.CustomView.FastMenuBar;
+import com.handsome.projectnz.View.Mine.MineCompanyInfo;
 import com.handsome.projectnz.View.Mine.MineCompanyInfoEmployee;
 import com.handsome.projectnz.View.Mine.MineFeedback;
+import com.handsome.projectnz.View.Mine.MinePersonalInfo;
 import com.handsome.projectnz.View.Mine.MineSetting;
 
 /**
@@ -19,6 +22,7 @@ public class MineFragment extends BaseLazyFragment implements FastMenuBar.onMenu
     private FastMenuBar fmb_cache_clean_up;
     private FastMenuBar fmb_feedback;
     private FastMenuBar fmb_setting;
+    private ImageView iv_photo;
 
     @Override
     public int getLayoutId() {
@@ -32,6 +36,7 @@ public class MineFragment extends BaseLazyFragment implements FastMenuBar.onMenu
         fmb_cache_clean_up = findView(R.id.cache_clean_up);
         fmb_setting = findView(R.id.setting);
         fmb_feedback = findView(R.id.feedback);
+        iv_photo=findView(R.id.my_photo);
     }
 
     @Override
@@ -41,6 +46,7 @@ public class MineFragment extends BaseLazyFragment implements FastMenuBar.onMenu
         fmb_cache_clean_up.setOnMenuBarClickListener(this);
         fmb_feedback.setOnMenuBarClickListener(this);
         fmb_setting.setOnMenuBarClickListener(this);
+        iv_photo.setOnClickListener(this);
     }
 
     @Override
@@ -50,6 +56,12 @@ public class MineFragment extends BaseLazyFragment implements FastMenuBar.onMenu
 
     @Override
     public void processClick(View v) {
+        if(v.getId()==R.id.my_photo){
+            Intent i=new Intent(getActivity(), MinePersonalInfo.class);
+            startActivity(i);
+
+
+        }
     }
 
     @Override
@@ -57,7 +69,7 @@ public class MineFragment extends BaseLazyFragment implements FastMenuBar.onMenu
         Intent i;
         switch (view.getId()) {
             case R.id.company_information:
-                i=new Intent(getActivity(), MineCompanyInfoEmployee.class);
+                i=new Intent(getActivity(), MineCompanyInfo.class);
                 startActivity(i);
                 break;
             case R.id.help:

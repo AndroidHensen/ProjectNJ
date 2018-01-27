@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.handsome.projectnz.View.Mine.MinePersonalInfo">
+
+    <include layout="@layout/include_common_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="单位名称："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="嘉应学院" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="所属上级公司："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/company_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="无" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="社会统一信用号："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/company_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:text="12441400456763110Y"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/company_id_one"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/register_unit_ic_creadit1"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:id="@+id/company_id_two"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/register_unit_ic_creadit2"
+                    android:padding="4dp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="开户许可证："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_bg_blue_radius"
+                    android:gravity="center"
+                    android:text="上传照片"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/company_admit_picture_1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <ImageView
+                    android:id="@+id/company_admit_picture_2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <ImageView
+                    android:id="@+id/company_admit_picture_3"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <ImageView
+                    android:id="@+id/company_admit_picture_4"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="资质证明："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_bg_blue_radius"
+                    android:gravity="center"
+                    android:text="上传照片"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/company_qualification_picture_1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <ImageView
+                    android:id="@+id/company_qualification_picture_2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <ImageView
+                    android:id="@+id/company_qualification_picture_3"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <ImageView
+                    android:id="@+id/company_qualification_picture_4"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="上一年度完税证明："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_bg_blue_radius"
+                    android:gravity="center"
+                    android:text="上传照片"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/company_tax_1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <ImageView
+                    android:id="@+id/company_tax_2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="开户行："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/company_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="中国银行" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="账号："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/company_bank_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="444 444 444 444 444 444" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="地址："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/company_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="广东省梅州市嘉应学院计算机学院" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="资质证书照："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_bg_blue_radius"
+                    android:gravity="center"
+                    android:text="上传照片"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/company_qualification_1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <ImageView
+                    android:id="@+id/company_qualification_2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <ImageView
+                    android:id="@+id/company_qualification_3"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <ImageView
+                    android:id="@+id/company_qualification_4"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/common_ic_default_pic" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="公司官网："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/company_web"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="www.jyu.edu.cn" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="联系电话："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:id="@+id/company_cell"
+                    android:text="110-120-119" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="企业邮箱："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/company_email"
+                    android:gravity="center_vertical"
+                    android:text="1198611857@qq.com" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="可参与的工程类别："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:id="@+id/company_type"
+                    android:text="安装工程、建筑工程、焊接工程、电缆工程、自动化工程、安装工程、建筑工程、焊接工程、电缆工程、自动化工程等等"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimaryBackGroup"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/company_employee"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/mine_company_info_shape"
+            android:gravity="center"
+            android:text="人员库"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/company_cars"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mine_company_info_shape_grey"
+            android:gravity="center"
+            android:text="车辆库"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/company_tools"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="47dp"
+            android:background="@drawable/mine_company_info_shape_grey"
+            android:gravity="center"
+            android:text="器械库"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

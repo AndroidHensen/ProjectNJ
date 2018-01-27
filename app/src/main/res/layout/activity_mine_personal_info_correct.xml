@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.handsome.projectnz.View.Mine.MinePersonalInfoCorrect">
+
+    <include layout="@layout/include_common_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="姓名："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/my_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#6e6e6e"
+                    android:background="@drawable/mine_feedback_et_shape"
+                    android:gravity="center_vertical"
+                    android:text="张三疯" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="身份证："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/my_id_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mine_feedback_et_shape"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="445222111124031144"
+                    android:textColor="#6e6e6e"
+
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/my_id_one"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/register_unit_ic_creadit1"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:id="@+id/my_id_two"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/register_unit_ic_creadit2"
+                    android:padding="4dp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="手机："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/my_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mine_feedback_et_shape"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="17875511856"
+                    android:textColor="#6e6e6e"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="邮箱："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/my_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mine_feedback_et_shape"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="1198611857@qq.com"
+                    android:textColor="#6e6e6e"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="单位名称："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/my_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mine_feedback_et_shape"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="创辉"
+                    android:textColor="#6e6e6e"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="部门："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/my_department"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mine_feedback_et_shape"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="计算机学院"
+                    android:textColor="#6e6e6e"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="职位："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/my_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/common_bg_blue_radius"
+                    android:gravity="center"
+                    android:text="项目经理"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <include layout="@layout/include_common_split_line_hor" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="资质照："
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/my_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/common_bg_blue_radius"
+                    android:gravity="center"
+                    android:text="上传照片"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/my_photo_1"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/my_photo_2"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/my_photo_3"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/common_ic_default_pic" />
+
+                <com.handsome.projectnz.CustomView.PictureView
+                    android:id="@+id/my_photo_4"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/common_ic_default_pic" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

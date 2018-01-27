@@ -41,4 +41,7 @@
         <attr name="builder_name" format="string" />
         <attr name="builders_visible" format="boolean"/>
     </declare-styleable>
+    <declare-styleable name="HomeStatisticsInfoView">
+        <attr name="info_name" format="string"/>
+    </declare-styleable>
 </resources>

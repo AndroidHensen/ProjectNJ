@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackGroup"
+    android:orientation="vertical"
+    tools:context="com.handsome.projectnz.View.Home.Statistics.InfoStatisticsDownloadActivity">
+    <include layout="@layout/include_common_header" />
+
+    <com.handsome.projectnz.CustomView.HomeStatisticsInfoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/project_info"
+        app:info_name="项目基本资料" />
+
+    <com.handsome.projectnz.CustomView.HomeStatisticsInfoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_assignment"
+        app:info_name="任务资料汇总" />
+
+    <com.handsome.projectnz.CustomView.HomeStatisticsInfoView
+        android:layout_width="match_parent"
+        android:id="@+id/info_invite"
+        android:layout_height="wrap_content"
+        app:info_name="申请资料汇总" />
+
+    <com.handsome.projectnz.CustomView.HomeStatisticsInfoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_intent"
+        app:info_name="计划资料汇总" />
+
+    <com.handsome.projectnz.CustomView.HomeStatisticsInfoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_signature"
+        app:info_name="签到资料汇总" />
+
+    <com.handsome.projectnz.CustomView.HomeStatisticsInfoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_material"
+        app:info_name="物资资料汇总" />
+</LinearLayout>
