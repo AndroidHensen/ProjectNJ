@@ -37,7 +37,8 @@
         <activity android:name=".View.Mine.MinePersonalInfo" />
         <activity android:name=".View.Mine.MinePersonalInfoCorrect" />
         <activity android:name=".View.Mine.MineCompanyInfo" />
-        <activity android:name=".View.Mine.MineCompanyInfoCorrect"></activity>
+        <activity android:name=".View.Mine.MineCompanyInfoCorrect" />
+        <activity android:name=".View.Home.MaterialHandling.StockOutputActivity"></activity>
     </application>
 
 </manifest>

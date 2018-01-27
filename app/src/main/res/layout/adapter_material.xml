@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackGroup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+        <TextView
+            android:minHeight="36dp"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:text="物资名称"
+            android:id="@+id/material_name"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:minHeight="36dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:id="@+id/material_type"
+                android:layout_height="match_parent"
+                android:text="型号"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="单位："
+                android:id="@+id/department"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="台"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/department"
+                android:gravity="center_vertical"
+                android:id="@+id/department_count"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="24dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:id="@+id/new_output"
+                android:background="@drawable/adapter_material_ic"
+                android:layout_marginRight="8dp"
+                android:layout_height="24dp" />
+            
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:minHeight="36dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="入："
+                android:id="@+id/input"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/input"
+                android:id="@+id/input_count"
+                android:text="120"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="出："
+                android:id="@+id/output"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="30"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/output"
+                android:gravity="center_vertical"
+                android:id="@+id/output_count"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:text="80"
+                android:id="@+id/add_count"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@id/add_count"
+                android:id="@+id/add"
+                android:text="存："
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

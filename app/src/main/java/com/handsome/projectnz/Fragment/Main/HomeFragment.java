@@ -8,6 +8,7 @@ import com.handsome.module_engine.E.BaseTemplate.BaseLazyFragment;
 import com.handsome.projectnz.CustomView.WorkbenchContent;
 import com.handsome.projectnz.R;
 import com.handsome.projectnz.View.Home.LoginActivity;
+import com.handsome.projectnz.View.Home.MaterialHandling.StockOutputActivity;
 import com.handsome.projectnz.View.Home.RegisterActivity;
 import com.handsome.projectnz.View.Home.Statistics.InfoStatisticsActivity;
 
@@ -57,6 +58,7 @@ public class HomeFragment extends BaseLazyFragment {
     @Override
     public void initListener() {
         iv_data_statistics.setOnClickListener(this);
+        iv_material_statistics.setOnClickListener(this);
     }
 
     @Override
@@ -80,6 +82,10 @@ public class HomeFragment extends BaseLazyFragment {
                 break;
             case R.id.iv_data_statistics:
                 i=new Intent(getActivity(), InfoStatisticsActivity.class);
+                startActivity(i);
+                break;
+            case R.id.iv_material_statistics:
+                i=new Intent(getActivity(), StockOutputActivity.class);
                 startActivity(i);
                 break;
         }
