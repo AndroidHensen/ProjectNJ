@@ -11,10 +11,11 @@ import android.widget.TextView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
 import com.handsome.projectnz.R;
-
+/**
+ * Created by YX_PC on 2018/1/15.
+ * 界面：工作台_进度计划_计划详情_进度反馈
+ */
 public class PlanScheduleFeedback extends BaseActivity {
-
-
     private TextView tv_project_name;//项目名称
     private TextView tv_task_name;//任务名称
     private TextView tv_task_style;//任务类型
@@ -56,7 +57,8 @@ public class PlanScheduleFeedback extends BaseActivity {
 
     @Override
     public void initData() {
-
+        setTitle("进度反馈");
+        setTitleCanBack();
     }
 
     @Override
