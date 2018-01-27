@@ -26,7 +26,7 @@
                 android:paddingTop="10dp">
 
                 <View
-                    android:layout_width="1dp"
+                    android:layout_width="3dp"
                     android:layout_height="match_parent"
                     android:background="#3F51B5" />
 
@@ -35,7 +35,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="6dp"
                     android:text="办公OA"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -47,29 +47,33 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:background="#fff"
                     android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <com.handsome.projectnz.CustomView.WorkbenchContent
                             android:id="@+id/iv_company_announcements"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             app:wc_content="公司公告"
                             app:wc_image="@drawable/workbench_ic_company_announcements"
                             app:wc_new_notice="false" />
 
                     </LinearLayout>
 
+                    <include layout="@layout/include_common_split_line_ver" />
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <com.handsome.projectnz.CustomView.WorkbenchContent
                             android:id="@+id/iv_working_task"
@@ -82,12 +86,12 @@
 
                     <include layout="@layout/include_common_split_line_ver" />
 
-                    <include layout="@layout/include_common_split_line_ver" />
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <com.handsome.projectnz.CustomView.WorkbenchContent
                             android:id="@+id/iv_work_report"
@@ -103,7 +107,8 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <com.handsome.projectnz.CustomView.WorkbenchContent
                             android:id="@+id/iv_general_settings"
@@ -116,6 +121,9 @@
 
                 </LinearLayout>
 
+                <include layout="@layout/include_common_split_line_hor" />
+
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -125,7 +133,7 @@
                     android:paddingTop="10dp">
 
                     <View
-                        android:layout_width="1dp"
+                        android:layout_width="3dp"
                         android:layout_height="match_parent"
                         android:background="#259B24" />
 
@@ -134,12 +142,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
                         android:text="项目管理"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
+
+                <include layout="@layout/include_common_split_line_hor" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:background="#fff"
                     android:orientation="horizontal">
 
@@ -163,7 +173,7 @@
                             android:layout_height="wrap_content"
                             android:text="清单"
                             android:textColor="#5D5F6A"
-                            android:textSize="10dp" />
+                            android:textSize="14dp" />
                     </LinearLayout>
 
                     <include layout="@layout/include_common_split_line_ver" />
@@ -188,7 +198,7 @@
                             android:layout_height="wrap_content"
                             android:text="进度计划"
                             android:textColor="#5D5F6A"
-                            android:textSize="10dp" />
+                            android:textSize="14dp" />
                     </LinearLayout>
 
                     <include layout="@layout/include_common_split_line_ver" />
@@ -213,7 +223,7 @@
                             android:layout_height="wrap_content"
                             android:text="安全检查"
                             android:textColor="#5D5F6A"
-                            android:textSize="10dp" />
+                            android:textSize="14dp" />
                     </LinearLayout>
 
                     <include layout="@layout/include_common_split_line_ver" />
@@ -237,7 +247,7 @@
                             android:layout_height="wrap_content"
                             android:text="质量检查"
                             android:textColor="#5D5F6A"
-                            android:textSize="10dp" />
+                            android:textSize="14dp" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -245,7 +255,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:background="#fff"
                     android:orientation="horizontal">
 
@@ -269,7 +279,7 @@
                             android:layout_height="wrap_content"
                             android:text="签到记工"
                             android:textColor="#5D5F6A"
-                            android:textSize="10dp" />
+                            android:textSize="14dp" />
                     </LinearLayout>
 
                     <include layout="@layout/include_common_split_line_ver" />
@@ -294,7 +304,7 @@
                             android:layout_height="wrap_content"
                             android:text="完工验收"
                             android:textColor="#5D5F6A"
-                            android:textSize="10dp" />
+                            android:textSize="14dp" />
                     </LinearLayout>
 
                     <include layout="@layout/include_common_split_line_ver" />
@@ -319,7 +329,7 @@
                             android:layout_height="wrap_content"
                             android:text="物资"
                             android:textColor="#5D5F6A"
-                            android:textSize="10dp" />
+                            android:textSize="14dp" />
                     </LinearLayout>
 
                     <include layout="@layout/include_common_split_line_ver" />
@@ -343,9 +353,11 @@
                             android:layout_height="wrap_content"
                             android:text="日常巡查"
                             android:textColor="#5D5F6A"
-                            android:textSize="10dp" />
+                            android:textSize="14dp" />
                     </LinearLayout>
                 </LinearLayout>
+
+                <include layout="@layout/include_common_split_line_hor" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -356,7 +368,7 @@
                     android:paddingTop="10dp">
 
                     <View
-                        android:layout_width="1dp"
+                        android:layout_width="3dp"
                         android:layout_height="match_parent"
                         android:background="#ff4081" />
 
@@ -365,12 +377,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
                         android:text="统计"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
+
+                <include layout="@layout/include_common_split_line_hor" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:background="#fff"
                     android:orientation="horizontal">
 
@@ -394,7 +408,7 @@
                             android:layout_height="wrap_content"
                             android:text="任务统计"
                             android:textColor="#5D5F6A"
-                            android:textSize="10dp" />
+                            android:textSize="14dp" />
                     </LinearLayout>
 
                     <include layout="@layout/include_common_split_line_ver" />
@@ -419,7 +433,7 @@
                             android:layout_height="wrap_content"
                             android:text="用工统计"
                             android:textColor="#5D5F6A"
-                            android:textSize="10dp" />
+                            android:textSize="14dp" />
                     </LinearLayout>
 
                     <include layout="@layout/include_common_split_line_ver" />
@@ -444,7 +458,7 @@
                             android:layout_height="wrap_content"
                             android:text="物资统计"
                             android:textColor="#5D5F6A"
-                            android:textSize="10dp" />
+                            android:textSize="14dp" />
                     </LinearLayout>
 
                     <include layout="@layout/include_common_split_line_ver" />
@@ -468,9 +482,12 @@
                             android:layout_height="wrap_content"
                             android:text="资料统计"
                             android:textColor="#5D5F6A"
-                            android:textSize="10dp" />
+                            android:textSize="14dp" />
                     </LinearLayout>
                 </LinearLayout>
+
+                <include layout="@layout/include_common_split_line_hor" />
+
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
