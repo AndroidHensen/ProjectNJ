@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:minHeight="50dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/assignment_type"
+            android:gravity="center_vertical"
+            android:text="执行人:"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/assignment_object"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Diko"
+            android:textSize="14sp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="96dp"
+            android:id="@+id/assignment_sum"
+            android:textColor="@color/blue"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:text="3"
+            android:textSize="14sp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="64dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/assignment_finish"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="16dp"
+            android:text="2"
+            android:textSize="14sp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

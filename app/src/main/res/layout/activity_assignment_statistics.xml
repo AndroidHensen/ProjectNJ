@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.handsome.projectnz.View.Home.Statistics.AssignmentStatisticsActivity">
+    <include layout="@layout/include_common_header"/>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="#f2f2f2"
+        android:id="@+id/vp"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_height="48dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:id="@+id/assignment_arrange"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="@drawable/home_statistics_assignment_arrange_selected"
+                android:layout_width="24dp"
+                android:id="@+id/assignment_arrange_ic"
+                android:layout_height="24dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/assignment_arrange_text"
+                android:gravity="center"
+                android:text="我安排的"
+                android:textSize="10sp"
+                android:textColor="@color/blue"
+                android:layout_height="wrap_content" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:id="@+id/assignment_execute"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="@drawable/home_statistics_assignment_execute_unselected"
+                android:layout_width="24dp"
+                android:id="@+id/assignment_execute_ic"
+                android:layout_height="24dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/assignment_execute_text"
+                android:gravity="center"
+                android:text="我安排的"
+                android:textSize="10sp"
+                android:textColor="@color/gray"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

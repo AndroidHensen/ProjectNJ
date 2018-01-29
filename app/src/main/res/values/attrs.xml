@@ -44,4 +44,16 @@
     <declare-styleable name="HomeStatisticsInfoView">
         <attr name="info_name" format="string"/>
     </declare-styleable>
+    <declare-styleable name="MenuBar">
+        <attr name="menu_name" format="string"/>
+        <attr name="menu_content" format="string"/>
+        <attr name="menu_comment" format="string"/>
+        <attr name="menu_ic_visible" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="MaterialStreamBar">
+        <attr name="stream_date" format="string"/>
+        <attr name="stream_handler" format="string"/>
+        <attr name="stream_belong_project" format="string"/>
+        <attr name="stream_count" format="integer"/>
+    </declare-styleable>
 </resources>

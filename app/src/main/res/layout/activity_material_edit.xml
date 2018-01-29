@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryBackGroup"
+    tools:context="com.handsome.projectnz.View.Home.MaterialHandling.MaterialEditActivity">
+    <include layout="@layout/include_common_header" />
+    <com.handsome.projectnz.CustomView.MenuBar
+        android:layout_width="match_parent"
+        app:menu_name="物资名称"
+        android:layout_marginTop="8dp"
+        android:id="@+id/material_name"
+        android:layout_height="wrap_content"/>
+    <include layout="@layout/include_common_split_line_hor"/>
+    <com.handsome.projectnz.CustomView.MenuBar
+        android:layout_width="match_parent"
+        app:menu_name="型号规格"
+        android:id="@+id/material_type"
+        android:layout_height="wrap_content"/>
+    <include layout="@layout/include_common_split_line_hor"/>
+    <com.handsome.projectnz.CustomView.MenuBar
+        android:layout_width="match_parent"
+        app:menu_name="单位"
+        android:id="@+id/material_department"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

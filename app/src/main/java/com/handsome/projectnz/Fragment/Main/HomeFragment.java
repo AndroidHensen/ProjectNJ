@@ -8,9 +8,14 @@ import com.handsome.module_engine.E.BaseTemplate.BaseLazyFragment;
 import com.handsome.projectnz.CustomView.WorkbenchContent;
 import com.handsome.projectnz.R;
 import com.handsome.projectnz.View.Home.LoginActivity;
+import com.handsome.projectnz.View.Home.MaterialHandling.MaterialInputRecordActivity;
+import com.handsome.projectnz.View.Home.MaterialHandling.MaterialOutputRecordActivity;
+import com.handsome.projectnz.View.Home.MaterialHandling.StockKeepActivity;
 import com.handsome.projectnz.View.Home.MaterialHandling.StockOutputActivity;
 import com.handsome.projectnz.View.Home.RegisterActivity;
+import com.handsome.projectnz.View.Home.Statistics.AssignmentStatisticsActivity;
 import com.handsome.projectnz.View.Home.Statistics.InfoStatisticsActivity;
+import com.handsome.projectnz.View.Home.Statistics.MaterialStatisticsActivity;
 
 /**
  * Created by handsome on 2016/4/7.
@@ -53,12 +58,16 @@ public class HomeFragment extends BaseLazyFragment {
         iv_hard_statistics = findView(R.id.iv_hard_statistics);
         iv_material_statistics = findView(R.id.iv_material_statistics);
         iv_data_statistics = findView(R.id.iv_data_statistics);
+
     }
 
     @Override
     public void initListener() {
         iv_data_statistics.setOnClickListener(this);
         iv_material_statistics.setOnClickListener(this);
+        iv_hard_statistics.setOnClickListener(this);
+        iv_statistics_task.setOnClickListener(this);
+        iv_completion_test.setOnClickListener(this);
     }
 
     @Override
@@ -85,9 +94,20 @@ public class HomeFragment extends BaseLazyFragment {
                 startActivity(i);
                 break;
             case R.id.iv_material_statistics:
-                i=new Intent(getActivity(), StockOutputActivity.class);
+                i=new Intent(getActivity(), MaterialStatisticsActivity.class);
                 startActivity(i);
                 break;
+            case R.id.iv_hard_statistics:
+                i=new Intent(getActivity(), StockKeepActivity.class);
+                startActivity(i);
+                break;
+            case R.id.iv_statistics_task:
+                i=new Intent(getActivity(), AssignmentStatisticsActivity.class);
+                startActivity(i);
+                break;
+            case R.id.iv_completion_test:
+                i=new Intent(getActivity(), MaterialOutputRecordActivity.class);
+                startActivity(i);
         }
     }
 }

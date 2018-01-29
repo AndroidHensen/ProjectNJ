@@ -1,16 +1,16 @@
 package com.handsome.projectnz.Adapter.Home.MaterialHandling;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.handsome.projectnz.Adapter.Home.Statistics.InfoStatisticsAdapter;
 import com.handsome.projectnz.Module.Material;
-import com.handsome.projectnz.Module.Project;
 import com.handsome.projectnz.R;
+import com.handsome.projectnz.View.Home.MaterialHandling.StockOutputNewActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,10 +19,10 @@ import java.util.List;
  * Created by 柯东煜 on 2018/1/27.
  */
 
-public class MaterialAdapter extends BaseAdapter {
+public class MaterialOutputAdapter extends BaseAdapter {
     private List<Material> lists=new ArrayList<Material>();
     private Context context;
-    public MaterialAdapter(Context context, List<Material> lists ){
+    public MaterialOutputAdapter(Context context, List<Material> lists ){
         this.context=context;
         this.lists= lists;
     }
@@ -42,10 +42,10 @@ public class MaterialAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         ViewHolder holder = null;
         if(convertView == null){
-            convertView = LayoutInflater.from(context).inflate(R.layout.adapter_material,null,false);
+            convertView = LayoutInflater.from(context).inflate(R.layout.adapter_material_output,null,false);
             holder = new ViewHolder();
             holder.tv_material_name = (TextView) convertView.findViewById(R.id.material_name);
             holder.tv_material_type=(TextView)convertView.findViewById(R.id.material_type);
@@ -64,6 +64,14 @@ public class MaterialAdapter extends BaseAdapter {
         holder.tv_material_input.setText(lists.get(position).getInputCount()+"");
         holder.tv_material_ouput.setText(lists.get(position).getOutputCount()+"");
         holder.tv_material_add.setText(lists.get(position).getKeepCount()+"");
+        holder.tv_material_new.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(context, StockOutputNewActivity.class);
+                i.putExtra("material",lists.get(position));
+                context.startActivity(i);
+            }
+        });
         return convertView;
     }
 

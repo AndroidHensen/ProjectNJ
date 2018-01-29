@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.Home.SignMeritActivity">
+        <activity android:name=".View.Main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,8 +39,16 @@
         <activity android:name=".View.Mine.MineCompanyInfo" />
         <activity android:name=".View.Mine.MineCompanyInfoCorrect" />
         <activity android:name=".View.Home.MaterialHandling.StockOutputActivity" />
-        <activity android:name=".View.Home.PlanStaffRosterActivity" />
-        <activity android:name=".View.Main.MainActivity"/>
+        <activity android:name=".View.Home.MaterialHandling.StockOutputNewActivity" />
+        <activity android:name=".View.Home.MaterialHandling.StockKeepActivity" />
+        <activity android:name=".View.Home.MaterialHandling.MaterialStreamActivity" />
+        <activity android:name=".View.Home.MaterialHandling.MaterialEditActivity" />
+        <activity android:name=".View.Home.MaterialHandling.MaterialInputRecordActivity" />
+        <activity android:name=".View.Home.MaterialHandling.MaterialInputRecordDetailActivity" />
+        <activity android:name=".View.Home.MaterialHandling.MaterialOutputRecordActivity" />
+        <activity android:name=".View.Home.MaterialHandling.MaterialOutputRecordDetailActivity" />
+        <activity android:name=".View.Home.Statistics.MaterialStatisticsActivity" />
+        <activity android:name=".View.Home.Statistics.AssignmentStatisticsActivity"></activity>
     </application>
 
 </manifest>

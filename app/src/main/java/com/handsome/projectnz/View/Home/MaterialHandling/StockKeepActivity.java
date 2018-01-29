@@ -3,22 +3,19 @@ package com.handsome.projectnz.View.Home.MaterialHandling;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
 import com.handsome.projectnz.Adapter.MainAdapter;
-import com.handsome.projectnz.CustomView.MessageTabButton;
+import com.handsome.projectnz.Fragment.Home.MaterialHandling.MaterialKeepArmourFragment;
+import com.handsome.projectnz.Fragment.Home.MaterialHandling.MaterialKeepPrimeFragment;
+import com.handsome.projectnz.Fragment.Home.MaterialHandling.MaterialKeepProprietorSupplyFragment;
+import com.handsome.projectnz.Fragment.Home.MaterialHandling.MaterialKeepPurchaseFragment;
 import com.handsome.projectnz.Fragment.Home.MaterialHandling.MaterialOutputArmourFragment;
 import com.handsome.projectnz.Fragment.Home.MaterialHandling.MaterialOutputPrimeFragment;
 import com.handsome.projectnz.Fragment.Home.MaterialHandling.MaterialOutputProprietorSupplyFragment;
 import com.handsome.projectnz.Fragment.Home.MaterialHandling.MaterialOutputPurchaseFragment;
-import com.handsome.projectnz.Fragment.Message.MessageAssignmentFragment;
-import com.handsome.projectnz.Fragment.Message.MessageCompanyNoticeFragment;
-import com.handsome.projectnz.Fragment.Message.MessageOfficeFragment;
-import com.handsome.projectnz.Fragment.Message.MessageSystemFragment;
 import com.handsome.projectnz.R;
 
 import java.util.ArrayList;
@@ -28,7 +25,7 @@ import java.util.List;
  * Create By Diko （柯东煜） in 2018.1.27
  *
  */
-public class StockOutputActivity extends BaseActivity implements ViewPager.OnPageChangeListener{
+public class StockKeepActivity extends BaseActivity implements ViewPager.OnPageChangeListener{
     //甲供材，初期，业主供材，自购
     private TextView tv_armour,tv_prime,tv_proprietor_supply,tv_purchase;
     private ViewPager vp;//材料清单
@@ -59,8 +56,7 @@ public class StockOutputActivity extends BaseActivity implements ViewPager.OnPag
 
     @Override
     public void initData() {
-        setTitle("出库：选择物资");
-        setEdit2("新建");
+        setTitle("物资库存");
         setTitleCanBack();
         //初始化碎片
         initFragments();
@@ -93,10 +89,10 @@ public class StockOutputActivity extends BaseActivity implements ViewPager.OnPag
      */
     private void initFragments() {
         list = new ArrayList<>();
-        list.add(new MaterialOutputPrimeFragment());
-        list.add(new MaterialOutputArmourFragment());
-        list.add(new MaterialOutputProprietorSupplyFragment());
-        list.add(new MaterialOutputPurchaseFragment());
+        list.add(new MaterialKeepPrimeFragment());
+        list.add(new MaterialKeepArmourFragment());
+        list.add(new MaterialKeepProprietorSupplyFragment());
+        list.add(new MaterialKeepPurchaseFragment());
         adapter = new MainAdapter(getSupportFragmentManager(), list);
         vp.setAdapter(adapter);
         selectPager(0);
