@@ -7,15 +7,15 @@ import android.view.View;
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
 import com.handsome.projectnz.R;
 /**
- * Created by YX_PC on 2018/1/27.
- * 界面：工作台_计划详情_人员名册
+ * Created by YX_PC on 2018/1/29.
+ * 界面：工作台_签到记功_用工名册
  */
-public class PlanStaffRosterActivity extends BaseActivity {
+public class RegisterLabourActivity extends BaseActivity {
 
 
     @Override
     public int getLayoutId() {
-        return R.layout.activity_plan_staff_roster;
+        return R.layout.activity_register_labour;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class PlanStaffRosterActivity extends BaseActivity {
 
     @Override
     public void initData() {
-        setTitle("人员名册");
+        setTitle("用工名册");
         setTitleCanBack();
     }
 
