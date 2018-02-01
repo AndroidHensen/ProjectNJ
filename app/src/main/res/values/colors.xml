@@ -13,4 +13,7 @@
     <!--标题蓝-->
     <color name="blue">#3F51B5</color>
     <color name="red" >#ff0000</color>
+
+    <color name="orange"> #ED5805</color>
+
 </resources>

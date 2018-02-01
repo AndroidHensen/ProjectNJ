@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryBackGroup"
     android:orientation="vertical"
-    tools:context="com.handsome.projectnz.View.Home.PlanMakeActivity">
+    tools:context="com.handsome.projectnz.View.Home.PlanDetails.PlanMakeActivity">
 
     <include layout="@layout/include_common_header" />
 

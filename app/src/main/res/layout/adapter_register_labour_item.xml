@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.handsome.projectnz.View.Home.PlanStaffRosterActivity">
+    tools:context="com.handsome.projectnz.View.Home.PlanDetails.PlanStaffRosterActivity">
 
 
     <LinearLayout

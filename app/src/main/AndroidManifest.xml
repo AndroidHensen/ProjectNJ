@@ -16,12 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- <activity android:name=".View.Home.OptionProjectActivity" /> -->
-        <!-- <activity android:name=".View.Home.OptionProjectActivity" /> -->
-        <activity android:name=".View.Home.WorkReportActivity" />
-        <activity android:name=".View.Home.LoginActivity" />
-        <activity android:name=".View.Home.RegisterActivity" />
-        <activity android:name=".View.Home.ReturnProjectTaskActivity" />
+        <activity android:name=".View.Home.DailyCheck.DailyCheckCharacterActivity" />
+        <activity android:name=".View.Home.DailyCheck.DailyCheckNewActivity" />
+        <activity android:name=".View.Home.DailyCheck.DailyCheckActivity" />
+        <activity android:name=".View.Home.QualityCheck.QualityCheckActivity" />
+        <activity android:name=".View.Home.QualityCheck.QualityCheckCharacterActivity" />
+        <activity android:name=".View.Home.QualityCheck.QualityCheckAlreadyActivity" />
+        <activity android:name=".View.Home.QualityCheck.QualityCheckNewActivity" />
+        <activity android:name=".View.Home.SecurityCheck.SecurityCheckNewActivity" />
+        <activity android:name=".View.Home.SecurityCheck.SecurityCheckAlreadyActivity" />
+        <activity android:name=".View.Home.SecurityCheck.SecurityCheckCharacterActivity" />
+        <activity android:name=".View.Home.SecurityCheck.SecurityCheckActivity" />
+        <activity android:name=".View.Home.PlanProgress.PlanProgressActivity" />
+        <activity android:name=".View.Home.WorkReport.WorkReportActivity" />
+        <activity android:name=".View.Home.Login.LoginActivity" />
+        <activity android:name=".View.Home.Register.RegisterActivity" />
+        <activity android:name=".View.Home.WorkTask.WorkTaskProject.ReturnProjectTaskActivity" />
         <activity android:name=".View.Project.ProjectNewActivity" />
         <activity android:name=".View.Project.ProjectSumActivity" />
         <activity android:name=".View.Project.ProjectFileActivity" />
@@ -29,8 +39,8 @@
         <activity android:name=".View.Project.ProjectUpdateActivity" />
         <activity android:name=".View.Mine.MineSetting" />
         <activity android:name=".View.Mine.MineFeedback" />
-        <activity android:name=".View.Home.WorkTaskProjectAcceptActivity" />
-        <activity android:name=".View.Home.WorkTaskNewActivity" />
+        <activity android:name=".View.Home.WorkTask.WorkTaskProject.WorkTaskProjectAcceptActivity" />
+        <activity android:name=".View.Home.WorkTask.WorkTaskNewActivity" />
         <activity android:name=".View.Mine.MineCompanyInfoEmployee" />
         <activity android:name=".View.Home.Statistics.InfoStatisticsActivity" />
         <activity android:name=".View.Home.Statistics.InfoStatisticsDownloadActivity" />

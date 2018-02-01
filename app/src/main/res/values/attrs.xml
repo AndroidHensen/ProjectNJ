@@ -56,4 +56,8 @@
         <attr name="stream_belong_project" format="string"/>
         <attr name="stream_count" format="integer"/>
     </declare-styleable>
+    <declare-styleable name="PlanProgressTabButton">
+        <attr name="Plan_explain" format="string" />
+        <attr name="Plan_number" format="integer" />
+    </declare-styleable>
 </resources>

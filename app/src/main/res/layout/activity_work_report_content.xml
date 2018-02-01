@@ -192,11 +192,13 @@
     </ScrollView>
 
     <LinearLayout
-        android:layout_above="@id/bottom"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom">
+
         <include layout="@layout/include_common_split_line_hor" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/bottom"
         android:layout_width="match_parent"
