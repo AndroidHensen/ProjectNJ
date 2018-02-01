@@ -1,4 +1,4 @@
-package com.handsome.projectnz.Adapter;
+package com.handsome.projectnz.Adapter.Home.WorkTask;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,7 +8,6 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.handsome.projectnz.Module.WorkTaskOfficialMessage;
-import com.handsome.projectnz.Module.WorkTaskProjectMessage;
 import com.handsome.projectnz.R;
 
 import java.util.ArrayList;

@@ -4,8 +4,8 @@ import android.view.View;
 import android.widget.ListView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseLazyFragment;
-import com.handsome.projectnz.Adapter.WorkTaskOfficialAdapter;
-import com.handsome.projectnz.Adapter.WorkTaskProjectAdapter;
+import com.handsome.projectnz.Adapter.Home.WorkTask.WorkTaskOfficialAdapter;
+import com.handsome.projectnz.Adapter.Home.WorkTask.WorkTaskProjectAdapter;
 import com.handsome.projectnz.Module.WorkTaskOfficialMessage;
 import com.handsome.projectnz.Module.WorkTaskProjectMessage;
 import com.handsome.projectnz.R;

@@ -4,7 +4,7 @@ import android.view.View;
 import android.widget.ListView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
-import com.handsome.projectnz.Adapter.AnnouncementsAdapter;
+import com.handsome.projectnz.Adapter.Home.Announcements.AnnouncementsAdapter;
 import com.handsome.projectnz.Module.Announcements;
 import com.handsome.projectnz.R;
 

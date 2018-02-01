@@ -3,11 +3,10 @@ package com.handsome.projectnz.View.Home.AnnouncementsCompany;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
-import com.handsome.projectnz.Adapter.AnnouncementsDetailAdapter;
+import com.handsome.projectnz.Adapter.Home.Announcements.AnnouncementsDetailAdapter;
 import com.handsome.projectnz.R;
 
 import java.util.ArrayList;

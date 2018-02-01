@@ -1,4 +1,4 @@
-package com.handsome.projectnz.Adapter;
+package com.handsome.projectnz.Adapter.Home.Announcements;
 
 import android.content.Context;
 import android.view.LayoutInflater;
