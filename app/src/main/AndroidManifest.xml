@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".View.Home.DailyCheck.DailyCheckCharacterActivity" />
         <activity android:name=".View.Home.DailyCheck.DailyCheckNewActivity" />
+        <activity android:name=".View.Home.DailyCheck.DailyCheckAlreadyActivity" />
+        <!--<activity android:name=".View.Home.DailyCheck.DailyCheckAlreadyActivity" />-->
         <activity android:name=".View.Home.DailyCheck.DailyCheckActivity" />
         <activity android:name=".View.Home.QualityCheck.QualityCheckActivity" />
         <activity android:name=".View.Home.QualityCheck.QualityCheckCharacterActivity" />

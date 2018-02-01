@@ -1,6 +1,7 @@
 package com.handsome.projectnz.View.Home.DailyCheck;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.support.annotation.IdRes;
 import android.text.InputType;
 import android.util.Log;
@@ -106,6 +107,7 @@ public class DailyCheckNewActivity extends BaseActivity {
         et_time.setOnClickListener(new myonclistener());
         ibtn_add_man.setOnClickListener(this);
         btn_commit.setOnClickListener(this);
+        ib_right.setOnClickListener(this);
         radiogroup.setOnCheckedChangeListener(new myoncheckchagelistener());
     }
 
@@ -113,10 +115,12 @@ public class DailyCheckNewActivity extends BaseActivity {
     public void initData() {
         setTitle("新增日常巡查");
         setTitleCanBack();
-//        Intent intent = getIntent();
-//        Myarray = intent.getStringArrayListExtra("myArray");
-//        Log.d(TAG, "initData: " + Myarray);
-//        init_linearlayout_add();
+        Intent intent = getIntent();
+        Myarray = intent.getStringArrayListExtra("myArray");
+        if (Myarray!=null){
+            Log.d(TAG, "initData: " + Myarray);
+            init_linearlayout_add();
+        }
     }
 
     @Override
@@ -127,6 +131,11 @@ public class DailyCheckNewActivity extends BaseActivity {
                 break;
             case R.id.btn_commit:
                 commit();
+                break;
+            case R.id.ib_right:
+                Intent intent1 = new Intent(DailyCheckNewActivity.this, DailyCheckCharacterActivity.class);
+                startActivity(intent1);
+                finish();
                 break;
             default:
                 break;

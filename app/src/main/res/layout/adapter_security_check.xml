@@ -55,7 +55,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="6dp"
             android:paddingTop="6dp">
 
             <TextView
@@ -74,6 +73,7 @@
                 android:textSize="16sp" />
 
             <Button
+                android:gravity="center_vertical"
                 android:id="@+id/btn_check"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -105,34 +105,36 @@
 
             <TextView
                 android:id="@+id/tv_man"
-                android:layout_toRightOf="@id/tv_manager"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_manager"
                 android:text="xxx"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/tv_kind"
-                android:layout_toRightOf="@id/tv_man"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/tv_man"
                 android:text="工程类别："
                 android:textSize="16sp" />
 
             <TextView
-                android:layout_toRightOf="@id/tv_kind"
+                android:id="@+id/tv_kind_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_kind"
                 android:text="土建"
                 android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/tv_detail"
-                android:text="查看详情>>"
-                android:textSize="16sp"
-                android:layout_alignParentRight="true"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="查看详情>>"
+                android:textSize="16sp" />
         </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

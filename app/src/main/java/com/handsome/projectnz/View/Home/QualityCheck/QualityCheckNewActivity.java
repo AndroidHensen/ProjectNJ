@@ -93,6 +93,7 @@ public class QualityCheckNewActivity extends BaseActivity {
     public void initListener() {
         et_time.setOnFocusChangeListener(new myOnfocusChangeListener());
         et_time.setOnClickListener(new myonclistener());
+        ib_right.setOnClickListener(this);
     }
 
     @Override
@@ -101,14 +102,27 @@ public class QualityCheckNewActivity extends BaseActivity {
         setTitleCanBack();
         Intent intent = getIntent();
         Myarray = intent.getStringArrayListExtra("myArray");
-        Log.d(TAG, "initData: " + Myarray);
-        init_linearlayout_add();
+        if (Myarray!=null){
+            Log.d(TAG, "initData: " + Myarray);
+            init_linearlayout_add();
+        }
     }
 
     @Override
     public void processClick(View v) {
-
+        switch (v.getId()) {
+            case R.id.ib_right:
+                Intent intent1 = new Intent(QualityCheckNewActivity.this, QualityCheckCharacterActivity.class);
+                startActivity(intent1);
+                finish();
+                break;
+            default:
+                break;
+        }
     }
+    /*
+    时间选择器的监听内部类
+    * */
     private class myOnfocusChangeListener implements View.OnFocusChangeListener {
         @Override
         public void onFocusChange(View v, boolean hasFocus) {
@@ -134,6 +148,7 @@ public class QualityCheckNewActivity extends BaseActivity {
 
     }
 
+    /*监听点击时间选择器*/
     private class myonclistener implements View.OnClickListener {
         @Override
         public void onClick(View v) {

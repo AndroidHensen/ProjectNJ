@@ -98,10 +98,11 @@ public class DailyCheckCharacterActivity extends BaseActivity {
                 add_view(v);
                 break;
             case R.id.tv_edit2:
-                Intent intent = new Intent(DailyCheckCharacterActivity.this, QualityCheckNewActivity.class);
+                Intent intent = new Intent(DailyCheckCharacterActivity.this, DailyCheckNewActivity.class);
                 intent.putStringArrayListExtra("myArray", (ArrayList<String>) myList);
                 Log.d(TAG, "processClick: " + myList);
                 startActivity(intent);
+                finish();
                 break;
             default:
                 break;

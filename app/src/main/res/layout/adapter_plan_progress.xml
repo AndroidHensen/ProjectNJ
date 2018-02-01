@@ -12,17 +12,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3">
             <TextView
+                android:id="@+id/tv_work_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="工单内容"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -35,16 +37,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="任务类型："
-                android:textSize="16sp" />
+                android:textSize="14sp" />
             <TextView
+                android:id="@+id/tv_task_kind"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="建造"
-                android:textSize="16sp"/>
+                android:textSize="14sp"/>
         </LinearLayout>
 
     </LinearLayout>
     <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -53,12 +58,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="负责人："
-            android:textSize="16sp" />
+            android:textSize="14sp" />
         <TextView
+            android:id="@+id/tv_manger"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1028"
-            android:textSize="16sp"/>
+            android:textSize="14sp"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -66,19 +72,17 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3">
             <TextView
+                android:id="@+id/tv_start_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="验收日期："
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2017-12-8"
-                android:textSize="16sp" />
+                android:text="验收日期：2017-12-8"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -88,15 +92,12 @@
 
 
             <TextView
+                android:id="@+id/tv_delay_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="验收不通过："
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="20天"
-                android:textSize="16sp"/>
+                android:text="验收不通过：20天"
+                android:textSize="14sp" />
+
         </LinearLayout>
 
     </LinearLayout>
@@ -106,6 +107,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:layout_marginTop="3dp"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3">
@@ -113,22 +115,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="工作量："
-                android:textSize="16sp" />
+                android:textSize="14sp" />
             <TextView
+                android:id="@+id/tv_workload"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="------"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
             <TextView
+                android:layout_marginLeft="4dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="进度："
-                android:textSize="16sp" />
+                android:textSize="14sp" />
             <TextView
+                android:id="@+id/tv_progress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="10%"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -138,22 +143,12 @@
 
 
             <TextView
+                android:id="@+id/tv_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="超期："
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="20天"
-                android:textSize="16sp"/>
+                android:text="超期：20天"
+                android:textSize="14sp" />
         </LinearLayout>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="6dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <include layout="@layout/include_common_split_line_hor"/>
     </LinearLayout>
 </LinearLayout>

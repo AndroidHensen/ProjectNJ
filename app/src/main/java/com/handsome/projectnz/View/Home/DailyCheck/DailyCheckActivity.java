@@ -1,8 +1,10 @@
 package com.handsome.projectnz.View.Home.DailyCheck;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
@@ -20,6 +22,7 @@ import java.util.ArrayList;
 public class DailyCheckActivity extends BaseActivity implements ViewPager.OnPageChangeListener{
     private TextView tv_inform;//通知情况
     private TextView tv_revices;//整改情况
+    private ImageButton btn_add;//新增巡检情况
     private ViewPager vp_daily_check;
     private ArrayList<Fragment> list;
     private MainAdapter adapter;
@@ -32,11 +35,13 @@ public class DailyCheckActivity extends BaseActivity implements ViewPager.OnPage
     public void initViews() {
         tv_inform = findView(R.id.tv_inform);
         tv_revices = findView(R.id.tv_revices);
+        btn_add = findView(R.id.btn_add);
         vp_daily_check = findView(R.id.vp_daily_check);
     }
 
     @Override
     public void initListener() {
+        btn_add.setOnClickListener(this);
         setOnClick(tv_inform);
         setOnClick(tv_revices);
         vp_daily_check.setOnPageChangeListener(this);
@@ -81,6 +86,12 @@ public class DailyCheckActivity extends BaseActivity implements ViewPager.OnPage
                 break;
             case R.id.tv_revices:
                 selectPager(1);
+                break;
+            case R.id.btn_add:
+                Intent intent = new Intent(DailyCheckActivity.this, DailyCheckNewActivity.class);
+                startActivity(intent);
+                break;
+            default:
                 break;
         }
     }

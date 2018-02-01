@@ -103,6 +103,7 @@ public class SecurityCheckCharacterActivity extends BaseActivity {
                 intent.putStringArrayListExtra("myArray", (ArrayList<String>) myList);
                 Log.d(TAG, "processClick: "+myList);
                 startActivity(intent);
+                finish();
                 break;
             default:
                 break;

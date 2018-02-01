@@ -16,6 +16,8 @@ import android.widget.TextView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
 import com.handsome.projectnz.R;
+import com.handsome.projectnz.View.Home.QualityCheck.QualityCheckCharacterActivity;
+import com.handsome.projectnz.View.Home.QualityCheck.QualityCheckNewActivity;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -95,6 +97,7 @@ public class SecurityCheckNewActivity extends BaseActivity {
     public void initListener() {
         et_time.setOnFocusChangeListener(new myOnfocusChangeListener());
         et_time.setOnClickListener(new myonclistener());
+        ib_right.setOnClickListener(this);
     }
 
     @Override
@@ -103,13 +106,24 @@ public class SecurityCheckNewActivity extends BaseActivity {
         setTitleCanBack();
         Intent intent = getIntent();
         Myarray = intent.getStringArrayListExtra("myArray");
-        Log.d(TAG, "initData: " + Myarray);
-        init_linearlayout_add();
+        if (Myarray!=null){
+            Log.d(TAG, "initData: " + Myarray);
+            init_linearlayout_add();
+        }
+
     }
 
     @Override
     public void processClick(View v) {
-
+        switch (v.getId()){
+            case R.id.ib_right:
+                Intent intent1 = new Intent(SecurityCheckNewActivity.this, SecurityCheckCharacterActivity.class);
+                startActivity(intent1);
+                finish();
+                break;
+            default:
+                break;
+        }
     }
 
     private class myOnfocusChangeListener implements View.OnFocusChangeListener {
