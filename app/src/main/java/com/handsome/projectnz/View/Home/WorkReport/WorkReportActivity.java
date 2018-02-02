@@ -1,10 +1,12 @@
 package com.handsome.projectnz.View.Home.WorkReport;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
 import com.handsome.projectnz.Adapter.MainAdapter;
@@ -24,6 +26,7 @@ public class WorkReportActivity extends BaseActivity implements ViewPager.OnPage
     private ViewPager vp_work_report;
     private ArrayList<Fragment> list;
     private MainAdapter adapter;
+    private ImageButton ib_add;//添加工作汇报新建
 
     @Override
     public int getLayoutId() {
@@ -35,10 +38,12 @@ public class WorkReportActivity extends BaseActivity implements ViewPager.OnPage
         btn_receive = findView(R.id.btn_receive);
         btn_submit = findView(R.id.btn_submit);
         vp_work_report = findView(R.id.vp_work_report);
+        ib_add = findView(R.id.ib_add);
     }
 
     @Override
     public void initListener() {
+        ib_add.setOnClickListener(this);
         setOnClick(btn_receive);
         setOnClick(btn_submit);
         vp_work_report.setOnPageChangeListener(this);
@@ -66,15 +71,15 @@ public class WorkReportActivity extends BaseActivity implements ViewPager.OnPage
     public void selectPager(int position) {
         vp_work_report.setCurrentItem(position);
         if (position == 0) {
-            btn_receive.setBackgroundColor(Color.WHITE);
-            btn_receive.setTextColor(Color.parseColor("#3F51B5"));
-            btn_submit.setBackgroundColor(Color.parseColor("#3F51B5"));
-            btn_submit.setTextColor(Color.WHITE);
+            btn_receive.setBackgroundColor(getResources().getColor(R.color.colorWhite));
+            btn_receive.setTextColor(getResources().getColor(R.color.colorPrimary));
+            btn_submit.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            btn_submit.setTextColor(getResources().getColor(R.color.white));
         } else {
-            btn_receive.setBackgroundColor(Color.parseColor("#3F51B5"));
-            btn_receive.setTextColor(Color.WHITE);
-            btn_submit.setBackgroundColor(Color.WHITE);
-            btn_submit.setTextColor(Color.parseColor("#3F51B5"));
+            btn_submit.setBackgroundColor(getResources().getColor(R.color.colorWhite));
+            btn_submit.setTextColor(getResources().getColor(R.color.colorPrimary));
+            btn_receive.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            btn_receive.setTextColor(getResources().getColor(R.color.white));
         }
     }
 
@@ -86,6 +91,12 @@ public class WorkReportActivity extends BaseActivity implements ViewPager.OnPage
                 break;
             case R.id.btn_submit:
                 selectPager(1);
+                break;
+            case R.id.ib_add:
+                Intent intent = new Intent(WorkReportActivity.this, WorkReportNewActivity.class);
+                startActivity(intent);
+                break;
+            default:
                 break;
         }
     }
@@ -99,15 +110,15 @@ public class WorkReportActivity extends BaseActivity implements ViewPager.OnPage
     public void onPageSelected(int position) {
         vp_work_report.setCurrentItem(position);
         if (position == 0) {
-            btn_receive.setBackgroundColor(Color.WHITE);
-            btn_receive.setTextColor(Color.parseColor("#3F51B5"));
-            btn_submit.setBackgroundColor(Color.parseColor("#3F51B5"));
-            btn_submit.setTextColor(Color.WHITE);
+            btn_receive.setBackgroundColor(getResources().getColor(R.color.colorWhite));
+            btn_receive.setTextColor(getResources().getColor(R.color.colorPrimary));
+            btn_submit.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            btn_submit.setTextColor(getResources().getColor(R.color.white));
         } else {
-            btn_receive.setBackgroundColor(Color.parseColor("#3F51B5"));
-            btn_receive.setTextColor(Color.WHITE);
-            btn_submit.setBackgroundColor(Color.WHITE);
-            btn_submit.setTextColor(Color.parseColor("#3F51B5"));
+            btn_submit.setBackgroundColor(getResources().getColor(R.color.colorWhite));
+            btn_submit.setTextColor(getResources().getColor(R.color.colorPrimary));
+            btn_receive.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            btn_receive.setTextColor(getResources().getColor(R.color.white));
         }
     }
 

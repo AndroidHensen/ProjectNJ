@@ -27,28 +27,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="项目编号："
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/tv_itme_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="XNC1344"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:text="工期："
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/tv_work_day"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="20天"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </LinearLayout>
 
         <RelativeLayout
@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="项目名称："
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/tv_name"
@@ -70,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/tv_item_name"
                 android:text="项目一"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <Button
                 android:gravity="center_vertical"
@@ -101,7 +101,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="负责人："
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/tv_man"
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/tv_manager"
                 android:text="xxx"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/tv_kind"
@@ -118,7 +118,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_toRightOf="@id/tv_man"
                 android:text="工程类别："
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/tv_kind_name"
@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/tv_kind"
                 android:text="土建"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/tv_detail"
@@ -134,7 +134,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="查看详情>>"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

@@ -1,6 +1,8 @@
 package com.handsome.projectnz.Adapter.Home.Announcements;
 
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +12,8 @@ import android.widget.TextView;
 import com.handsome.projectnz.Module.Announcements;
 import com.handsome.projectnz.Module.Message;
 import com.handsome.projectnz.R;
+import com.handsome.projectnz.View.Home.AnnouncementsCompany.AnnouncementsCompanyActivity;
+import com.handsome.projectnz.View.Home.AnnouncementsCompany.AnnouncementsDetailActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,7 +51,7 @@ public class AnnouncementsAdapter extends BaseAdapter {
             convertView = LayoutInflater.from(context).inflate(R.layout.view_announcements_company,null,false);
             holder = new ViewHolder();
             holder.tv_title = (TextView) convertView.findViewById(R.id.tv_announcements_title);
-            holder.tv_read_state = (TextView) convertView.findViewById(R.id.tv_announcements_title);
+            holder.tv_read_state = (TextView) convertView.findViewById(R.id.tv_announcements_state);
             holder.tv_content = (TextView) convertView.findViewById(R.id.announcements_content);
             holder.tv_data = (TextView) convertView.findViewById(R.id.tv_announcements_data);
             holder.tv_operation = (TextView) convertView.findViewById(R.id.tv_announcements_operation);
@@ -57,14 +61,23 @@ public class AnnouncementsAdapter extends BaseAdapter {
         }
         holder.tv_title.setText(lists.get(position).getTitle());
         if(lists.get(position).isRead_state()){
-            holder.tv_read_state.setBackground(context.getResources().getDrawable(R.drawable.message_content_grey_circle_shape));
+            Drawable gray = context.getResources().getDrawable(R.drawable.message_content_grey_circle_shape);
+            holder.tv_read_state.setBackground(gray);
         }
         else{
-            holder.tv_read_state.setBackground(context.getResources().getDrawable(R.drawable.message_content_red_circle_shape));
+            Drawable red = context.getResources().getDrawable(R.drawable.message_content_red_circle_shape);
+            holder.tv_read_state.setBackground(red);
         }
         holder.tv_content.setText(lists.get(position).getContent());
         holder.tv_data.setText(lists.get(position).getData());
         holder.tv_operation.setText(lists.get(position).getOperation());
+        holder.tv_operation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, AnnouncementsDetailActivity.class);
+                context.startActivity(intent);
+            }
+        });
         return convertView;
     }
 

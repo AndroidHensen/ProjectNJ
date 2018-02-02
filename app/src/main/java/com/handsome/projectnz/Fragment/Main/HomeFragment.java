@@ -8,6 +8,7 @@ import com.handsome.module_engine.E.BaseTemplate.BaseLazyFragment;
 import com.handsome.projectnz.CustomView.WorkbenchContent;
 import com.handsome.projectnz.Module.DailyCheck;
 import com.handsome.projectnz.R;
+import com.handsome.projectnz.View.Home.AnnouncementsCompany.AnnouncementsCompanyActivity;
 import com.handsome.projectnz.View.Home.DailyCheck.DailyCheckActivity;
 import com.handsome.projectnz.View.Home.Login.LoginActivity;
 import com.handsome.projectnz.View.Home.MaterialHandling.MaterialOutputRecordActivity;
@@ -19,6 +20,7 @@ import com.handsome.projectnz.View.Home.SecurityCheck.SecurityCheckActivity;
 import com.handsome.projectnz.View.Home.Statistics.AssignmentStatisticsActivity;
 import com.handsome.projectnz.View.Home.Statistics.InfoStatisticsActivity;
 import com.handsome.projectnz.View.Home.Statistics.MaterialStatisticsActivity;
+import com.handsome.projectnz.View.Home.WorkReport.WorkReportActivity;
 
 /**
  * Created by handsome on 2016/4/7.
@@ -39,7 +41,7 @@ public class HomeFragment extends BaseLazyFragment {
     private ImageView iv_hard_statistics;//用工统计
     private ImageView iv_material_statistics;//物资统计
     private ImageView iv_data_statistics;//资料统计
-    private ImageView iv_daily_check;//资料统计
+    private ImageView iv_daily_check;//日常检查
     @Override
     public int getLayoutId() {
         return R.layout.fragment_home;
@@ -77,6 +79,8 @@ public class HomeFragment extends BaseLazyFragment {
         iv_quality_inspection.setOnClickListener(this);
         tv_security_check.setOnClickListener(this);
         iv_progress_plan.setOnClickListener(this);
+        iv_company_announcements.setOnClickListener(this);
+        iv_work_report.setOnClickListener(this);
     }
 
     @Override
@@ -132,6 +136,14 @@ public class HomeFragment extends BaseLazyFragment {
                 break;
             case R.id.iv_progress_plan:
                 i=new Intent(getActivity(),PlanProgressActivity.class);
+                startActivity(i);
+                break;
+            case R.id.iv_company_announcements:
+                i=new Intent(getActivity(), AnnouncementsCompanyActivity.class);
+                startActivity(i);
+                break;
+            case R.id.iv_work_report:
+                i=new Intent(getActivity(), WorkReportActivity.class);
                 startActivity(i);
                 break;
             default:

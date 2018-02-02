@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".View.Home.WorkReport.WorkReportContentAcitvity"/>
+        <activity android:name=".View.Home.WorkReport.WorkReportNewActivity"/>
+        <activity android:name=".View.Home.WorkReport.WorkReportActivity"/>
+        <activity android:name=".View.Home.AnnouncementsCompany.AnnouncementsDetailActivity"/>
+        <activity android:name=".View.Home.AnnouncementsCompany.AnnouncementsNewsActivity"/>
+        <activity android:name=".View.Home.AnnouncementsCompany.AnnouncementsCompanyActivity"/>
         <activity android:name=".View.Home.DailyCheck.DailyCheckCharacterActivity" />
         <activity android:name=".View.Home.DailyCheck.DailyCheckNewActivity" />
         <activity android:name=".View.Home.DailyCheck.DailyCheckAlreadyActivity" />

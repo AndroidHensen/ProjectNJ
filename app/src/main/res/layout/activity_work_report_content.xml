@@ -120,7 +120,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="办法卡咖啡就开始大举开始封"
+                android:text="办法卡咖啡就开始大举开始封adfadsfasdfadsfasdfadfasdfasdfasdfadsfadsfadsfad"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -133,6 +133,7 @@
             android:paddingTop="6dp">
 
             <TextView
+                android:textSize="16sp"
                 android:id="@+id/tv_photos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -212,6 +213,7 @@
 
 
         <EditText
+            android:maxLines="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
