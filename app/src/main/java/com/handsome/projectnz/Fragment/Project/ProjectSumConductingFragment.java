@@ -1,12 +1,15 @@
 package com.handsome.projectnz.Fragment.Project;
 
+import android.content.Intent;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseLazyFragment;
 import com.handsome.projectnz.Adapter.Project.ProjectSumAdapter;
 import com.handsome.projectnz.Module.Project;
 import com.handsome.projectnz.R;
+import com.handsome.projectnz.View.Project.ProjectDetailActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,6 +60,13 @@ public class ProjectSumConductingFragment extends BaseLazyFragment {
         lists.add(project1);
         adapter=new ProjectSumAdapter(getActivity(),lists);
         lv_project.setAdapter(adapter);
+        lv_project.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent i=new Intent(getActivity(), ProjectDetailActivity.class);
+                startActivity(i);
+            }
+        });
 
     }
 

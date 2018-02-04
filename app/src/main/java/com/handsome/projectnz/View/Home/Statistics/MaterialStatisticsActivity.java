@@ -94,6 +94,7 @@ public class MaterialStatisticsActivity extends BaseActivity implements ViewPage
         list.add(new MaterialStatisticsPurchaseFragment());
         adapter = new MainAdapter(getSupportFragmentManager(), list);
         vp.setAdapter(adapter);
+        vp.setOffscreenPageLimit(4);
         selectPager(0);
     }
     public void selectPager(int position){

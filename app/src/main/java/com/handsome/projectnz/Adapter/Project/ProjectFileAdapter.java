@@ -1,7 +1,9 @@
 package com.handsome.projectnz.Adapter.Project;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -10,6 +12,7 @@ import android.widget.TextView;
 
 import com.handsome.projectnz.Module.Project;
 import com.handsome.projectnz.R;
+import com.handsome.projectnz.View.Project.ProjectFileCollectActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,12 +23,14 @@ import java.util.List;
  */
 
 public class ProjectFileAdapter extends BaseAdapter {
-    private List<Project> lists=new ArrayList<>();
+    private List<Project> lists = new ArrayList<>();
     private Context context;
-    public ProjectFileAdapter(Context context, List<Project> lists){
-        this.context=context;
-        this.lists=lists;
+
+    public ProjectFileAdapter(Context context, List<Project> lists) {
+        this.context = context;
+        this.lists = lists;
     }
+
     @Override
     public int getCount() {
         return lists.size();
@@ -42,18 +47,18 @@ public class ProjectFileAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         ViewHolder holder = null;
-        if(convertView == null){
-            convertView = LayoutInflater.from(context).inflate(R.layout.adapter_project_file,null,false);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(context).inflate(R.layout.adapter_project_file, null, false);
             holder = new ViewHolder();
-            holder.tv_project_num=(TextView)convertView.findViewById(R.id.project_num);
-            holder.tv_project_name= (TextView) convertView.findViewById(R.id.project_name);
+            holder.tv_project_num = (TextView) convertView.findViewById(R.id.project_num);
+            holder.tv_project_name = (TextView) convertView.findViewById(R.id.project_name);
             holder.tv_project_manager = (TextView) convertView.findViewById(R.id.project_manager);
-            holder.tv_project_state=(TextView)convertView.findViewById(R.id.project_state);
-            holder.bn_project_file=(Button)convertView.findViewById(R.id.file);
+            holder.tv_project_state = (TextView) convertView.findViewById(R.id.project_state);
+            holder.bn_project_file = (Button) convertView.findViewById(R.id.file);
             convertView.setTag(holder);   //将Holder存储到convertView中
-        }else{
+        } else {
             holder = (ViewHolder) convertView.getTag();
         }
         //设置项目编号
@@ -63,18 +68,25 @@ public class ProjectFileAdapter extends BaseAdapter {
         //设置项目负责人，项目经理
         holder.tv_project_manager.setText(lists.get(position).getProjectManager());
         //设置项目进度
-        if(lists.get(position).getProjectProgress()==100){
+        if (lists.get(position).getProjectProgress() == 100) {
             holder.tv_project_state.setText("已完成");
             holder.bn_project_file.setVisibility(View.VISIBLE);
-        }
-        else{
+        } else {
             holder.tv_project_state.setText("正在进行中");
             holder.bn_project_file.setVisibility(View.INVISIBLE);
         }
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(context, ProjectFileCollectActivity.class);
+                i.putExtra("project", lists.get(position));
+                context.startActivity(i);
+            }
+        });
         return convertView;
     }
 
-    static class ViewHolder{
+    static class ViewHolder {
         TextView tv_project_num;//项目编号
         TextView tv_project_name;//项目名称
         TextView tv_project_manager;//项目经理

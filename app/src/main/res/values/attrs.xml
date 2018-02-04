@@ -40,6 +40,7 @@
     <declare-styleable name="ProjectBuilderView">
         <attr name="builder_name" format="string" />
         <attr name="builders_visible" format="boolean"/>
+        <attr name="add_visible" format="boolean"/>
     </declare-styleable>
     <declare-styleable name="HomeStatisticsInfoView">
         <attr name="info_name" format="string"/>
@@ -59,5 +60,9 @@
     <declare-styleable name="PlanProgressTabButton">
         <attr name="Plan_explain" format="string" />
         <attr name="Plan_number" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ProjectDataDownloadView">
+        <attr name="files_list_name" format="string"/>
+        <attr name="files_list_visible" format="boolean"/>
     </declare-styleable>
 </resources>

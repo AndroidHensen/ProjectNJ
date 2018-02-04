@@ -7,8 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.handsome.projectnz.Module.AssignmentRecord;
-import com.handsome.projectnz.Module.Project;
+import com.handsome.projectnz.Module.TaskRecord;
 import com.handsome.projectnz.R;
 
 import java.util.ArrayList;
@@ -19,12 +18,17 @@ import java.util.List;
  */
 
 public class AssignmentAdapter extends BaseAdapter {
-    private List<AssignmentRecord> lists=new ArrayList<AssignmentRecord>();
+    private List<TaskRecord> lists = new ArrayList<TaskRecord>();
     private Context context;
-    public AssignmentAdapter(Context context, List<AssignmentRecord> lists ){
-        this.context=context;
-        this.lists= lists;
+    public  int showType = 0;//显示类型 ，默认为0，0的话显示执行者，1的话显示安排者
+    static public int ARRANGE = 1;
+    static public int EXECUTE = 0;
+
+    public AssignmentAdapter(Context context, List<TaskRecord> lists) {
+        this.context = context;
+        this.lists = lists;
     }
+
     @Override
     public int getCount() {
         return lists.size();
@@ -43,32 +47,34 @@ public class AssignmentAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder = null;
-        if(convertView == null){
-            convertView = LayoutInflater.from(context).inflate(R.layout.adapter_assignment,null,false);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(context).inflate(R.layout.adapter_assignment, null, false);
             holder = new ViewHolder();
             holder.tv_assignment_type = (TextView) convertView.findViewById(R.id.assignment_type);
-            holder.tv_assignment_object=(TextView)convertView.findViewById(R.id.assignment_object);
-            holder.tv_assignment_sum=(TextView)convertView.findViewById(R.id.assignment_sum);
-            holder.tv_assignment_finish=(TextView)convertView.findViewById(R.id.assignment_finish);
+            holder.tv_assignment_object = (TextView) convertView.findViewById(R.id.assignment_object);
+            holder.tv_assignment_sum = (TextView) convertView.findViewById(R.id.assignment_sum);
+            holder.tv_assignment_finish = (TextView) convertView.findViewById(R.id.assignment_finish);
 
             convertView.setTag(holder);   //将Holder存储到convertView中
-        }else{
+        } else {
             holder = (ViewHolder) convertView.getTag();
         }
-        holder.tv_assignment_object.setText(lists.get(position).getAssignmentObject());
-        holder.tv_assignment_sum.setText(lists.get(position).getAssignmentCount()+"");
-        holder.tv_assignment_finish.setText(lists.get(position).getAssignmentFinish()+"");
-        if(lists.get(position).getAssignmentType()==AssignmentRecord.ARRANGE){
+        holder.tv_assignment_sum.setText(lists.get(position).getTaskCount() + "");
+        holder.tv_assignment_finish.setText(lists.get(position).getTaskFinish() + "");
+        if (showType == EXECUTE) {
             holder.tv_assignment_type.setText("执行人：");
-        }
-        else{
+            holder.tv_assignment_object.setText(lists.get(position).getTaskExecute());
+
+        } else {
             holder.tv_assignment_type.setText("安排人：");
+            holder.tv_assignment_object.setText(lists.get(position).getTaskArranger());
+
         }
 
         return convertView;
     }
 
-    static class ViewHolder{
+    static class ViewHolder {
         TextView tv_assignment_type;
         TextView tv_assignment_object;
         TextView tv_assignment_sum;

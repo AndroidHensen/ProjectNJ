@@ -28,6 +28,16 @@ public class MaterialOutputPrimeFragment extends BaseLazyFragment {
     @Override
     public void initViews() {
         lv = findView(R.id.message_notice_lv);
+
+    }
+
+    @Override
+    public void initListener() {
+
+    }
+
+    @Override
+    public void initData() {
         List<Material> lists = new ArrayList<>();
         Material material=new Material();
         material.setName("电表v1");
@@ -90,16 +100,6 @@ public class MaterialOutputPrimeFragment extends BaseLazyFragment {
 
         mAdapter = new MaterialOutputAdapter(getActivity(), lists);
         lv.setAdapter(mAdapter);
-    }
-
-    @Override
-    public void initListener() {
-
-    }
-
-    @Override
-    public void initData() {
-
     }
 
     @Override

@@ -95,6 +95,7 @@ public class StockKeepActivity extends BaseActivity implements ViewPager.OnPageC
         list.add(new MaterialKeepPurchaseFragment());
         adapter = new MainAdapter(getSupportFragmentManager(), list);
         vp.setAdapter(adapter);
+        vp.setOffscreenPageLimit(4);
         selectPager(0);
     }
     public void selectPager(int position){

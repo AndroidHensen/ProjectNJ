@@ -33,6 +33,16 @@ public class MaterialKeepPrimeFragment extends BaseLazyFragment {
     @Override
     public void initViews() {
         lv = findView(R.id.message_notice_lv);
+
+    }
+
+    @Override
+    public void initListener() {
+
+    }
+
+    @Override
+    public void initData() {
         lists = new ArrayList<>();
         Material material = new Material();
         material.setName("电表v1");
@@ -98,15 +108,6 @@ public class MaterialKeepPrimeFragment extends BaseLazyFragment {
 
         mAdapter = new MaterialKeepAdapter(getActivity(), lists);
         lv.setAdapter(mAdapter);
-    }
-
-    @Override
-    public void initListener() {
-
-    }
-
-    @Override
-    public void initData() {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

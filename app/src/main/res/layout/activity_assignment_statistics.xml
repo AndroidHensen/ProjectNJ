@@ -57,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:id="@+id/assignment_execute_text"
                 android:gravity="center"
-                android:text="我安排的"
+                android:text="我执行的"
                 android:textSize="10sp"
                 android:textColor="@color/gray"
                 android:layout_height="wrap_content" />

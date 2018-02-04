@@ -31,6 +31,7 @@ public class ProjectBuilderView extends LinearLayout{
 
     private String builderName;//文件清单名
     private Boolean buildersVisible;//文件清单是否可见
+    private Boolean addVisible;//是否可添加
     private List<Employee> lists;
 
     public ProjectBuilderView(Context context) {
@@ -53,6 +54,7 @@ public class ProjectBuilderView extends LinearLayout{
 
     public void initAttrs(Context context, AttributeSet as, int def) {
         TypedArray ta = context.obtainStyledAttributes(as, R.styleable.ProjectBuilderView, def, 0);
+        addVisible=ta.getBoolean(R.styleable.ProjectBuilderView_add_visible,true);
         builderName = ta.getString(R.styleable.ProjectBuilderView_builder_name);
         buildersVisible=ta.getBoolean(R.styleable.ProjectBuilderView_builders_visible,true);
     }
@@ -65,6 +67,9 @@ public class ProjectBuilderView extends LinearLayout{
         tv_builder_name.setText(builderName);
         if(!buildersVisible){
             ll_builders.setVisibility(GONE);
+        }
+        if(!addVisible){
+            tv_builder_add.setVisibility(GONE);
         }
         ll_builder_bar.setOnClickListener(new OnClickListener() {
             @Override

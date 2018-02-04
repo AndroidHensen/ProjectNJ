@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.handsome.projectnz.Fragment.Project.ProjectNewDataFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.handsome.projectnz.CustomView.ProjectDataDownloadView
+                android:id="@+id/files_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:files_list_name="工作量表"
+                app:files_list_visible="true" />
+
+            <com.handsome.projectnz.CustomView.ProjectDataDownloadView
+                android:layout_width="match_parent"
+                android:id="@+id/files_material"
+                android:layout_height="wrap_content"
+                app:files_list_name="材料清单表"
+                app:files_list_visible="false" />
+
+            <com.handsome.projectnz.CustomView.ProjectDataDownloadView
+                android:layout_width="match_parent"
+                android:id="@+id/files_design"
+                android:layout_height="wrap_content"
+                app:files_list_name="设计图纸"
+                app:files_list_visible="false" />
+
+            <com.handsome.projectnz.CustomView.ProjectDataDownloadView
+                android:layout_width="match_parent"
+                android:id="@+id/files_danger"
+                android:layout_height="wrap_content"
+                app:files_list_name="安全基准表"
+                app:files_list_visible="false" />
+
+            <com.handsome.projectnz.CustomView.ProjectDataDownloadView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/files_guidance"
+                app:files_list_name="质量指导书"
+                app:files_list_visible="false" />
+
+            <com.handsome.projectnz.CustomView.ProjectDataDownloadView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/files_measure"
+                app:files_list_name="施工方案"
+                app:files_list_visible="false" />
+
+            <com.handsome.projectnz.CustomView.ProjectDataDownloadView
+                android:layout_width="match_parent"
+                android:id="@+id/files_other"
+                android:layout_height="wrap_content"
+                app:files_list_name="其他"
+                app:files_list_visible="false" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

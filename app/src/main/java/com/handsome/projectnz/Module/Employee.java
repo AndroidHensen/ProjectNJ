@@ -5,13 +5,40 @@ package com.handsome.projectnz.Module;
  */
 
 public class Employee {
-    private String employee_name;
-    private String position;
-    private String phone;
-    private String e_mail;
-    private String company;
-    private String department;
-    private String comment;
+    private String employee_name;//姓名
+    private String position;//职位
+    private String phone;//联系号码
+    private String e_mail;//邮箱
+    private String company;//公司
+    private String department;//部门
+    private String comment;//描述，备注
+    private int salary;//工资//月薪
+    private String type;//类别
+    private String work_date;//工作时长
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getWork_date() {
+        return work_date;
+    }
+
+    public void setWork_date(String wrok_date) {
+        this.work_date = wrok_date;
+    }
 
     public String getPosition() {
         return position;

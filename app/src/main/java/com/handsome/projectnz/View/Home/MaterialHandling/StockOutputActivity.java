@@ -99,6 +99,7 @@ public class StockOutputActivity extends BaseActivity implements ViewPager.OnPag
         list.add(new MaterialOutputPurchaseFragment());
         adapter = new MainAdapter(getSupportFragmentManager(), list);
         vp.setAdapter(adapter);
+        vp.setOffscreenPageLimit(4);
         selectPager(0);
     }
     public void selectPager(int position){

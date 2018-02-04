@@ -33,6 +33,16 @@ public class MaterialKeepProprietorSupplyFragment extends BaseLazyFragment {
     @Override
     public void initViews() {
         lv = findView(R.id.message_notice_lv);
+
+    }
+
+    @Override
+    public void initListener() {
+
+    }
+
+    @Override
+    public void initData() {
         lists = new ArrayList<>();
         Material material=new Material();
         material.setName("水泥v1");
@@ -65,16 +75,6 @@ public class MaterialKeepProprietorSupplyFragment extends BaseLazyFragment {
 
         mAdapter = new MaterialKeepAdapter(getActivity(), lists);
         lv.setAdapter(mAdapter);
-    }
-
-    @Override
-    public void initListener() {
-
-    }
-
-    @Override
-    public void initData() {
-
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

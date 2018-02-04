@@ -16,16 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.Home.WorkReport.WorkReportContentAcitvity"/>
-        <activity android:name=".View.Home.WorkReport.WorkReportNewActivity"/>
-        <activity android:name=".View.Home.WorkReport.WorkReportActivity"/>
-        <activity android:name=".View.Home.AnnouncementsCompany.AnnouncementsDetailActivity"/>
-        <activity android:name=".View.Home.AnnouncementsCompany.AnnouncementsNewsActivity"/>
-        <activity android:name=".View.Home.AnnouncementsCompany.AnnouncementsCompanyActivity"/>
+        <activity android:name=".View.Home.WorkReport.WorkReportContentAcitvity" />
+        <activity android:name=".View.Home.WorkReport.WorkReportNewActivity" />
+        <activity android:name=".View.Home.WorkReport.WorkReportActivity" />
+        <activity android:name=".View.Home.AnnouncementsCompany.AnnouncementsDetailActivity" />
+        <activity android:name=".View.Home.AnnouncementsCompany.AnnouncementsNewsActivity" />
+        <activity android:name=".View.Home.AnnouncementsCompany.AnnouncementsCompanyActivity" />
         <activity android:name=".View.Home.DailyCheck.DailyCheckCharacterActivity" />
         <activity android:name=".View.Home.DailyCheck.DailyCheckNewActivity" />
         <activity android:name=".View.Home.DailyCheck.DailyCheckAlreadyActivity" />
-        <!--<activity android:name=".View.Home.DailyCheck.DailyCheckAlreadyActivity" />-->
+        <!-- <activity android:name=".View.Home.DailyCheck.DailyCheckAlreadyActivity" /> -->
         <activity android:name=".View.Home.DailyCheck.DailyCheckActivity" />
         <activity android:name=".View.Home.QualityCheck.QualityCheckActivity" />
         <activity android:name=".View.Home.QualityCheck.QualityCheckCharacterActivity" />
@@ -46,6 +46,7 @@
         <activity android:name=".View.Project.ProjectDeleteFileActivity" />
         <activity android:name=".View.Project.ProjectUpdateActivity" />
         <activity android:name=".View.Mine.MineSetting" />
+        <activity android:name=".View.Home.WorkTaskOfficialAcceptActivity" />
         <activity android:name=".View.Mine.MineFeedback" />
         <activity android:name=".View.Home.WorkTask.WorkTaskProject.WorkTaskProjectAcceptActivity" />
         <activity android:name=".View.Home.WorkTask.WorkTaskNewActivity" />
@@ -66,7 +67,14 @@
         <activity android:name=".View.Home.MaterialHandling.MaterialOutputRecordActivity" />
         <activity android:name=".View.Home.MaterialHandling.MaterialOutputRecordDetailActivity" />
         <activity android:name=".View.Home.Statistics.MaterialStatisticsActivity" />
-        <activity android:name=".View.Home.Statistics.AssignmentStatisticsActivity"></activity>
+        <activity android:name=".View.Home.Statistics.AssignmentStatisticsActivity" />
+        <activity android:name=".View.Home.TaskCheckAndAcceptActivity" />
+        <activity android:name=".View.Home.Statistics.AssignmentListDetailActivity" />
+        <activity android:name=".View.Home.Statistics.AssignmentProjectActivity" />
+        <activity android:name=".View.Home.Statistics.AssignmentOfficeActivity" />
+        <activity android:name=".View.Project.ProjectDetailActivity" />
+        <activity android:name=".View.Project.ProjectFileCollectActivity" />
+        <activity android:name=".View.Home.Statistics.EmployeeStatisticsActivity"></activity>
     </application>
 
 </manifest>

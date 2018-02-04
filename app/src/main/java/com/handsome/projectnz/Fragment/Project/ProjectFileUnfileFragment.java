@@ -1,6 +1,8 @@
 package com.handsome.projectnz.Fragment.Project;
 
+import android.content.Intent;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseLazyFragment;
@@ -8,6 +10,7 @@ import com.handsome.projectnz.Adapter.Project.ProjectFileAdapter;
 import com.handsome.projectnz.Adapter.Project.ProjectSumAdapter;
 import com.handsome.projectnz.Module.Project;
 import com.handsome.projectnz.R;
+import com.handsome.projectnz.View.Project.ProjectFileCollectActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +42,7 @@ public class ProjectFileUnfileFragment extends BaseLazyFragment {
     public void initData() {
 
 
-        List<Project> lists=new ArrayList<>();
+        final List<Project> lists=new ArrayList<>();
         Project project=new Project();
         project.setProjectName("1028工程");
         project.setTimeLimit(30);
@@ -63,7 +66,6 @@ public class ProjectFileUnfileFragment extends BaseLazyFragment {
         lists.add(project1);
         adapter=new ProjectFileAdapter(getActivity(),lists);
         lv_project.setAdapter(adapter);
-
     }
 
     @Override

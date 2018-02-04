@@ -18,6 +18,7 @@ import com.handsome.projectnz.View.Home.QualityCheck.QualityCheckActivity;
 import com.handsome.projectnz.View.Home.Register.RegisterActivity;
 import com.handsome.projectnz.View.Home.SecurityCheck.SecurityCheckActivity;
 import com.handsome.projectnz.View.Home.Statistics.AssignmentStatisticsActivity;
+import com.handsome.projectnz.View.Home.Statistics.EmployeeStatisticsActivity;
 import com.handsome.projectnz.View.Home.Statistics.InfoStatisticsActivity;
 import com.handsome.projectnz.View.Home.Statistics.MaterialStatisticsActivity;
 import com.handsome.projectnz.View.Home.WorkReport.WorkReportActivity;
@@ -111,7 +112,7 @@ public class HomeFragment extends BaseLazyFragment {
                 startActivity(i);
                 break;
             case R.id.iv_hard_statistics:
-                i=new Intent(getActivity(), StockKeepActivity.class);
+                i=new Intent(getActivity(), EmployeeStatisticsActivity.class);
                 startActivity(i);
                 break;
             case R.id.iv_statistics_task:

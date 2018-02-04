@@ -39,6 +39,16 @@ public class MaterialKeepArmourFragment extends BaseLazyFragment {
     public void initViews() {
         lv = findView(R.id.message_notice_lv);
         lists = new ArrayList<>();
+
+    }
+
+    @Override
+    public void initListener() {
+
+    }
+
+    @Override
+    public void initData() {
         Material material = new Material();
         material.setName("电缆v1");
         material.setType("IVMS-4323");
@@ -70,16 +80,6 @@ public class MaterialKeepArmourFragment extends BaseLazyFragment {
 
         mAdapter = new MaterialKeepAdapter(getActivity(), lists);
         lv.setAdapter(mAdapter);
-    }
-
-    @Override
-    public void initListener() {
-
-    }
-
-    @Override
-    public void initData() {
-
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
