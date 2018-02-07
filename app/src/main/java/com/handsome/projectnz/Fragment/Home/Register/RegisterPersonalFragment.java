@@ -13,22 +13,22 @@ import com.handsome.projectnz.R;
  */
 
 public class RegisterPersonalFragment extends BaseLazyFragment {
-    private EditText et_name;
-    private EditText et_id_card;
-    private ImageButton ib_id_card01;
-    private ImageButton ib_id_card02;
-    private EditText et_personl_phone;
-    private EditText et_personl_email;
-    private EditText et_personl_util_name;
-    private Button bt_department;
-    private Button bt_position;
-    private EditText et_job_number;
-    private Button bt_personal_photo;
-    private ImageButton ib_personal_photo01;
-    private ImageButton ib_personal_photo02;
-    private ImageButton ib_personal_photo03;
-    private ImageButton ib_personal_photo04;
-    private Button bt_personal_Submit;
+    private EditText et_name;//姓名
+    private EditText et_id_card;//身份证
+    private ImageButton ib_id_card01;//身份证之正本
+    private ImageButton ib_id_card02;//身份证之副本
+    private EditText et_personl_phone;//手机号码
+    private EditText et_personl_email;//邮箱
+    private EditText et_personl_util_name;//单位全程
+    private Button bt_department;//部门
+    private Button bt_position;//职位
+    private EditText et_job_number;//工号
+    private Button bt_personal_photo;//上传资质照片按钮
+    private ImageButton ib_personal_photo01;//上传图片一
+    private ImageButton ib_personal_photo02;//上传图片二
+    private ImageButton ib_personal_photo03;//上传图片三
+    private ImageButton ib_personal_photo04;//上传图片四
+    private Button bt_personal_Submit;//提交审核
     @Override
     public int getLayoutId() {
         return R.layout.activity_register_personal;

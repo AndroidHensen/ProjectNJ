@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".View.Home.PlanDetails.PlanStaffRosterActivity"/>
+        <activity android:name=".View.Home.PlanDetails.PlanScheduleRecordActivity"/>
+        <activity android:name=".View.Home.PlanDetails.PlanScheduleFeedbackActivity"/>
+        <activity android:name=".View.Home.PlanDetails.PlanMakeActivity"/>
+        <activity android:name=".View.Home.PlanDetails.PlanDetailsActivity"/>
         <activity android:name=".View.Home.WorkReport.WorkReportContentAcitvity" />
         <activity android:name=".View.Home.WorkReport.WorkReportNewActivity" />
         <activity android:name=".View.Home.WorkReport.WorkReportActivity" />
@@ -25,7 +30,6 @@
         <activity android:name=".View.Home.DailyCheck.DailyCheckCharacterActivity" />
         <activity android:name=".View.Home.DailyCheck.DailyCheckNewActivity" />
         <activity android:name=".View.Home.DailyCheck.DailyCheckAlreadyActivity" />
-        <!-- <activity android:name=".View.Home.DailyCheck.DailyCheckAlreadyActivity" /> -->
         <activity android:name=".View.Home.DailyCheck.DailyCheckActivity" />
         <activity android:name=".View.Home.QualityCheck.QualityCheckActivity" />
         <activity android:name=".View.Home.QualityCheck.QualityCheckCharacterActivity" />

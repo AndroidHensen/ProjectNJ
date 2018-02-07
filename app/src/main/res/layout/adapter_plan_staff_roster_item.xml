@@ -28,7 +28,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="4dp"
             android:text="姓名："
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_name"
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:text="林出借"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -44,7 +44,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="16dp"
             android:text="岗位："
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_station"
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:text="安全员"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:orientation="horizontal"
-        android:paddingBottom="12dp"
+        android:paddingBottom="6dp"
         android:paddingLeft="8dp"
         android:paddingRight="8dp">
 
@@ -76,7 +76,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="4dp"
             android:text="18324888899"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
 
         <ImageView
@@ -92,7 +92,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="4dp"
             android:text="xxx@163.com"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -110,7 +110,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="34dp"
             android:text="人员类别："
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_category"
@@ -120,6 +120,6 @@
             android:layout_marginLeft="4dp"
             android:text="本部人员"
             android:textColor="@color/blue"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
     </LinearLayout>
 </LinearLayout>

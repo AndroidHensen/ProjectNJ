@@ -202,9 +202,11 @@
                 <Button
                     android:id="@+id/bt_department"
                     android:layout_width="wrap_content"
-                    android:layout_height="27dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/common_bg_blue_radius"
-                    android:padding="0dp"
+                    android:minHeight="0dp"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
                     android:text="工程部"
                     android:textColor="@color/colorWhite"
                     android:textSize="16sp" />
@@ -233,9 +235,11 @@
                 <Button
                     android:id="@+id/bt_position"
                     android:layout_width="wrap_content"
-                    android:layout_height="27dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/common_bg_blue_radius"
-                    android:padding="0dp"
+                    android:minHeight="0dp"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
                     android:text="项目经理"
                     android:textColor="@color/colorWhite"
                     android:textSize="16sp" />
@@ -292,9 +296,11 @@
                 <Button
                     android:id="@+id/bt_personal_photo"
                     android:layout_width="wrap_content"
-                    android:layout_height="27dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/common_bg_blue_radius"
-                    android:padding="0dp"
+                    android:minHeight="0dp"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
                     android:text="上传照片"
                     android:textColor="@color/colorWhite"
                     android:textSize="16sp" />
@@ -338,7 +344,7 @@
 
             <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="136dp">
+                android:layout_height="wrap_content">
 
                 <Button
                     android:id="@+id/bt_personal_Submit"

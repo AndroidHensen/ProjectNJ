@@ -9,4 +9,10 @@
     tools:context="com.handsome.projectnz.View.Home.PlanDetails.PlanStaffRosterActivity">
 
     <include layout="@layout/include_common_header" />
+
+    <ListView
+        android:id="@+id/lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"></ListView>
 </LinearLayout>

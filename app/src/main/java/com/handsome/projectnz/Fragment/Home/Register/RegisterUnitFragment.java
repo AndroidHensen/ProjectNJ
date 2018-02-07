@@ -14,38 +14,38 @@ import com.handsome.projectnz.R;
 
 public class RegisterUnitFragment extends BaseLazyFragment {
 
-    private EditText et_unit_name;
-    private EditText et_belong_company;
-    private EditText et_write_credit;
-    private ImageButton ib_register_credit01;
-    private ImageButton ib_register_credit02;
-    private Button bt_open_licence;
-    private ImageButton ib_allow_pic_01;
-    private ImageButton ib_allow_pic_02;
-    private ImageButton ib_allow_pic_03;
-    private ImageButton ib_allow_pic_04;
-    private Button bt_credit_certification;
-    private ImageButton ib_certification01;
-    private ImageButton ib_certification02;
-    private ImageButton ib_certification03;
-    private ImageButton ib_certification04;
-    private Button bt_tax;
-    private ImageButton ib_tax_credit01;
-    private ImageButton ib_tax_credit02;
-    private EditText et_opening_bank;
-    private EditText et_account;
-    private EditText et_adress;
-    private Button bt_certificate_pic;
-    private ImageButton ib_certificate_pic01;
-    private ImageButton ib_certificate_pic02;
-    private ImageButton ib_certificate_pic03;
-    private ImageButton ib_certificate_pic04;
-    private EditText et_official_website;
-    private EditText et_phone;
-    private EditText et_email;
-    private EditText et_area;
-    private EditText et_item_classification;
-    private Button bt_Submit;
+    private EditText et_unit_name;//单位名称
+    private EditText et_belong_company;//所属上级公司
+    private EditText et_write_credit;//社会统一信用号
+    private ImageButton ib_register_credit01;//社会统一信用号 正本
+    private ImageButton ib_register_credit02;//社会统一信用号 副本
+    private Button bt_open_licence;//开户许可证上传图片按钮
+    private ImageButton ib_allow_pic_01;//上传开户许可证图片一
+    private ImageButton ib_allow_pic_02;//上传开户许可证图片二
+    private ImageButton ib_allow_pic_03;//上传开户许可证图片三
+    private ImageButton ib_allow_pic_04;//上床开户许可证图片四
+    private Button bt_credit_certification;//资信证明按上传图片钮
+    private ImageButton ib_certification01;//上传资信证明图片一
+    private ImageButton ib_certification02;//上传资信证明图片二
+    private ImageButton ib_certification03;//上传资信证明图片三
+    private ImageButton ib_certification04;//上传资信证明图片四
+    private Button bt_tax;//上传完税证明按钮
+    private ImageButton ib_tax_credit01;//上传完税证明照片一
+    private ImageButton ib_tax_credit02;//上传完税证明照片二
+    private EditText et_opening_bank;//开户行
+    private EditText et_account;//账号
+    private EditText et_adress;//地址
+    private Button bt_certificate_pic;//资质证书照按钮
+    private ImageButton ib_certificate_pic01;//上传证书照一
+    private ImageButton ib_certificate_pic02;//上传证书照二
+    private ImageButton ib_certificate_pic03;//上传证书照三
+    private ImageButton ib_certificate_pic04;//上传证书照四
+    private EditText et_official_website;//公司官网
+    private EditText et_phone;//联系电话
+    private EditText et_email;//eamil
+    private EditText et_area;//经营区域
+    private EditText et_item_classification;//可参与项目类型
+    private Button bt_Submit;//提交
     @Override
     public int getLayoutId() {
         return R.layout.activity_register_unit;

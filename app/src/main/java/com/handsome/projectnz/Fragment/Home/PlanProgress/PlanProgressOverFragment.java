@@ -1,6 +1,8 @@
 package com.handsome.projectnz.Fragment.Home.PlanProgress;
 
+import android.content.Intent;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseLazyFragment;
@@ -8,6 +10,7 @@ import com.handsome.projectnz.Adapter.Home.PlanProgress.PlanProgressAlreadyAdapt
 import com.handsome.projectnz.Adapter.Home.PlanProgress.PlanProgressOverAdapter;
 import com.handsome.projectnz.Module.PlanProgress;
 import com.handsome.projectnz.R;
+import com.handsome.projectnz.View.Home.PlanDetails.PlanDetailsActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,6 +48,14 @@ public class PlanProgressOverFragment extends BaseLazyFragment {
         lists.add(planProgress1);
         adapter=new PlanProgressOverAdapter(lists,getActivity());
         lv_content.setAdapter(adapter);
+        lv_content.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent i=new Intent(getActivity(), PlanDetailsActivity.class);
+//                i.putExtra("material",lists.get(position));
+                startActivity(i);
+            }
+        });
     }
 
     @Override

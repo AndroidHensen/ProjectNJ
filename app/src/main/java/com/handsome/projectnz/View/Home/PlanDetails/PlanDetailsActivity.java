@@ -1,5 +1,6 @@
 package com.handsome.projectnz.View.Home.PlanDetails;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +10,8 @@ import android.widget.TextView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
 import com.handsome.projectnz.R;
+import com.handsome.projectnz.View.Home.DailyCheck.DailyCheckActivity;
+import com.handsome.projectnz.View.Home.DailyCheck.DailyCheckNewActivity;
 
 public class PlanDetailsActivity extends BaseActivity {
     private TextView tv_project;//项目
@@ -25,6 +28,8 @@ public class PlanDetailsActivity extends BaseActivity {
     private Button btn_make_plan;//编制计划
     private Button btn_schedule_feedback;//进度反馈
     private Button btn_arrange_task;//安排任务
+    private TextView tv_arrange_department;//上级安排部门
+    private TextView tv_opreate_man;//执行人
 
     @Override
     public int getLayoutId() {
@@ -47,11 +52,16 @@ public class PlanDetailsActivity extends BaseActivity {
         btn_make_plan = findView(R.id.btn_make_plan);
         btn_schedule_feedback = findView(R.id.btn_schedule_feedback);
         btn_arrange_task = findView(R.id.btn_arrange_task);
+        tv_arrange_department = findView(R.id.tv_arrange_department);
+        tv_opreate_man = findView(R.id.tv_operate_man);
     }
 
     @Override
     public void initListener() {
-
+        btn_make_plan.setOnClickListener(this);
+        btn_schedule_feedback.setOnClickListener(this);
+        btn_arrange_task.setOnClickListener(this);
+        btn_find_record.setOnClickListener(this);
     }
 
     @Override
@@ -62,6 +72,25 @@ public class PlanDetailsActivity extends BaseActivity {
 
     @Override
     public void processClick(View v) {
-
+        switch (v.getId()){
+            case R.id.btn_make_plan:
+                Intent intent = new Intent(PlanDetailsActivity.this, PlanMakeActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_schedule_feedback:
+                Intent intent1 = new Intent(PlanDetailsActivity.this, PlanScheduleFeedbackActivity.class);
+                startActivity(intent1);
+                break;
+            case R.id.btn_arrange_task:
+                Intent intent2 = new Intent(PlanDetailsActivity.this, PlanStaffRosterActivity.class);
+                startActivity(intent2);
+                break;
+            case R.id.btn_find_record:
+                Intent intent3 = new Intent(PlanDetailsActivity.this, PlanScheduleRecordActivity.class);
+                startActivity(intent3);
+                break;
+            default:
+                break;
+        }
     }
 }

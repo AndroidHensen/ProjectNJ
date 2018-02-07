@@ -6,16 +6,16 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryBackGroup"
     android:orientation="vertical"
-    tools:context="com.handsome.projectnz.View.Home.PlanScheduleRecord">
+    tools:context="com.handsome.projectnz.View.Home.PlanDetails.PlanScheduleRecordActivity">
 
     <include layout="@layout/include_common_header" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:paddingBottom="12dp"
-        android:paddingTop="12dp"
-        android:orientation="horizontal">
+        android:paddingTop="12dp">
 
         <TextView
             android:layout_width="0dp"
@@ -49,4 +49,11 @@
             android:text="进度"
             android:textSize="16sp" />
     </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
 </LinearLayout>
