@@ -50,44 +50,48 @@ public class OptionProjectActivity extends BaseActivity implements ViewPager.OnP
         setOnClick(tv_else);
         vp_content.setOnPageChangeListener(this);
     }
+
     public void selectPager(int position) {
         vp_content.setCurrentItem(position);
         if (position == 0) {
-            tv_system_inner.setBackgroundColor(Color.WHITE);
-            tv_system_inner.setTextColor(Color.parseColor("#3F51B5"));
-            tv_system_outer.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_system_outer.setTextColor(Color.WHITE);
-            tv_expans.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_expans.setTextColor(Color.WHITE);
-            tv_else.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_else.setTextColor(Color.WHITE);
-        } if (position == 1){
-            tv_system_outer.setBackgroundColor(Color.WHITE);
-            tv_system_outer.setTextColor(Color.parseColor("#3F51B5"));
-            tv_system_inner.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_system_inner.setTextColor(Color.WHITE);
-            tv_expans.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_expans.setTextColor(Color.WHITE);
-            tv_else.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_else.setTextColor(Color.WHITE);
-        }if (position == 2) {
-            tv_expans.setBackgroundColor(Color.WHITE);
-            tv_expans.setTextColor(Color.parseColor("#3F51B5"));
-            tv_system_inner.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_system_inner.setTextColor(Color.WHITE);
-            tv_system_outer.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_system_outer.setTextColor(Color.WHITE);
-            tv_else.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_else.setTextColor(Color.WHITE);
-        }  if (position == 3) {
-            tv_else.setBackgroundColor(Color.WHITE);
-            tv_else.setTextColor(Color.parseColor("#3F51B5"));
-            tv_system_inner.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_system_inner.setTextColor(Color.WHITE);
-            tv_expans.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_expans.setTextColor(Color.WHITE);
-            tv_system_outer.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_system_outer.setTextColor(Color.WHITE);
+            tv_system_inner.setBackgroundColor(getResources().getColor(R.color.colorWhite));
+            tv_system_inner.setTextColor(getResources().getColor(R.color.colorPrimary));
+            tv_system_outer.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            tv_system_outer.setTextColor(getResources().getColor(R.color.white));
+            tv_expans.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            tv_expans.setTextColor(getResources().getColor(R.color.white));
+            tv_else.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            tv_else.setTextColor(getResources().getColor(R.color.white));
+
+        } if (position == 1) {
+            tv_system_outer.setBackgroundColor(getResources().getColor(R.color.colorWhite));
+            tv_system_outer.setTextColor(getResources().getColor(R.color.colorPrimary));
+            tv_system_inner.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            tv_system_inner.setTextColor(getResources().getColor(R.color.white));
+            tv_expans.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            tv_expans.setTextColor(getResources().getColor(R.color.white));
+            tv_else.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            tv_else.setTextColor(getResources().getColor(R.color.white));
+        }
+        if (position==2){
+            tv_expans.setBackgroundColor(getResources().getColor(R.color.colorWhite));
+            tv_expans.setTextColor(getResources().getColor(R.color.colorPrimary));
+            tv_system_inner.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            tv_system_inner.setTextColor(getResources().getColor(R.color.white));
+            tv_system_outer.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            tv_system_outer.setTextColor(getResources().getColor(R.color.white));
+            tv_else.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            tv_else.setTextColor(getResources().getColor(R.color.white));
+        }
+        if (position==3){
+            tv_else.setBackgroundColor(getResources().getColor(R.color.colorWhite));
+            tv_else.setTextColor(getResources().getColor(R.color.colorPrimary));
+            tv_system_inner.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            tv_system_inner.setTextColor(getResources().getColor(R.color.white));
+            tv_system_outer.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            tv_system_outer.setTextColor(getResources().getColor(R.color.white));
+            tv_expans.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            tv_expans.setTextColor(getResources().getColor(R.color.white));
         }
     }
     //初始化碎片
@@ -135,44 +139,7 @@ public class OptionProjectActivity extends BaseActivity implements ViewPager.OnP
 
     @Override
     public void onPageSelected(int position) {
-        vp_content.setCurrentItem(position);
-        if (position == 0) {
-            tv_system_inner.setBackgroundColor(Color.WHITE);
-            tv_system_inner.setTextColor(Color.parseColor("#3F51B5"));
-            tv_system_outer.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_system_outer.setTextColor(Color.WHITE);
-            tv_expans.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_expans.setTextColor(Color.WHITE);
-            tv_else.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_else.setTextColor(Color.WHITE);
-        } if (position == 1){
-            tv_system_outer.setBackgroundColor(Color.WHITE);
-            tv_system_outer.setTextColor(Color.parseColor("#3F51B5"));
-            tv_system_inner.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_system_inner.setTextColor(Color.WHITE);
-            tv_expans.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_expans.setTextColor(Color.WHITE);
-            tv_else.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_else.setTextColor(Color.WHITE);
-        }if (position == 2) {
-            tv_expans.setBackgroundColor(Color.WHITE);
-            tv_expans.setTextColor(Color.parseColor("#3F51B5"));
-            tv_system_inner.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_system_inner.setTextColor(Color.WHITE);
-            tv_system_outer.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_system_outer.setTextColor(Color.WHITE);
-            tv_else.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_else.setTextColor(Color.WHITE);
-        }  if (position == 3) {
-            tv_else.setBackgroundColor(Color.WHITE);
-            tv_else.setTextColor(Color.parseColor("#3F51B5"));
-            tv_system_inner.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_system_inner.setTextColor(Color.WHITE);
-            tv_expans.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_expans.setTextColor(Color.WHITE);
-            tv_system_outer.setBackgroundColor(Color.parseColor("#3F51B5"));
-            tv_system_outer.setTextColor(Color.WHITE);
-        }
+        selectPager(position);
     }
 
     @Override

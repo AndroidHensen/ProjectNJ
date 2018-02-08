@@ -1,6 +1,6 @@
 package com.handsome.projectnz.View.Home.ApplyCommon;
 
-import android.graphics.Color;
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -10,16 +10,17 @@ import android.widget.ImageButton;
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
 import com.handsome.projectnz.Adapter.MainAdapter;
 import com.handsome.projectnz.Fragment.Home.ApplyCommon.ApplyCommonApprovalFragment;
-import com.handsome.projectnz.Fragment.Home.Register.ApplyCommonSubmitFragment;
+import com.handsome.projectnz.Fragment.Home.ApplyCommon.ApplyCommonSubmitFragment;
 import com.handsome.projectnz.R;
+import com.handsome.projectnz.View.Home.OptionProject.OptionProjectActivity;
 
 import java.util.ArrayList;
 
 public class ApplyCommonActivity extends BaseActivity implements ViewPager.OnPageChangeListener{
-    private ImageButton ib_find;
-    private ImageButton ib_add;
-    private Button btn_approval;
-    private Button btn_submit;
+    private ImageButton ib_find;//头部搜素
+    private ImageButton ib_add;//添加
+    private Button btn_approval;//我审批的
+    private Button btn_submit;//我提交的
     private ViewPager vp_apply_common;
     private ArrayList<Fragment> list;
     private MainAdapter adapter;
@@ -40,6 +41,7 @@ public class ApplyCommonActivity extends BaseActivity implements ViewPager.OnPag
 
     @Override
     public void initListener() {
+        ib_add.setOnClickListener(this);
         setOnClick(btn_approval);
         setOnClick(btn_submit);
         vp_apply_common.setOnPageChangeListener(this);
@@ -71,6 +73,12 @@ public class ApplyCommonActivity extends BaseActivity implements ViewPager.OnPag
             case R.id.btn_submit:
                 onPageSelected(1);
                 break;
+            case R.id.ib_add:
+                Intent intent = new Intent(ApplyCommonActivity.this,OptionProjectActivity.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
         }
     }
 
@@ -83,16 +91,18 @@ public class ApplyCommonActivity extends BaseActivity implements ViewPager.OnPag
     public void onPageSelected(int position) {
         vp_apply_common.setCurrentItem(position);
         if (position == 0) {
-            btn_approval.setBackgroundColor(Color.WHITE);
-            btn_approval.setTextColor(Color.parseColor("#3F51B5"));
-            btn_submit.setBackgroundColor(Color.parseColor("#3F51B5"));
-            btn_submit.setTextColor(Color.WHITE);
+            btn_approval.setBackgroundColor(getResources().getColor(R.color.colorWhite));
+            btn_approval.setTextColor(getResources().getColor(R.color.colorPrimary));
+            btn_submit.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            btn_submit.setTextColor(getResources().getColor(R.color.white));
+
         } else {
-            btn_approval.setBackgroundColor(Color.parseColor("#3F51B5"));
-            btn_approval.setTextColor(Color.WHITE);
-            btn_submit.setBackgroundColor(Color.WHITE);
-            btn_submit.setTextColor(Color.parseColor("#3F51B5"));
+            btn_submit.setBackgroundColor(getResources().getColor(R.color.colorWhite));
+            btn_submit.setTextColor(getResources().getColor(R.color.colorPrimary));
+            btn_approval.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            btn_approval.setTextColor(getResources().getColor(R.color.white));
         }
+
     }
 
     @Override

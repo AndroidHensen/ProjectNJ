@@ -5,7 +5,6 @@ import android.widget.ListView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseLazyFragment;
 import com.handsome.projectnz.Adapter.Home.ApplyCommon.ApplyCommomSubmitAdapter;
-import com.handsome.projectnz.Adapter.Home.ApplyCommon.ApplyCommonApprovalAdapter;
 import com.handsome.projectnz.Module.ApplyCommon;
 import com.handsome.projectnz.R;
 
@@ -16,13 +15,12 @@ import java.util.List;
  * Created by YX_PC on 2018/1/25.
  */
 
-public class ApplyCommonApprovalFragment extends BaseLazyFragment {
+public class ApplyCommonSubmitFragment extends BaseLazyFragment {
     private ListView lv_content;//listview容器
-    private ApplyCommonApprovalAdapter adapter;
-
+    private ApplyCommomSubmitAdapter adapter;
     @Override
     public int getLayoutId() {
-        return R.layout.activity_apply_common_approval;
+        return R.layout.activity_apply_common_submit;
     }
 
     @Override
@@ -44,7 +42,7 @@ public class ApplyCommonApprovalFragment extends BaseLazyFragment {
         lists.add(applyCommon1);
         ApplyCommon applyCommon2 = new ApplyCommon("有新的个人注册", "2018-1-1", "审批不通过");
         lists.add(applyCommon2);
-        adapter=new ApplyCommonApprovalAdapter(lists,getActivity());
+        adapter=new ApplyCommomSubmitAdapter(lists,getActivity());
         lv_content.setAdapter(adapter);
     }
 

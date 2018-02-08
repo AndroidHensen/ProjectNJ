@@ -18,12 +18,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="项目名称："
-            android:textSize="16sp" />
+            android:textSize="14sp" />
         <TextView
+            android:id="@+id/tv_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/tv_itme_name"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:text="项目一"/>
         <TextView
             android:id="@+id/tv_day"
@@ -31,14 +32,14 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:text="20天"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
         <TextView
             android:layout_toLeftOf="@id/tv_day"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:layout_marginRight="10dp"
-            android:text="工期"/>
+            android:textSize="14sp"
+
+            android:text="工期："/>
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -52,13 +53,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="工程类别："
-            android:textSize="16sp"/>
+            android:textSize="14sp"/>
         <TextView
+            android:id="@+id/tv_work_kind"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="系统内工程"
-            android:layout_marginLeft="10dp"
-            android:textSize="16sp"/>
+            android:textSize="14sp"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -72,13 +73,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="项目类别："
-            android:textSize="16sp"/>
+            android:textSize="14sp"/>
         <TextView
+            android:id="@+id/tv_item_kind"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="检测试验"
-            android:layout_marginLeft="10dp"
-            android:textSize="16sp"/>
+            android:textSize="14sp"/>
     </LinearLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -93,26 +94,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="项目经理："
-            android:textSize="16sp" />
+            android:textSize="14sp" />
         <TextView
+            android:id="@+id/tv_managers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/tv_itme_man"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:text="xxx"/>
         <TextView
-            android:id="@+id/tv_progress"
+            android:id="@+id/tv_work_progress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:text="30%"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
         <TextView
-            android:layout_toLeftOf="@id/tv_progress"
+            android:layout_toLeftOf="@id/tv_work_progress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:layout_marginRight="10dp"
-            android:text="项目进度"/>
+            android:textSize="14sp"
+            android:text="项目进度："/>
     </RelativeLayout>
 </LinearLayout>

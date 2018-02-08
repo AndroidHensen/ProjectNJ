@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".View.Home.OptionProject.OptionProjectActivity"/>
+        <activity android:name=".View.Home.ApplyCommon.ApplyDetailsActivity"/>
+        <activity android:name=".View.Home.ApplyCommon.ApplyCommonActivity"/>
         <activity android:name=".View.Home.PlanDetails.PlanStaffRosterActivity"/>
         <activity android:name=".View.Home.PlanDetails.PlanScheduleRecordActivity"/>
         <activity android:name=".View.Home.PlanDetails.PlanScheduleFeedbackActivity"/>

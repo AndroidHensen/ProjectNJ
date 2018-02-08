@@ -29,7 +29,7 @@
             android:paddingTop="5dp"
             android:text="系统内工程"
             android:textColor="@color/white"
-            android:textSize="16dp" />
+            android:textSize="14dp" />
 
         <TextView
             android:id="@+id/tv_system_outer"
@@ -44,7 +44,7 @@
             android:paddingTop="5dp"
             android:text="系统外工程"
             android:textColor="@color/white"
-            android:textSize="16dp" />
+            android:textSize="14dp" />
 
         <TextView
             android:id="@+id/tv_expans"
@@ -59,7 +59,7 @@
             android:paddingTop="5dp"
             android:text="业扩工程"
             android:textColor="@color/white"
-            android:textSize="16dp" />
+            android:textSize="14dp" />
 
         <TextView
             android:id="@+id/tv_else"
@@ -74,7 +74,7 @@
             android:paddingTop="5dp"
             android:text="其他"
             android:textColor="@color/white"
-            android:textSize="16dp" />
+            android:textSize="14dp" />
 
     </LinearLayout>
 

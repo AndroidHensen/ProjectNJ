@@ -9,6 +9,7 @@ import com.handsome.projectnz.CustomView.WorkbenchContent;
 import com.handsome.projectnz.Module.DailyCheck;
 import com.handsome.projectnz.R;
 import com.handsome.projectnz.View.Home.AnnouncementsCompany.AnnouncementsCompanyActivity;
+import com.handsome.projectnz.View.Home.ApplyCommon.ApplyCommonActivity;
 import com.handsome.projectnz.View.Home.DailyCheck.DailyCheckActivity;
 import com.handsome.projectnz.View.Home.Login.LoginActivity;
 import com.handsome.projectnz.View.Home.MaterialHandling.MaterialOutputRecordActivity;
@@ -82,6 +83,7 @@ public class HomeFragment extends BaseLazyFragment {
         iv_progress_plan.setOnClickListener(this);
         iv_company_announcements.setOnClickListener(this);
         iv_work_report.setOnClickListener(this);
+        iv_general_settings.setOnClickListener(this);
     }
 
     @Override
@@ -145,6 +147,10 @@ public class HomeFragment extends BaseLazyFragment {
                 break;
             case R.id.iv_work_report:
                 i=new Intent(getActivity(), WorkReportActivity.class);
+                startActivity(i);
+                break;
+            case R.id.iv_general_settings:
+                i=new Intent(getActivity(), ApplyCommonActivity.class);
                 startActivity(i);
                 break;
             default:
