@@ -8,9 +8,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
-        android:paddingBottom="12dp"
         android:paddingTop="12dp">
 
         <TextView
@@ -18,6 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
+            android:text="xxx部门安排活动"
             android:textSize="16sp" />
 
         <TextView
@@ -38,46 +39,57 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:textSize="16sp" />
+            android:text="2018-1-1"
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@id/tv_official_time"
-            android:text="时间"
-            android:textSize="16sp" />
+            android:text="时间："
+            android:textSize="14sp" />
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
-        android:paddingBottom="12dp"
         android:paddingTop="12dp">
+
         <TextView
             android:id="@+id/temp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="内容"
-            android:textSize="16sp"
-            android:layout_centerVertical="true"/>
+            android:layout_centerVertical="true"
+            android:text="内容："
+            android:textSize="14sp" />
+
         <TextView
+            android:textSize="14sp"
+            android:text="去机场接某人"
             android:id="@+id/tv_content"
-            android:layout_toRightOf="@id/temp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/temp" />
+
         <TextView
+            android:textSize="14sp"
+            android:text="待验收"
             android:id="@+id/tv_official_schedule_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="进度状态"
             android:layout_centerVertical="true"
-            android:layout_toLeftOf="@id/tv_official_schedule_status"/>
+            android:layout_toLeftOf="@id/tv_official_schedule_status"
+            android:text="进度状态："
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
     </RelativeLayout>
 </LinearLayout>

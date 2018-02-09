@@ -17,11 +17,11 @@ import java.util.List;
  * Created by YX_PC on 2018/1/15.
  */
 
-public class WorkTaskProjectAdapter extends BaseAdapter {
+public class WorkTaskProjectArrangeAdapter extends BaseAdapter {
     private List<WorkTaskProjectMessage> lists = new ArrayList<>();
     private Context context;
 
-    public WorkTaskProjectAdapter(Context context, List<WorkTaskProjectMessage> lists) {
+    public WorkTaskProjectArrangeAdapter(Context context, List<WorkTaskProjectMessage> lists) {
         this.context = context;
         this.lists = lists;
     }
@@ -45,7 +45,7 @@ public class WorkTaskProjectAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder = null;
         if(convertView==null){
-            convertView = LayoutInflater.from(context).inflate(R.layout.adapter_return_project_task_item, null, false);
+            convertView = LayoutInflater.from(context).inflate(R.layout.adapter_work_task_assign_project_item, null, false);
             holder=new ViewHolder();
             holder.tv_project_status=(TextView)convertView.findViewById(R.id.tv_project_status);
             holder.tv_arrange_people=(TextView)convertView.findViewById(R.id.tv_arrange_people);
@@ -59,10 +59,12 @@ public class WorkTaskProjectAdapter extends BaseAdapter {
         }
         holder.tv_project_status.setText(lists.get(position).getProject_status());
         holder.tv_arrange_people.setText(lists.get(position).getArrange_people());
-        holder.tv_project_schedule_status.setText(lists.get(position).getProject_schedule_status());
-        holder.tv_project_time.setText(lists.get(position).getProject_time());
-        holder.tv_over_date.setText(lists.get(position).getOver_date());
-        holder.tv_work_date.setText(lists.get(position).getWork_date());
+        holder.tv_project_schedule_status.setText(lists.get(position).getProject_schedule_status()+"%");
+        holder.tv_project_schedule_status.setTextColor(context.getResources().getColor(R.color.blue));
+        holder.tv_project_time.setText(lists.get(position).getProject_time_start()+" 至 "+lists.get(position).getGetProject_time_end());
+        holder.tv_over_date.setText("超期："+lists.get(position).getOver_date()+"天");
+        holder.tv_over_date.setTextColor(context.getResources().getColor(R.color.red));
+        holder.tv_work_date.setText(lists.get(position).getWork_date()+"天");
         return convertView;
     }
 

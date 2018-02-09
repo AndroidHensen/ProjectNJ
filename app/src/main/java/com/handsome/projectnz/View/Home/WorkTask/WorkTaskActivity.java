@@ -1,5 +1,6 @@
 package com.handsome.projectnz.View.Home.WorkTask;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -26,8 +27,8 @@ public class WorkTaskActivity extends BaseActivity implements ViewPager.OnPageCh
     private ViewPager vp_work_task;
     private ArrayList<Fragment> list;
     private MainAdapter adapter;
-    private ImageButton ib_find;
-    private ImageButton ib_add;
+    private ImageButton ib_find;//头部栏搜索镜
+    private ImageButton ib_add;//头部添加
 
     @Override
     public int getLayoutId() {
@@ -45,6 +46,7 @@ public class WorkTaskActivity extends BaseActivity implements ViewPager.OnPageCh
 
     @Override
     public void initListener() {
+        ib_add.setOnClickListener(this);
         setOnClick(btn_assign);
         setOnClick(btn_arrange);
         vp_work_task.setOnPageChangeListener(this);
@@ -79,6 +81,12 @@ public class WorkTaskActivity extends BaseActivity implements ViewPager.OnPageCh
             case R.id.btn_arrange:
                 onPageSelected(1);
                 break;
+            case R.id.ib_add:
+                Intent intent = new Intent(WorkTaskActivity.this, WorkTaskNewActivity.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
         }
     }
 
@@ -91,15 +99,16 @@ public class WorkTaskActivity extends BaseActivity implements ViewPager.OnPageCh
     public void onPageSelected(int position) {
         vp_work_task.setCurrentItem(position);
         if (position == 0) {
-            btn_assign.setBackgroundColor(Color.WHITE);
-            btn_assign.setTextColor(Color.parseColor("#3F51B5"));
-            btn_arrange.setBackgroundColor(Color.parseColor("#3F51B5"));
-            btn_arrange.setTextColor(Color.WHITE);
+            btn_assign.setBackgroundColor(getResources().getColor(R.color.colorWhite));
+            btn_assign.setTextColor(getResources().getColor(R.color.colorPrimary));
+            btn_arrange.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            btn_arrange.setTextColor(getResources().getColor(R.color.white));
+
         } else {
-            btn_assign.setBackgroundColor(Color.parseColor("#3F51B5"));
-            btn_assign.setTextColor(Color.WHITE);
-            btn_arrange.setBackgroundColor(Color.WHITE);
-            btn_arrange.setTextColor(Color.parseColor("#3F51B5"));
+            btn_arrange.setBackgroundColor(getResources().getColor(R.color.colorWhite));
+            btn_arrange.setTextColor(getResources().getColor(R.color.colorPrimary));
+            btn_assign.setBackground(getResources().getDrawable(R.drawable.work_task_bd_white_bg_blue));
+            btn_assign.setTextColor(getResources().getColor(R.color.white));
         }
     }
 

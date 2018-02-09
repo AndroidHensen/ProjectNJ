@@ -17,11 +17,11 @@ import java.util.List;
  * Created by YX_PC on 2018/1/16.
  */
 
-public class WorkTaskOfficialAdapter extends BaseAdapter {
+public class WorkTaskOfficialAssignAdapter extends BaseAdapter {
     private List<WorkTaskOfficialMessage> lists = new ArrayList<>();
     private Context context;
 
-    public WorkTaskOfficialAdapter(Context context,List<WorkTaskOfficialMessage> lists) {
+    public WorkTaskOfficialAssignAdapter(Context context, List<WorkTaskOfficialMessage> lists) {
         this.lists = lists;
         this.context = context;
     }
@@ -43,7 +43,7 @@ public class WorkTaskOfficialAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        WorkTaskOfficialAdapter.ViewHolder holder = null;
+        WorkTaskOfficialAssignAdapter.ViewHolder holder = null;
         if(convertView==null){
             convertView = LayoutInflater.from(context).inflate(R.layout.adapter_work_task_assign_official_item, null, false);
             holder=new ViewHolder();
@@ -54,13 +54,14 @@ public class WorkTaskOfficialAdapter extends BaseAdapter {
             holder.tv_official_schedule_status=(TextView)convertView.findViewById(R.id.tv_official_schedule_status);
             convertView.setTag(holder);
         }else{
-            holder=(WorkTaskOfficialAdapter.ViewHolder)convertView.getTag();
+            holder=(WorkTaskOfficialAssignAdapter.ViewHolder)convertView.getTag();
         }
         holder.tv_department.setText(lists.get(position).getDepartment());
         holder.tv_official_status.setText(lists.get(position).getOfficial_schedule_status());
         holder.tv_official_time.setText(lists.get(position).getOfficial_time());
         holder.tv_content.setText(lists.get(position).getContent());
         holder.tv_official_schedule_status.setText(lists.get(position).getOfficial_status());
+        holder.tv_official_schedule_status.setTextColor(context.getResources().getColor(R.color.blue));
         return convertView;
     }
     static class ViewHolder {

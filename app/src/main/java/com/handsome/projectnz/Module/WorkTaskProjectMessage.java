@@ -13,19 +13,20 @@ public class WorkTaskProjectMessage implements Parcelable {
     private String project_status;//状态(项目任务)
     private String arrange_people;//安排人
     private String project_schedule_status;//进度状态(项目任务)
-    private String project_time;//时间(项目任务)
+    private String project_time_start;//开始时间(项目任务)
+    private String getProject_time_end;//结束时间(项目任务)
     private String over_date;//超期
     private String work_date;//工时
 
-    public WorkTaskProjectMessage(String project_status, String arrange_people, String project_schedule_status, String project_time, String over_date, String work_date) {
+    public WorkTaskProjectMessage(String project_status, String arrange_people, String project_schedule_status, String project_time_start, String getProject_time_end, String over_date, String work_date) {
         this.project_status = project_status;
         this.arrange_people = arrange_people;
         this.project_schedule_status = project_schedule_status;
-        this.project_time = project_time;
+        this.project_time_start = project_time_start;
+        this.getProject_time_end = getProject_time_end;
         this.over_date = over_date;
         this.work_date = work_date;
     }
-
 
     public static final Creator<WorkTaskProjectMessage> CREATOR = new Creator<WorkTaskProjectMessage>() {
         @Override
@@ -63,12 +64,20 @@ public class WorkTaskProjectMessage implements Parcelable {
         this.project_schedule_status = project_schedule_status;
     }
 
-    public String getProject_time() {
-        return project_time;
+    public String getProject_time_start() {
+        return project_time_start;
     }
 
-    public void setProject_time(String project_time) {
-        this.project_time = project_time;
+    public void setProject_time_start(String project_time_start) {
+        this.project_time_start = project_time_start;
+    }
+
+    public String getGetProject_time_end() {
+        return getProject_time_end;
+    }
+
+    public void setGetProject_time_end(String getProject_time_end) {
+        this.getProject_time_end = getProject_time_end;
     }
 
     public String getOver_date() {
@@ -97,7 +106,8 @@ public class WorkTaskProjectMessage implements Parcelable {
         dest.writeString(this.project_status);
         dest.writeString(this.arrange_people);
         dest.writeString(this.project_schedule_status);
-        dest.writeString(this.project_time);
+        dest.writeString(this.project_time_start);
+        dest.writeString(this.getProject_time_end);
         dest.writeString(this.over_date);
         dest.writeString(this.work_date);
     }
@@ -106,7 +116,8 @@ public class WorkTaskProjectMessage implements Parcelable {
         this.project_status = in.readString();
         this.arrange_people = in.readString();
         this.project_schedule_status = in.readString();
-        this.project_time = in.readString();
+        this.project_time_start = in.readString();
+        this.getProject_time_end = in.readString();
         this.over_date = in.readString();
         this.work_date = in.readString();
     }

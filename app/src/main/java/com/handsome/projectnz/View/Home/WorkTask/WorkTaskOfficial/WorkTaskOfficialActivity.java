@@ -1,5 +1,6 @@
 package com.handsome.projectnz.View.Home.WorkTask.WorkTaskOfficial;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
@@ -7,7 +8,12 @@ import android.widget.TextView;
 import android.widget.TextView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
+import com.handsome.projectnz.Adapter.Home.WorkTask.ReturnOfficialTaskAdapter;
+import com.handsome.projectnz.Module.ReturnProjectTask;
 import com.handsome.projectnz.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by jie on 2018/1/20.
@@ -60,17 +66,25 @@ public class WorkTaskOfficialActivity extends BaseActivity {
 
     @Override
     public void initListener() {
-
+        bt_return_task.setOnClickListener(this);
     }
 
     @Override
     public void initData() {
         setTitle("任务详情");
         setTitleCanBack();
+
     }
 
     @Override
     public void processClick(View v) {
-
+        switch (v.getId()){
+            case R.id.bt_return_task:
+                Intent intent = new Intent(WorkTaskOfficialActivity.this, WorkTaskOfficialReturnActivity.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
     }
 }

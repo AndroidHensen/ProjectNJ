@@ -23,6 +23,7 @@ import com.handsome.projectnz.View.Home.Statistics.EmployeeStatisticsActivity;
 import com.handsome.projectnz.View.Home.Statistics.InfoStatisticsActivity;
 import com.handsome.projectnz.View.Home.Statistics.MaterialStatisticsActivity;
 import com.handsome.projectnz.View.Home.WorkReport.WorkReportActivity;
+import com.handsome.projectnz.View.Home.WorkTask.WorkTaskActivity;
 
 /**
  * Created by handsome on 2016/4/7.
@@ -84,6 +85,7 @@ public class HomeFragment extends BaseLazyFragment {
         iv_company_announcements.setOnClickListener(this);
         iv_work_report.setOnClickListener(this);
         iv_general_settings.setOnClickListener(this);
+        iv_working_task.setOnClickListener(this);
     }
 
     @Override
@@ -151,6 +153,10 @@ public class HomeFragment extends BaseLazyFragment {
                 break;
             case R.id.iv_general_settings:
                 i=new Intent(getActivity(), ApplyCommonActivity.class);
+                startActivity(i);
+                break;
+            case R.id.iv_working_task:
+                i=new Intent(getActivity(),WorkTaskActivity.class);
                 startActivity(i);
                 break;
             default:

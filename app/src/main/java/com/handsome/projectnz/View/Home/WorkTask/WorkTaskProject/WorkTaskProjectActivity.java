@@ -1,5 +1,6 @@
 package com.handsome.projectnz.View.Home.WorkTask.WorkTaskProject;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
@@ -7,6 +8,7 @@ import android.widget.TextView;
 
 import com.handsome.module_engine.E.BaseTemplate.BaseActivity;
 import com.handsome.projectnz.R;
+import com.handsome.projectnz.View.Home.WorkTask.WorkTaskOfficial.WorkTaskOfficialReturnActivity;
 
 /**
  * Created by jie on 2018/1/20.
@@ -61,7 +63,7 @@ public class WorkTaskProjectActivity extends BaseActivity {
 
     @Override
     public void initListener() {
-
+        bt_work_task_return.setOnClickListener(this);
     }
 
     @Override
@@ -73,6 +75,13 @@ public class WorkTaskProjectActivity extends BaseActivity {
 
     @Override
     public void processClick(View v) {
-
+        switch (v.getId()){
+            case R.id.bt_work_task_return:
+                Intent intent = new Intent(WorkTaskProjectActivity.this, ReturnProjectTaskActivity.class);
+                 startActivity(intent);
+                break;
+            default:
+                break;
+        }
     }
 }

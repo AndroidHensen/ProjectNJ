@@ -45,12 +45,12 @@
                         android:textSize="16sp" />
                 </LinearLayout>
 
-                <android.support.v7.widget.RecyclerView
+                <ListView
                     android:id="@+id/rv_progress_detail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:paddingLeft="8dp"></android.support.v7.widget.RecyclerView>
+                    android:background="@color/white">
+                </ListView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
