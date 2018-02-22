@@ -14,6 +14,7 @@ import com.handsome.projectnz.View.Home.DailyCheck.DailyCheckActivity;
 import com.handsome.projectnz.View.Home.Login.LoginActivity;
 import com.handsome.projectnz.View.Home.MaterialHandling.MaterialOutputRecordActivity;
 import com.handsome.projectnz.View.Home.MaterialHandling.StockKeepActivity;
+import com.handsome.projectnz.View.Home.MaterialsManagement.MaterialsManagementActivity;
 import com.handsome.projectnz.View.Home.PlanProgress.PlanProgressActivity;
 import com.handsome.projectnz.View.Home.QualityCheck.QualityCheckActivity;
 import com.handsome.projectnz.View.Home.Register.RegisterActivity;
@@ -159,6 +160,9 @@ public class HomeFragment extends BaseLazyFragment {
                 i=new Intent(getActivity(),WorkTaskActivity.class);
                 startActivity(i);
                 break;
+            case R.id.iv_materials:
+                i=new Intent(getActivity(), MaterialsManagementActivity.class);
+                startActivity(i);
             default:
                 break;
         }
