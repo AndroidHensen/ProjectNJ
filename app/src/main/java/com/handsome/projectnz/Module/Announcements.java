@@ -75,7 +75,7 @@ public class Announcements {
             private int publish_time;
             private String content;
             private String image;
-            private long validity;
+            private int validity;
             private int cid;
             private String unit_name;
             private int isread;
@@ -113,11 +113,11 @@ public class Announcements {
                 this.image = image;
             }
 
-            public long getValidity() {
+            public int getValidity() {
                 return validity;
             }
 
-            public void setValidity(long validity) {
+            public void setValidity(int validity) {
                 this.validity = validity;
             }
 

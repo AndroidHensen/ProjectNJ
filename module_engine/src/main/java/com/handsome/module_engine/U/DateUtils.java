@@ -16,7 +16,7 @@ public class DateUtils {
     /*
      * 将时间戳转换为时间
      */
-    public static String stampToDate(Long lt) {
+    public static String stampToDate(Integer lt) {
         String res;
         SimpleDateFormat simpleDateFormat;
         simpleDateFormat = new SimpleDateFormat("yyyy年MM月dd日");
