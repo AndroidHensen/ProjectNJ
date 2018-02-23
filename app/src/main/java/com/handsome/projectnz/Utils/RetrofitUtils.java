@@ -44,6 +44,13 @@ public class RetrofitUtils {
         return iServer;
     }
 
+    /**
+     * 文件参数
+     *
+     * @param key
+     * @param filePaths
+     * @return
+     */
     public static List<MultipartBody.Part> filesToMultipartBodyParts(String key, List<String> filePaths) {
         List<MultipartBody.Part> parts = new ArrayList<>(filePaths.size());
         for (String filePath : filePaths) {
@@ -55,11 +62,20 @@ public class RetrofitUtils {
         return parts;
     }
 
+    /**
+     * 文本参数
+     *
+     * @param param
+     * @return
+     */
     public static RequestBody convertToRequestBody(String param) {
         RequestBody requestBody = RequestBody.create(MediaType.parse("text/plain"), param);
         return requestBody;
     }
 
+    /**
+     * 接口
+     */
     public interface IRetrofitServer {
         //显示公司公告
         @Multipart
