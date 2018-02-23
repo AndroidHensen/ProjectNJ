@@ -3,6 +3,7 @@
     package="com.handsome.projectnz">
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,18 +17,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.Home.WorkTask.WorkTaskOfficial.WorkTaskOfficialReturnActivity"/>
-        <activity android:name=".View.Home.WorkTask.WorkTaskProject.WorkTaskProjectActivity"/>
-        <activity android:name=".View.Home.WorkTask.WorkTaskOfficial.WorkTaskOfficialActivity"/>
-        <activity android:name=".View.Home.WorkTask.WorkTaskActivity"/>
-        <activity android:name=".View.Home.OptionProject.OptionProjectActivity"/>
-        <activity android:name=".View.Home.ApplyCommon.ApplyDetailsActivity"/>
-        <activity android:name=".View.Home.ApplyCommon.ApplyCommonActivity"/>
-        <activity android:name=".View.Home.PlanDetails.PlanStaffRosterActivity"/>
-        <activity android:name=".View.Home.PlanDetails.PlanScheduleRecordActivity"/>
-        <activity android:name=".View.Home.PlanDetails.PlanScheduleFeedbackActivity"/>
-        <activity android:name=".View.Home.PlanDetails.PlanMakeActivity"/>
-        <activity android:name=".View.Home.PlanDetails.PlanDetailsActivity"/>
+        <activity android:name=".View.Home.WorkTask.WorkTaskOfficial.WorkTaskOfficialReturnActivity" />
+        <activity android:name=".View.Home.WorkTask.WorkTaskProject.WorkTaskProjectActivity" />
+        <activity android:name=".View.Home.WorkTask.WorkTaskOfficial.WorkTaskOfficialActivity" />
+        <activity android:name=".View.Home.WorkTask.WorkTaskActivity" />
+        <activity android:name=".View.Home.OptionProject.OptionProjectActivity" />
+        <activity android:name=".View.Home.ApplyCommon.ApplyDetailsActivity" />
+        <activity android:name=".View.Home.ApplyCommon.ApplyCommonActivity" />
+        <activity android:name=".View.Home.PlanDetails.PlanStaffRosterActivity" />
+        <activity android:name=".View.Home.PlanDetails.PlanScheduleRecordActivity" />
+        <activity android:name=".View.Home.PlanDetails.PlanScheduleFeedbackActivity" />
+        <activity android:name=".View.Home.PlanDetails.PlanMakeActivity" />
+        <activity android:name=".View.Home.PlanDetails.PlanDetailsActivity" />
         <activity android:name=".View.Home.WorkReport.WorkReportContentAcitvity" />
         <activity android:name=".View.Home.WorkReport.WorkReportNewActivity" />
         <activity android:name=".View.Home.WorkReport.WorkReportActivity" />

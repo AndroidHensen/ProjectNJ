@@ -25,7 +25,7 @@ import retrofit2.http.PartMap;
  */
 public class RetrofitUtils {
 
-    private static final String ObjectUrl = "http: //106.14.175.111/index.php/api/";
+    private static final String ObjectUrl = "http://106.14.175.111/index.php/api/";
     private static Retrofit retrofit = null;
     private static IRetrofitServer iServer;
 
@@ -61,6 +61,11 @@ public class RetrofitUtils {
     }
 
     public interface IRetrofitServer {
+        //显示公司公告
+        @Multipart
+        @POST("notice/show_notice_abstract")
+        Call<ResponseBody> show_notice_abstract(@PartMap Map<String, RequestBody> map, @Part List<MultipartBody.Part> parts);
+
         //显示所有项目物资
         @Multipart
         @POST("goods/showAll")
