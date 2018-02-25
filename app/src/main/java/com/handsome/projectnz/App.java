@@ -14,7 +14,9 @@ import com.handsome.projectnz.Manager.PrefManager;
 
 public class App extends Application {
 
+
     @Override
+
     public void onCreate() {
         super.onCreate();
 
